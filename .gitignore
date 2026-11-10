@@ -1,0 +1,9 @@
+# Godot cache and local build output
+.godot/
+build/
+export/
+*.blend1
+*.blend2
+*.log
+__pycache__/
+Thumbs.db
