@@ -1,0 +1,558 @@
+{
+ "_comment": "NEON TIDE animals (rigid parts, no armature). Positions are Blender asset-space metres (x right, y forward, z up); Godot = (x, z, -y). GLB node names are '<id>__<part>'. Every part has identity rest rotation and its origin at the joint ('part_origins'): head = head + neck pivoting at the neck base (rotate about X: negative = nose down), leg_* pivot at shoulder / hip (about X: positive = foot forward), tail pivots at its base (about Godot Y = wag / swim), wing_l / wing_r pivot at the wing root, rest = flat spread (about Godot Z: wing_l +angle = tip down, wing_r -angle = tip down). Quadrupeds / seagull: origin on the ground under the body centre; fish, fish_b, shark: origin at the body centre.",
+ "assets": [
+  {
+   "id": "seagull",
+   "glb": "animals/seagull",
+   "category": "Animals",
+   "size": [
+    1.25,
+    0.516,
+    0.306
+   ],
+   "tris": 436,
+   "parts": [
+    "body",
+    "head",
+    "tail",
+    "wing_l",
+    "wing_r"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.1,
+     0.2
+    ],
+    "tail": [
+     0.0,
+     -0.115,
+     0.186
+    ],
+    "wing_l": [
+     -0.045,
+     0.005,
+     0.205
+    ],
+    "wing_r": [
+     0.045,
+     0.005,
+     0.205
+    ]
+   },
+   "length": 0.516,
+   "wingspan": 1.25,
+   "spec": {
+    "wingspan": 1.25
+   },
+   "bbox_min": [
+    -0.625,
+    -0.258,
+    0.0
+   ],
+   "bbox_max": [
+    0.625,
+    0.258,
+    0.306
+   ],
+   "notes": "Seagull, wings flat spread at rest (wing_l toward -X, wing_r toward +X, pivots at the wing roots). Godot flap: wing_l rot.z = +a / wing_r rot.z = -a (a > 0 = tips down). Perch fold suggestion: wing_l rot.y = +1.45, wing_r rot.y = -1.45 (wings swing back along the body). Head turns about Y. Legs are part of the body (feet on z = 0)."
+  },
+  {
+   "id": "fish",
+   "glb": "animals/fish",
+   "category": "Animals",
+   "size": [
+    0.089,
+    0.352,
+    0.122
+   ],
+   "tris": 260,
+   "parts": [
+    "body",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tail": [
+     0.0,
+     -0.095,
+     0.0
+    ]
+   },
+   "length": 0.352,
+   "spec": {
+    "length": 0.35
+   },
+   "bbox_min": [
+    -0.054,
+    -0.176,
+    -0.052
+   ],
+   "bbox_max": [
+    0.034,
+    0.176,
+    0.07
+   ],
+   "notes": "Streamlined silver fish (blue-grey back, light belly). Origin at the body centre. Part tail = peduncle + forked caudal fin, pivot at the tail base, swims by rotating about Z."
+  },
+  {
+   "id": "fish_b",
+   "glb": "animals/fish_b",
+   "category": "Animals",
+   "size": [
+    0.08,
+    0.319,
+    0.24
+   ],
+   "tris": 310,
+   "parts": [
+    "body",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tail": [
+     0.0,
+     -0.085,
+     0.0
+    ]
+   },
+   "length": 0.319,
+   "spec": {
+    "length": 0.32
+   },
+   "bbox_min": [
+    -0.048,
+    -0.175,
+    -0.105
+   ],
+   "bbox_max": [
+    0.032,
+    0.144,
+    0.135
+   ],
+   "notes": "Deep-bodied reef fish, fish_orange with white bands and dark fin edges. Origin at the body centre. Part tail = peduncle + rounded fan, pivot at the tail base, swims about Z."
+  },
+  {
+   "id": "dog",
+   "glb": "animals/dog",
+   "category": "Animals",
+   "size": [
+    0.251,
+    0.946,
+    0.753
+   ],
+   "tris": 592,
+   "parts": [
+    "body",
+    "head",
+    "leg_fl",
+    "leg_fr",
+    "leg_rl",
+    "leg_rr",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.2,
+     0.47
+    ],
+    "leg_fl": [
+     -0.072,
+     0.17,
+     0.42
+    ],
+    "leg_fr": [
+     0.072,
+     0.17,
+     0.42
+    ],
+    "leg_rl": [
+     -0.078,
+     -0.21,
+     0.44
+    ],
+    "leg_rr": [
+     0.078,
+     -0.21,
+     0.44
+    ],
+    "tail": [
+     0.0,
+     -0.29,
+     0.5
+    ]
+   },
+   "length": 0.946,
+   "shoulder": 0.545,
+   "spec": {
+    "length": 0.95,
+    "shoulder": 0.55
+   },
+   "bbox_min": [
+    -0.126,
+    -0.419,
+    0.0
+   ],
+   "bbox_max": [
+    0.126,
+    0.527,
+    0.753
+   ],
+   "notes": "Medium mixed-breed dog: dark coat, light chest / muzzle / socks / tail tip, floppy ears, red collar with a tag (collar + ears belong to head). Tail held up, wags about Z."
+  },
+  {
+   "id": "cat",
+   "glb": "animals/cat",
+   "category": "Animals",
+   "size": [
+    0.138,
+    0.496,
+    0.471
+   ],
+   "tris": 510,
+   "parts": [
+    "body",
+    "head",
+    "leg_fl",
+    "leg_fr",
+    "leg_rl",
+    "leg_rr",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.1,
+     0.205
+    ],
+    "leg_fl": [
+     -0.034,
+     0.1,
+     0.19
+    ],
+    "leg_fr": [
+     0.034,
+     0.1,
+     0.19
+    ],
+    "leg_rl": [
+     -0.04,
+     -0.12,
+     0.2
+    ],
+    "leg_rr": [
+     0.04,
+     -0.12,
+     0.2
+    ],
+    "tail": [
+     0.0,
+     -0.165,
+     0.225
+    ]
+   },
+   "length": 0.496,
+   "spec": {
+    "length": 0.5
+   },
+   "bbox_min": [
+    -0.069,
+    -0.237,
+    0.0
+   ],
+   "bbox_max": [
+    0.069,
+    0.259,
+    0.471
+   ],
+   "notes": "Ginger tabby cat: fur_ginger coat with fur_ginger_dark stripes, light chest / muzzle, pointed ears, upright tail curling forward at the tip (tail wags about Z)."
+  },
+  {
+   "id": "deer",
+   "glb": "animals/deer",
+   "category": "Animals",
+   "size": [
+    0.451,
+    1.696,
+    1.818
+   ],
+   "tris": 591,
+   "parts": [
+    "body",
+    "head",
+    "leg_fl",
+    "leg_fr",
+    "leg_rl",
+    "leg_rr",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.33,
+     0.9
+    ],
+    "leg_fl": [
+     -0.098,
+     0.3,
+     0.8
+    ],
+    "leg_fr": [
+     0.098,
+     0.3,
+     0.8
+    ],
+    "leg_rl": [
+     -0.108,
+     -0.42,
+     0.84
+    ],
+    "leg_rr": [
+     0.108,
+     -0.42,
+     0.84
+    ],
+    "tail": [
+     0.0,
+     -0.64,
+     0.95
+    ]
+   },
+   "length": 1.696,
+   "shoulder": 1.042,
+   "spec": {
+    "length": 1.7,
+    "shoulder": 1.05
+   },
+   "bbox_min": [
+    -0.225,
+    -0.763,
+    -0.002
+   ],
+   "bbox_max": [
+    0.225,
+    0.933,
+    1.816
+   ],
+   "notes": "Slender deer (fur_deer, fur_light belly / throat / muzzle band / tail flag / rump), antlers (cream) and big ears on the head part. Head graze = rotate head about X ~ -0.7 rad."
+  },
+  {
+   "id": "rabbit",
+   "glb": "animals/rabbit",
+   "category": "Animals",
+   "size": [
+    0.157,
+    0.388,
+    0.321
+   ],
+   "tris": 538,
+   "parts": [
+    "body",
+    "head",
+    "leg_fl",
+    "leg_fr",
+    "leg_rl",
+    "leg_rr",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.05,
+     0.125
+    ],
+    "leg_fl": [
+     -0.03,
+     0.05,
+     0.075
+    ],
+    "leg_fr": [
+     0.03,
+     0.05,
+     0.075
+    ],
+    "leg_rl": [
+     -0.056,
+     -0.08,
+     0.1
+    ],
+    "leg_rr": [
+     0.056,
+     -0.08,
+     0.1
+    ],
+    "tail": [
+     0.0,
+     -0.16,
+     0.128
+    ]
+   },
+   "length": 0.388,
+   "spec": {
+    "length": 0.38
+   },
+   "bbox_min": [
+    -0.079,
+    -0.199,
+    0.0
+   ],
+   "bbox_max": [
+    0.079,
+    0.189,
+    0.321
+   ],
+   "notes": "Crouching grey rabbit: big haunches (leg_rl / leg_rr include the long hind feet), long ears with pink insides (part of head), cotton tail = part tail (fur_light ball)."
+  },
+  {
+   "id": "coyote",
+   "glb": "animals/coyote",
+   "category": "Animals",
+   "size": [
+    0.227,
+    1.142,
+    0.79
+   ],
+   "tris": 546,
+   "parts": [
+    "body",
+    "head",
+    "leg_fl",
+    "leg_fr",
+    "leg_rl",
+    "leg_rr",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "head": [
+     0.0,
+     0.2,
+     0.47
+    ],
+    "leg_fl": [
+     -0.064,
+     0.17,
+     0.42
+    ],
+    "leg_fr": [
+     0.064,
+     0.17,
+     0.42
+    ],
+    "leg_rl": [
+     -0.07,
+     -0.21,
+     0.44
+    ],
+    "leg_rr": [
+     0.07,
+     -0.21,
+     0.44
+    ],
+    "tail": [
+     0.0,
+     -0.29,
+     0.49
+    ]
+   },
+   "length": 1.142,
+   "shoulder": 0.545,
+   "spec": {
+    "length": 1.15,
+    "shoulder": 0.55
+   },
+   "bbox_min": [
+    -0.113,
+    -0.612,
+    0.0
+   ],
+   "bbox_max": [
+    0.113,
+    0.53,
+    0.79
+   ],
+   "notes": "Lean coyote: grey coat, light throat / belly / muzzle, rusty ears and lower legs, big erect ears, bushy tail hanging back with a dark tip (wags about Z)."
+  },
+  {
+   "id": "shark",
+   "glb": "animals/shark",
+   "category": "Animals",
+   "size": [
+    1.496,
+    3.285,
+    1.279
+   ],
+   "tris": 540,
+   "parts": [
+    "body",
+    "tail"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tail": [
+     0.0,
+     -0.72,
+     0.03
+    ]
+   },
+   "length": 3.285,
+   "spec": {
+    "length": 3.3
+   },
+   "bbox_min": [
+    -0.748,
+    -1.62,
+    -0.419
+   ],
+   "bbox_max": [
+    0.748,
+    1.665,
+    0.86
+   ],
+   "notes": "Shark, origin at the body centre. Part body = torso + head + dorsal / pectoral / pelvic fins; part tail = rear body (from the pivot at y=-0.72) + second dorsal + anal fin + caudal fin, swings about Z (swim). Countershaded shark_gray / shark_belly."
+  }
+ ]
+}

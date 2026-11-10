@@ -1,0 +1,1486 @@
+{
+ "_comment": "NEON TIDE humanoid characters. Positions are Blender asset-space metres (x right, y forward, z up); Godot = (x, z, -y). One skinned mesh per part, material 'Character' (UV.x selects the colour region 0-15). GLB node names are '<id>__<part>'; accessories ('acc_*') are skinned 100 % to one bone and must be hidden unless equipped.",
+ "fps": 30,
+ "skeleton": [
+  {
+   "name": "Hips",
+   "parent": null,
+   "head": [
+    0.0,
+    0.0,
+    0.96
+   ],
+   "deform": true
+  },
+  {
+   "name": "Spine",
+   "parent": "Hips",
+   "head": [
+    0.0,
+    0.0,
+    1.08
+   ],
+   "deform": true
+  },
+  {
+   "name": "Chest",
+   "parent": "Spine",
+   "head": [
+    0.0,
+    0.0,
+    1.26
+   ],
+   "deform": true
+  },
+  {
+   "name": "Neck",
+   "parent": "Chest",
+   "head": [
+    0.0,
+    0.0,
+    1.48
+   ],
+   "deform": true
+  },
+  {
+   "name": "Head",
+   "parent": "Neck",
+   "head": [
+    0.0,
+    0.0,
+    1.56
+   ],
+   "deform": true
+  },
+  {
+   "name": "UpperArm_L",
+   "parent": "Chest",
+   "head": [
+    -0.2,
+    0.0,
+    1.43
+   ],
+   "deform": true
+  },
+  {
+   "name": "LowerArm_L",
+   "parent": "UpperArm_L",
+   "head": [
+    -0.235,
+    0.0,
+    1.15
+   ],
+   "deform": true
+  },
+  {
+   "name": "Hand_L",
+   "parent": "LowerArm_L",
+   "head": [
+    -0.265,
+    0.0,
+    0.89
+   ],
+   "deform": true
+  },
+  {
+   "name": "Prop_L",
+   "parent": "Hand_L",
+   "head": [
+    -0.275,
+    0.03,
+    0.8
+   ],
+   "deform": false
+  },
+  {
+   "name": "UpperArm_R",
+   "parent": "Chest",
+   "head": [
+    0.2,
+    0.0,
+    1.43
+   ],
+   "deform": true
+  },
+  {
+   "name": "LowerArm_R",
+   "parent": "UpperArm_R",
+   "head": [
+    0.235,
+    0.0,
+    1.15
+   ],
+   "deform": true
+  },
+  {
+   "name": "Hand_R",
+   "parent": "LowerArm_R",
+   "head": [
+    0.265,
+    0.0,
+    0.89
+   ],
+   "deform": true
+  },
+  {
+   "name": "Prop_R",
+   "parent": "Hand_R",
+   "head": [
+    0.275,
+    0.03,
+    0.8
+   ],
+   "deform": false
+  },
+  {
+   "name": "UpperLeg_L",
+   "parent": "Hips",
+   "head": [
+    -0.095,
+    0.0,
+    0.93
+   ],
+   "deform": true
+  },
+  {
+   "name": "LowerLeg_L",
+   "parent": "UpperLeg_L",
+   "head": [
+    -0.095,
+    0.0,
+    0.51
+   ],
+   "deform": true
+  },
+  {
+   "name": "Foot_L",
+   "parent": "LowerLeg_L",
+   "head": [
+    -0.095,
+    0.0,
+    0.09
+   ],
+   "deform": true
+  },
+  {
+   "name": "UpperLeg_R",
+   "parent": "Hips",
+   "head": [
+    0.095,
+    0.0,
+    0.93
+   ],
+   "deform": true
+  },
+  {
+   "name": "LowerLeg_R",
+   "parent": "UpperLeg_R",
+   "head": [
+    0.095,
+    0.0,
+    0.51
+   ],
+   "deform": true
+  },
+  {
+   "name": "Foot_R",
+   "parent": "LowerLeg_R",
+   "head": [
+    0.095,
+    0.0,
+    0.09
+   ],
+   "deform": true
+  }
+ ],
+ "bone_axes": "every joint: identity rest rotation, local X = character right, Y = up, Z = back",
+ "regions": {
+  "0": "skin",
+  "1": "torso",
+  "2": "upper_arms",
+  "3": "lower_arms",
+  "4": "hands",
+  "5": "pelvis",
+  "6": "upper_legs",
+  "7": "lower_legs",
+  "8": "feet",
+  "9": "hair",
+  "10": "eyes",
+  "11": "headwear",
+  "12": "eyewear",
+  "13": "torso_overlay",
+  "14": "detail_a",
+  "15": "detail_b"
+ },
+ "prop_socket": "Prop_L / Prop_R are keyed to ONE constant local rotation (-90 deg about X) in every clip: socket -Z (Godot forward) points along the fingers / forearm line, +Y (top) to the thumb side. Weapons whose origin is the grip and whose barrel / blade runs along Blender +Y attach with an identity transform. In the bare rest pose (no clip) the socket is identity.",
+ "animation_notes": [
+  "All clips are in place; 'hips' is the Hips bone position at frame 0, 'speed' the ground speed in m/s a gait covers at 1x playback (use it as NOMINAL_SPEED).",
+  "Loop clips end on a copy of frame 0. One-shots hold their last frame.",
+  "Every clip owns a rotation track for all 19 bones and a Hips position track that differ from the rest pose (a bone resting for a whole clip is offset by 0.08 deg, a resting Hips by 0.3 mm), so Godot's 'remove_immutable_tracks' import option cannot drop them and an AnimationPlayer never leaves a bone in the previous clip's pose.",
+  "AimPistol / AimRifle / HoldRifle / Reload / Punch_* / Stab / Throw / Block keep the Hips un-rotated (at frame 0) so Spine..Hand rotations can be layered over locomotion.",
+  "Seated clips (SitCar, SitPassenger, SitBike) are built around the Hips bone = the vehicle seat marker; the pelvis / thigh underside is 0.13 below the Hips bone.",
+  "Lying end poses: Death_Back / Knockdown end on the back with the head toward -Y; Death_Front / TakedownVictim end face-down with the head toward +Y; GetUp starts from the Knockdown end pose."
+ ],
+ "export": {
+  "tool": "gta_kit.export_asset(root, 'characters/<id>', animations=True, extra=...)",
+  "extra": {
+   "export_frame_step": 1,
+   "export_anim_single_armature": false,
+   "export_anim_slide_to_zero": true,
+   "export_optimize_animation_keep_anim_object": false
+  },
+  "scene_fps_during_export": 30
+ },
+ "assets": [
+  {
+   "id": "human_male",
+   "glb": "characters/human_male",
+   "category": "Characters",
+   "size": [
+    0.591,
+    0.342,
+    1.8
+   ],
+   "tris": 1990,
+   "tris_with_accessories": 8310,
+   "parts": [
+    "rig",
+    "body",
+    "acc_hair_short",
+    "acc_hair_side",
+    "acc_hair_long",
+    "acc_hair_pony",
+    "acc_hair_afro",
+    "acc_hair_mohawk",
+    "acc_hair_bun",
+    "acc_hair_bob",
+    "acc_beard",
+    "acc_mustache",
+    "acc_cap",
+    "acc_beanie",
+    "acc_hat_brim",
+    "acc_cap_police",
+    "acc_helmet_tactical",
+    "acc_helmet_moto",
+    "acc_glasses",
+    "acc_sunglasses",
+    "acc_bandana",
+    "acc_scuba_mask",
+    "acc_vest_tactical",
+    "acc_vest_safety",
+    "acc_tie",
+    "acc_badge",
+    "acc_backpack_chute",
+    "acc_scuba_tank",
+    "acc_holster",
+    "acc_skirt"
+   ],
+   "markers": [],
+   "bones": [
+    "Hips",
+    "Spine",
+    "Chest",
+    "Neck",
+    "Head",
+    "UpperArm_L",
+    "LowerArm_L",
+    "Hand_L",
+    "Prop_L",
+    "UpperArm_R",
+    "LowerArm_R",
+    "Hand_R",
+    "Prop_R",
+    "UpperLeg_L",
+    "LowerLeg_L",
+    "Foot_L",
+    "UpperLeg_R",
+    "LowerLeg_R",
+    "Foot_R"
+   ],
+   "accessories": [
+    {
+     "name": "hair_short",
+     "part": "acc_hair_short",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 232
+    },
+    {
+     "name": "hair_side",
+     "part": "acc_hair_side",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 244
+    },
+    {
+     "name": "hair_long",
+     "part": "acc_hair_long",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 188
+    },
+    {
+     "name": "hair_pony",
+     "part": "acc_hair_pony",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 288
+    },
+    {
+     "name": "hair_afro",
+     "part": "acc_hair_afro",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 188
+    },
+    {
+     "name": "hair_mohawk",
+     "part": "acc_hair_mohawk",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 52
+    },
+    {
+     "name": "hair_bun",
+     "part": "acc_hair_bun",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 280
+    },
+    {
+     "name": "hair_bob",
+     "part": "acc_hair_bob",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 164
+    },
+    {
+     "name": "beard",
+     "part": "acc_beard",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 92
+    },
+    {
+     "name": "mustache",
+     "part": "acc_mustache",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 88
+    },
+    {
+     "name": "cap",
+     "part": "acc_cap",
+     "bone": "Head",
+     "regions": [
+      11
+     ],
+     "tris": 180
+    },
+    {
+     "name": "beanie",
+     "part": "acc_beanie",
+     "bone": "Head",
+     "regions": [
+      11
+     ],
+     "tris": 248
+    },
+    {
+     "name": "hat_brim",
+     "part": "acc_hat_brim",
+     "bone": "Head",
+     "regions": [
+      11,
+      14
+     ],
+     "tris": 236
+    },
+    {
+     "name": "cap_police",
+     "part": "acc_cap_police",
+     "bone": "Head",
+     "regions": [
+      11,
+      14
+     ],
+     "tris": 204
+    },
+    {
+     "name": "helmet_tactical",
+     "part": "acc_helmet_tactical",
+     "bone": "Head",
+     "regions": [
+      11,
+      12
+     ],
+     "tris": 392
+    },
+    {
+     "name": "helmet_moto",
+     "part": "acc_helmet_moto",
+     "bone": "Head",
+     "regions": [
+      11,
+      12,
+      15
+     ],
+     "tris": 232
+    },
+    {
+     "name": "glasses",
+     "part": "acc_glasses",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 156
+    },
+    {
+     "name": "sunglasses",
+     "part": "acc_sunglasses",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 148
+    },
+    {
+     "name": "bandana",
+     "part": "acc_bandana",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 160
+    },
+    {
+     "name": "scuba_mask",
+     "part": "acc_scuba_mask",
+     "bone": "Head",
+     "regions": [
+      12,
+      15
+     ],
+     "tris": 204
+    },
+    {
+     "name": "vest_tactical",
+     "part": "acc_vest_tactical",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 560
+    },
+    {
+     "name": "vest_safety",
+     "part": "acc_vest_safety",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 364
+    },
+    {
+     "name": "tie",
+     "part": "acc_tie",
+     "bone": "Chest",
+     "regions": [
+      14
+     ],
+     "tris": 52
+    },
+    {
+     "name": "badge",
+     "part": "acc_badge",
+     "bone": "Chest",
+     "regions": [
+      14,
+      15
+     ],
+     "tris": 88
+    },
+    {
+     "name": "backpack_chute",
+     "part": "acc_backpack_chute",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 368
+    },
+    {
+     "name": "scuba_tank",
+     "part": "acc_scuba_tank",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 684
+    },
+    {
+     "name": "holster",
+     "part": "acc_holster",
+     "bone": "Hips",
+     "regions": [
+      14
+     ],
+     "tris": 112
+    },
+    {
+     "name": "skirt",
+     "part": "acc_skirt",
+     "bone": "Hips",
+     "regions": [
+      6
+     ],
+     "tris": 116
+    }
+   ],
+   "animations": [
+    {
+     "name": "Idle",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      -0.006,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Walk",
+     "length": 32,
+     "loop": true,
+     "seconds": 1.0667,
+     "hips": [
+      -0.001,
+      0.01,
+      0.904
+     ],
+     "speed": 1.41
+    },
+    {
+     "name": "Run",
+     "length": 20,
+     "loop": true,
+     "seconds": 0.6667,
+     "hips": [
+      0.008,
+      0.0,
+      0.914
+     ],
+     "speed": 4.11
+    },
+    {
+     "name": "Sprint",
+     "length": 16,
+     "loop": true,
+     "seconds": 0.5333,
+     "hips": [
+      0.008,
+      -0.02,
+      0.896
+     ],
+     "speed": 6.82
+    },
+    {
+     "name": "CrouchWalk",
+     "length": 32,
+     "loop": true,
+     "seconds": 1.0667,
+     "hips": [
+      -0.005,
+      -0.05,
+      0.649
+     ],
+     "speed": 1.27
+    },
+    {
+     "name": "CrouchIdle",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      -0.003,
+      -0.06,
+      0.63
+     ]
+    },
+    {
+     "name": "Jump",
+     "length": 10,
+     "loop": false,
+     "seconds": 0.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Fall",
+     "length": 30,
+     "loop": true,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ]
+    },
+    {
+     "name": "Land",
+     "length": 10,
+     "loop": false,
+     "seconds": 0.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "name": "SitCar",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.381
+     ],
+     "note": "hands on a wheel whose hub is 0.40 in front of / 0.31 above the Hips bone (car kit steer_hub), heels 0.26 below / 0.55 in front of the Hips"
+    },
+    {
+     "name": "AimPistol",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.89
+     ]
+    },
+    {
+     "name": "AimRifle",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "name": "HoldRifle",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      -0.004,
+      0.0,
+      0.948
+     ],
+     "note": "grip at the right hip, muzzle down-left; support palm 0.30 along the barrel"
+    },
+    {
+     "name": "Reload",
+     "length": 30,
+     "loop": false,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Punch_L",
+     "length": 12,
+     "loop": false,
+     "seconds": 0.4,
+     "hips": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "name": "Punch_R",
+     "length": 12,
+     "loop": false,
+     "seconds": 0.4,
+     "hips": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "name": "Kick",
+     "length": 18,
+     "loop": false,
+     "seconds": 0.6,
+     "hips": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "name": "HitReact_F",
+     "length": 10,
+     "loop": false,
+     "seconds": 0.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Death_Back",
+     "length": 24,
+     "loop": false,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Swim",
+     "length": 30,
+     "loop": true,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ]
+    },
+    {
+     "name": "SwimIdle",
+     "length": 40,
+     "loop": true,
+     "seconds": 1.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ]
+    },
+    {
+     "name": "Roll",
+     "length": 20,
+     "loop": false,
+     "seconds": 0.6667,
+     "hips": [
+      0.0,
+      -0.06,
+      0.63
+     ]
+    },
+    {
+     "name": "Dive",
+     "length": 36,
+     "loop": true,
+     "seconds": 1.2,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ]
+    },
+    {
+     "name": "ClimbLadder",
+     "length": 24,
+     "loop": true,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.942
+     ],
+     "speed": 1.08,
+     "note": "rungs 0.35 in front of the Hips (hands) / 0.21 (feet), body upright facing +Y"
+    },
+    {
+     "name": "Vault",
+     "length": 18,
+     "loop": false,
+     "seconds": 0.6,
+     "hips": [
+      0.0,
+      0.0,
+      0.86
+     ],
+     "note": "hands plant on an obstacle top ~1.0 high, 0.4 in front; root stays in place"
+    },
+    {
+     "name": "Mantle",
+     "length": 24,
+     "loop": false,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ],
+     "note": "in place: hands start on a ledge 1.9 above the feet and end at hip height while the game lifts the root onto the ledge"
+    },
+    {
+     "name": "SitPassenger",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.378
+     ]
+    },
+    {
+     "name": "SitBike",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.693
+     ],
+     "note": "fitted to bike_sport: grips at (+-0.293, +0.693, -0.149) and pegs at (+-0.215, +0.073, -0.645) relative to the Hips bone (= seat_driver marker)"
+    },
+    {
+     "name": "Sit",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.58
+     ],
+     "note": "root on the ground, seat top 0.45 high under the Hips (Hips 0.58 above the ground)"
+    },
+    {
+     "name": "Carjack",
+     "length": 20,
+     "loop": false,
+     "seconds": 0.6667,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "SwingBat",
+     "length": 16,
+     "loop": false,
+     "seconds": 0.5333,
+     "hips": [
+      0.02,
+      0.03,
+      0.89
+     ],
+     "note": "two-handed: left hand 0.10 further along the item axis (weapon marker hand_l of `bat`)"
+    },
+    {
+     "name": "Stab",
+     "length": 12,
+     "loop": false,
+     "seconds": 0.4,
+     "hips": [
+      0.0,
+      -0.01,
+      0.89
+     ]
+    },
+    {
+     "name": "Throw",
+     "length": 20,
+     "loop": false,
+     "seconds": 0.6667,
+     "hips": [
+      0.0,
+      -0.04,
+      0.89
+     ]
+    },
+    {
+     "name": "Block",
+     "length": 30,
+     "loop": true,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.88
+     ]
+    },
+    {
+     "name": "HitReact_B",
+     "length": 10,
+     "loop": false,
+     "seconds": 0.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Knockdown",
+     "length": 20,
+     "loop": false,
+     "seconds": 0.6667,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "GetUp",
+     "length": 30,
+     "loop": false,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      -0.2,
+      0.205
+     ]
+    },
+    {
+     "name": "Death_Front",
+     "length": 24,
+     "loop": false,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "TakedownVictim",
+     "length": 24,
+     "loop": false,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ],
+     "note": "ends face-down (same rest pose as Death_Front)"
+    },
+    {
+     "name": "Takedown",
+     "length": 24,
+     "loop": false,
+     "seconds": 0.8,
+     "hips": [
+      0.0,
+      0.0,
+      0.88
+     ],
+     "note": "attacker stands ~0.40 behind the victim (victim's neck at +0.40 Y, 1.48 high)"
+    },
+    {
+     "name": "CoverLow",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.56
+     ],
+     "note": "back to a wall ~0.14 behind the Hips; weapon held muzzle-up at the chest"
+    },
+    {
+     "name": "CoverHigh",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.93
+     ],
+     "note": "back to a wall ~0.14 behind the Hips; weapon held muzzle-up at the chest"
+    },
+    {
+     "name": "HandsUp",
+     "length": 40,
+     "loop": true,
+     "seconds": 1.3333,
+     "hips": [
+      -0.005,
+      0.0,
+      0.945
+     ]
+    },
+    {
+     "name": "Cower",
+     "length": 30,
+     "loop": true,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      -0.05,
+      0.54
+     ]
+    },
+    {
+     "name": "Surrender",
+     "length": 40,
+     "loop": true,
+     "seconds": 1.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.573
+     ]
+    },
+    {
+     "name": "PhoneCall",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      -0.007,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "PhoneUse",
+     "length": 60,
+     "loop": true,
+     "seconds": 2.0,
+     "hips": [
+      -0.005,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Talk",
+     "length": 80,
+     "loop": true,
+     "seconds": 2.6667,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Wave",
+     "length": 30,
+     "loop": false,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.948
+     ]
+    },
+    {
+     "name": "Parachute",
+     "length": 40,
+     "loop": true,
+     "seconds": 1.3333,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ],
+     "note": "hands on toggles 0.43 above the shoulders (canopy risers meet at the shoulders)"
+    },
+    {
+     "name": "Freefall",
+     "length": 30,
+     "loop": true,
+     "seconds": 1.0,
+     "hips": [
+      0.0,
+      0.0,
+      0.96
+     ]
+    }
+   ],
+   "glb_bytes": 1430568,
+   "glb_joint_rest_identity": true,
+   "notes": "Rig + body + accessories + the animation library (30 fps, Actions named exactly like the clips)."
+  },
+  {
+   "id": "human_female",
+   "glb": "characters/human_female",
+   "category": "Characters",
+   "size": [
+    0.58,
+    0.318,
+    1.8
+   ],
+   "tris": 1990,
+   "tris_with_accessories": 8310,
+   "parts": [
+    "rig",
+    "body",
+    "acc_hair_short",
+    "acc_hair_side",
+    "acc_hair_long",
+    "acc_hair_pony",
+    "acc_hair_afro",
+    "acc_hair_mohawk",
+    "acc_hair_bun",
+    "acc_hair_bob",
+    "acc_beard",
+    "acc_mustache",
+    "acc_cap",
+    "acc_beanie",
+    "acc_hat_brim",
+    "acc_cap_police",
+    "acc_helmet_tactical",
+    "acc_helmet_moto",
+    "acc_glasses",
+    "acc_sunglasses",
+    "acc_bandana",
+    "acc_scuba_mask",
+    "acc_vest_tactical",
+    "acc_vest_safety",
+    "acc_tie",
+    "acc_badge",
+    "acc_backpack_chute",
+    "acc_scuba_tank",
+    "acc_holster",
+    "acc_skirt"
+   ],
+   "markers": [],
+   "bones": [
+    "Hips",
+    "Spine",
+    "Chest",
+    "Neck",
+    "Head",
+    "UpperArm_L",
+    "LowerArm_L",
+    "Hand_L",
+    "Prop_L",
+    "UpperArm_R",
+    "LowerArm_R",
+    "Hand_R",
+    "Prop_R",
+    "UpperLeg_L",
+    "LowerLeg_L",
+    "Foot_L",
+    "UpperLeg_R",
+    "LowerLeg_R",
+    "Foot_R"
+   ],
+   "accessories": [
+    {
+     "name": "hair_short",
+     "part": "acc_hair_short",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 232
+    },
+    {
+     "name": "hair_side",
+     "part": "acc_hair_side",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 244
+    },
+    {
+     "name": "hair_long",
+     "part": "acc_hair_long",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 188
+    },
+    {
+     "name": "hair_pony",
+     "part": "acc_hair_pony",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 288
+    },
+    {
+     "name": "hair_afro",
+     "part": "acc_hair_afro",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 188
+    },
+    {
+     "name": "hair_mohawk",
+     "part": "acc_hair_mohawk",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 52
+    },
+    {
+     "name": "hair_bun",
+     "part": "acc_hair_bun",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 280
+    },
+    {
+     "name": "hair_bob",
+     "part": "acc_hair_bob",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 164
+    },
+    {
+     "name": "beard",
+     "part": "acc_beard",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 92
+    },
+    {
+     "name": "mustache",
+     "part": "acc_mustache",
+     "bone": "Head",
+     "regions": [
+      9
+     ],
+     "tris": 88
+    },
+    {
+     "name": "cap",
+     "part": "acc_cap",
+     "bone": "Head",
+     "regions": [
+      11
+     ],
+     "tris": 180
+    },
+    {
+     "name": "beanie",
+     "part": "acc_beanie",
+     "bone": "Head",
+     "regions": [
+      11
+     ],
+     "tris": 248
+    },
+    {
+     "name": "hat_brim",
+     "part": "acc_hat_brim",
+     "bone": "Head",
+     "regions": [
+      11,
+      14
+     ],
+     "tris": 236
+    },
+    {
+     "name": "cap_police",
+     "part": "acc_cap_police",
+     "bone": "Head",
+     "regions": [
+      11,
+      14
+     ],
+     "tris": 204
+    },
+    {
+     "name": "helmet_tactical",
+     "part": "acc_helmet_tactical",
+     "bone": "Head",
+     "regions": [
+      11,
+      12
+     ],
+     "tris": 392
+    },
+    {
+     "name": "helmet_moto",
+     "part": "acc_helmet_moto",
+     "bone": "Head",
+     "regions": [
+      11,
+      12,
+      15
+     ],
+     "tris": 232
+    },
+    {
+     "name": "glasses",
+     "part": "acc_glasses",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 156
+    },
+    {
+     "name": "sunglasses",
+     "part": "acc_sunglasses",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 148
+    },
+    {
+     "name": "bandana",
+     "part": "acc_bandana",
+     "bone": "Head",
+     "regions": [
+      12
+     ],
+     "tris": 160
+    },
+    {
+     "name": "scuba_mask",
+     "part": "acc_scuba_mask",
+     "bone": "Head",
+     "regions": [
+      12,
+      15
+     ],
+     "tris": 204
+    },
+    {
+     "name": "vest_tactical",
+     "part": "acc_vest_tactical",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 560
+    },
+    {
+     "name": "vest_safety",
+     "part": "acc_vest_safety",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 364
+    },
+    {
+     "name": "tie",
+     "part": "acc_tie",
+     "bone": "Chest",
+     "regions": [
+      14
+     ],
+     "tris": 52
+    },
+    {
+     "name": "badge",
+     "part": "acc_badge",
+     "bone": "Chest",
+     "regions": [
+      14,
+      15
+     ],
+     "tris": 88
+    },
+    {
+     "name": "backpack_chute",
+     "part": "acc_backpack_chute",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 368
+    },
+    {
+     "name": "scuba_tank",
+     "part": "acc_scuba_tank",
+     "bone": "Chest",
+     "regions": [
+      13,
+      15
+     ],
+     "tris": 684
+    },
+    {
+     "name": "holster",
+     "part": "acc_holster",
+     "bone": "Hips",
+     "regions": [
+      14
+     ],
+     "tris": 112
+    },
+    {
+     "name": "skirt",
+     "part": "acc_skirt",
+     "bone": "Hips",
+     "regions": [
+      6
+     ],
+     "tris": 116
+    }
+   ],
+   "animations": [],
+   "glb_bytes": 461960,
+   "glb_joint_rest_identity": true,
+   "notes": "Same skeleton / head / accessory names as human_male, exported WITHOUT animations (Godot shares the human_male library); scale the model to 0.94 in game."
+  }
+ ]
+}

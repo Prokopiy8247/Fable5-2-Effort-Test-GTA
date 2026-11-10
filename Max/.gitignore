@@ -1,0 +1,36 @@
+# Godot 4 transient/cache data
+.godot/
+*.translation
+.import/
+export.cfg
+export_credentials.cfg
+*.tmp
+
+# Build / export outputs
+/build/
+/builds/
+/export/
+*.pck
+*.exe
+*.zip
+
+# Logs and automated test output
+/logs/
+*.log
+/_test_output/
+
+# Blender autosave / technical backups (canonical source is GodotFable5.2GTAMax.blend)
+*.blend1
+*.blend2
+/_blender_backups/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

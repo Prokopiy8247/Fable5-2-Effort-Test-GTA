@@ -1,0 +1,332 @@
+{
+ "rates_usd_per_mtok": {
+  "input": 8.0,
+  "cache_write_5m": 10.0,
+  "cache_write_1h": 16.0,
+  "cache_read": 0.2,
+  "output": 40.0
+ },
+ "total": {
+  "messages": 1263,
+  "input": 2534,
+  "cache_read": 463298085,
+  "cache_write": 13418948,
+  "cache_write_5m": 11368218,
+  "cache_write_1h": 2050730,
+  "cache_write_unsplit": 0,
+  "output": 5569808
+ },
+ "total_tokens": 482289375,
+ "usd_at_fable_rates": 461.97,
+ "sources": [
+  {
+   "label": "lead session",
+   "models": [
+    "claude-fable-5-2",
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 399,
+    "input": 802,
+    "cache_read": 211838000,
+    "cache_write": 2050730,
+    "cache_write_5m": 0,
+    "cache_write_1h": 2050730,
+    "cache_write_unsplit": 0,
+    "output": 1279274
+   },
+   "first": "2026-11-09T20:57:34.479Z",
+   "last": "2026-11-10T06:42:02.542Z"
+  },
+  {
+   "label": "agent a01e4d6e5b9571b17",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 45,
+    "input": 90,
+    "cache_read": 10410930,
+    "cache_write": 787160,
+    "cache_write_5m": 787160,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 240302
+   },
+   "first": "2026-11-09T22:53:52.409Z",
+   "last": "2026-11-09T23:32:47.125Z"
+  },
+  {
+   "label": "agent a0b4c478880857396",
+   "models": [
+    "claude-fable-5-2",
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 111,
+    "input": 222,
+    "cache_read": 34034343,
+    "cache_write": 1744381,
+    "cache_write_5m": 1744381,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 558199
+   },
+   "first": "2026-11-09T23:44:23.472Z",
+   "last": "2026-11-10T05:46:28.170Z"
+  },
+  {
+   "label": "agent a0ca2c2cba613bea1",
+   "models": [
+    "claude-fable-5-2",
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 106,
+    "input": 212,
+    "cache_read": 35242237,
+    "cache_write": 2099867,
+    "cache_write_5m": 2099867,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 437617
+   },
+   "first": "2026-11-09T23:44:37.514Z",
+   "last": "2026-11-10T05:26:12.305Z"
+  },
+  {
+   "label": "agent a11075f8c8325c0e9",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 25,
+    "input": 50,
+    "cache_read": 5349829,
+    "cache_write": 355378,
+    "cache_write_5m": 355378,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 214383
+   },
+   "first": "2026-11-09T21:51:18.137Z",
+   "last": "2026-11-09T22:27:10.045Z"
+  },
+  {
+   "label": "agent a176932ae27ae18df",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 18,
+    "input": 36,
+    "cache_read": 2658392,
+    "cache_write": 392470,
+    "cache_write_5m": 392470,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 202147
+   },
+   "first": "2026-11-09T21:52:28.982Z",
+   "last": "2026-11-09T22:27:07.457Z"
+  },
+  {
+   "label": "agent a2178c3b999041c5a",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 159,
+    "input": 320,
+    "cache_read": 65998398,
+    "cache_write": 1159098,
+    "cache_write_5m": 1159098,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 486339
+   },
+   "first": "2026-11-10T04:52:34.478Z",
+   "last": "2026-11-10T06:08:11.129Z"
+  },
+  {
+   "label": "agent a2ba73a4f34c0b6f7",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 35,
+    "input": 70,
+    "cache_read": 7255700,
+    "cache_write": 369686,
+    "cache_write_5m": 369686,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 222806
+   },
+   "first": "2026-11-09T21:51:52.741Z",
+   "last": "2026-11-09T22:27:24.713Z"
+  },
+  {
+   "label": "agent a35810ec5fa8244df",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 74,
+    "input": 148,
+    "cache_read": 20178843,
+    "cache_write": 693766,
+    "cache_write_5m": 693766,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 323052
+   },
+   "first": "2026-11-10T05:06:42.714Z",
+   "last": "2026-11-10T06:02:22.980Z"
+  },
+  {
+   "label": "agent a5e0ba0d6efa0e63f",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "usage": {
+    "messages": 96,
+    "input": 192,
+    "cache_read": 26101571,
+    "cache_write": 693944,
+    "cache_write_5m": 693944,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 250021
+   },
+   "first": "2026-11-10T05:27:19.730Z",
+   "last": "2026-11-10T06:06:15.743Z"
+  },
+  {
+   "label": "agent a9161b6647745e947",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 11,
+    "input": 22,
+    "cache_read": 1720409,
+    "cache_write": 645391,
+    "cache_write_5m": 645391,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 211293
+   },
+   "first": "2026-11-09T21:51:40.442Z",
+   "last": "2026-11-09T22:27:58.498Z"
+  },
+  {
+   "label": "agent a91b0e79eb13adcab",
+   "models": [
+    "claude-haiku-5-5"
+   ],
+   "usage": {
+    "messages": 2,
+    "input": 4,
+    "cache_read": 3219,
+    "cache_write": 32965,
+    "cache_write_5m": 32965,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 2887
+   },
+   "first": "2026-11-10T06:41:04.555Z",
+   "last": "2026-11-10T06:41:21.780Z"
+  },
+  {
+   "label": "agent a93ef1edbd0667fca",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 71,
+    "input": 142,
+    "cache_read": 21109028,
+    "cache_write": 624863,
+    "cache_write_5m": 624863,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 281413
+   },
+   "first": "2026-11-09T22:53:38.957Z",
+   "last": "2026-11-09T23:42:02.520Z"
+  },
+  {
+   "label": "agent aa629bdd96a5d11c5",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 18,
+    "input": 38,
+    "cache_read": 2070437,
+    "cache_write": 268762,
+    "cache_write_5m": 268762,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 209930
+   },
+   "first": "2026-11-09T21:51:09.343Z",
+   "last": "2026-11-09T22:27:10.320Z"
+  },
+  {
+   "label": "agent acf6583679e1a8339",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 22,
+    "input": 44,
+    "cache_read": 3663574,
+    "cache_write": 476037,
+    "cache_write_5m": 476037,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 218212
+   },
+   "first": "2026-11-09T21:52:07.525Z",
+   "last": "2026-11-09T22:28:23.211Z"
+  },
+  {
+   "label": "agent ad975344013bb7075",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 37,
+    "input": 74,
+    "cache_read": 8576424,
+    "cache_write": 465436,
+    "cache_write_5m": 465436,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 214164
+   },
+   "first": "2026-11-09T21:51:28.519Z",
+   "last": "2026-11-09T22:28:27.683Z"
+  },
+  {
+   "label": "agent adc769cd137dd3117",
+   "models": [
+    "claude-fable-5-2"
+   ],
+   "usage": {
+    "messages": 34,
+    "input": 68,
+    "cache_read": 7086751,
+    "cache_write": 559014,
+    "cache_write_5m": 559014,
+    "cache_write_1h": 0,
+    "cache_write_unsplit": 0,
+    "output": 217769
+   },
+   "first": "2026-11-09T21:52:19.614Z",
+   "last": "2026-11-09T22:27:33.582Z"
+  }
+ ]
+}

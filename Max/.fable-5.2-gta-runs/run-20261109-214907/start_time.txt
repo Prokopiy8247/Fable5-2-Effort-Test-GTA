@@ -1,0 +1,8 @@
+﻿run_id: run-20261109-214907
+start_local: 2026-11-09T21:49:07.910+01:00
+start_utc: 2026-11-09T20:49:07.910Z
+timezone_id: Central European Standard Time
+timezone_display: (UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+utc_offset: 01:00:00
+working_directory: G:\YouTube\Fable 5.2 Effort Test GTA\Max
+segment: 1 (initial)

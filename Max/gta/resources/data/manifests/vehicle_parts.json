@@ -1,0 +1,20 @@
+{ "assets": [
+  {"id": "rim_steel", "glb": "vehicles/parts/rim_steel", "category": "VehicleParts", "size": [0.34, 1.0, 1.0], "tris": 284, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "rim_sport5", "glb": "vehicles/parts/rim_sport5", "category": "VehicleParts", "size": [0.34, 1.0, 1.0], "tris": 276, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "rim_deep", "glb": "vehicles/parts/rim_deep", "category": "VehicleParts", "size": [0.34, 1.0, 1.0], "tris": 288, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "rim_offroad", "glb": "vehicles/parts/rim_offroad", "category": "VehicleParts", "size": [0.38, 1.004, 1.0], "tris": 772, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "rim_classic", "glb": "vehicles/parts/rim_classic", "category": "VehicleParts", "size": [0.343, 1.0, 1.0], "tris": 368, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "spoiler_lip", "glb": "vehicles/parts/spoiler_lip", "category": "VehicleParts", "size": [1.54, 0.18, 0.06], "tris": 36, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "spoiler_wing", "glb": "vehicles/parts/spoiler_wing", "category": "VehicleParts", "size": [1.44, 0.28, 0.28], "tris": 84, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "spoiler_gt", "glb": "vehicles/parts/spoiler_gt", "category": "VehicleParts", "size": [1.745, 0.52, 0.58], "tris": 120, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "hood_scoop", "glb": "vehicles/parts/hood_scoop", "category": "VehicleParts", "size": [0.604, 0.815, 0.13], "tris": 68, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "hood_vents", "glb": "vehicles/parts/hood_vents", "category": "VehicleParts", "size": [0.96, 0.5, 0.052], "tris": 232, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "roof_scoop", "glb": "vehicles/parts/roof_scoop", "category": "VehicleParts", "size": [0.482, 0.7, 0.12], "tris": 56, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "roof_rack", "glb": "vehicles/parts/roof_rack", "category": "VehicleParts", "size": [1.3, 1.455, 0.24], "tris": 264, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "bumper_splitter", "glb": "vehicles/parts/bumper_splitter", "category": "VehicleParts", "size": [1.799, 0.24, 0.168], "tris": 60, "parts": ["mesh"], "markers": [], "notes": "Front lip at the bumper's lower edge (origin), sticking out forward (+Y)."},
+  {"id": "bumper_bullbar", "glb": "vehicles/parts/bumper_bullbar", "category": "VehicleParts", "size": [1.609, 0.204, 0.716], "tris": 268, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "bumper_diffuser", "glb": "vehicles/parts/bumper_diffuser", "category": "VehicleParts", "size": [1.4, 0.311, 0.121], "tris": 52, "parts": ["mesh"], "markers": [], "notes": "Rear diffuser at the rear bumper's lower edge (origin), extending backward (-Y)."},
+  {"id": "skirt_sport", "glb": "vehicles/parts/skirt_sport", "category": "VehicleParts", "size": [0.095, 2.6, 0.09], "tris": 36, "parts": ["mesh"], "markers": [], "notes": "LEFT side skirt, 2.6 long; origin = centre of its top inner edge (mounted at mod_skirt_l, mirrored by Godot)."},
+  {"id": "exhaust_dual", "glb": "vehicles/parts/exhaust_dual", "category": "VehicleParts", "size": [0.2, 0.179, 0.084], "tris": 156, "parts": ["mesh"], "markers": [], "notes": ""},
+  {"id": "exhaust_big", "glb": "vehicles/parts/exhaust_big", "category": "VehicleParts", "size": [0.14, 0.229, 0.14], "tris": 88, "parts": ["mesh"], "markers": [], "notes": ""}
+] }

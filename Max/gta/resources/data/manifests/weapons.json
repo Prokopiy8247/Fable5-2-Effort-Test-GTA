@@ -1,0 +1,1244 @@
+{
+ "_comment": "NEON TIDE weapons / attachments / projectiles / pickups / held items. Positions are Blender asset-space metres (x right, y forward = barrel, z up); Godot = (x, z, -y). Origin = firing-hand grip (palm centre) unless the notes say otherwise. 'markers' maps marker name -> position, 'part_origins' maps part -> pivot. GLB node names are '<id>__<part|marker>'. tint_a_metal = main metal, tint_b = furniture.",
+ "assets": [
+  {
+   "id": "pistol",
+   "glb": "weapons/pistol",
+   "category": "Weapons",
+   "size": [
+    0.033,
+    0.202,
+    0.183
+   ],
+   "tris": 680,
+   "length": 0.202,
+   "parts": [
+    "body",
+    "slide",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "slide": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     0.012,
+     0.03
+    ],
+    "mag_ext": [
+     0.0,
+     0.012,
+     0.03
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.014,
+     0.052,
+     0.072
+    ],
+    "hand_l": [
+     -0.022,
+     0.012,
+     -0.02
+    ],
+    "muzzle": [
+     0.0,
+     0.15,
+     0.063
+    ],
+    "scope": [
+     0.0,
+     0.01,
+     0.076
+    ],
+    "suppressor": [
+     0.0,
+     0.15,
+     0.063
+    ],
+    "under": [
+     0.0,
+     0.1155,
+     0.024
+    ]
+   },
+   "notes": "Compact semi-auto. slide: identity origin, travels -Y ~0.03. mag/mag_ext origin = magazine top inside the grip (raked ~14 deg, drops along (0,-0.25,-1))."
+  },
+  {
+   "id": "revolver",
+   "glb": "weapons/revolver",
+   "category": "Weapons",
+   "size": [
+    0.042,
+    0.27,
+    0.18
+   ],
+   "tris": 564,
+   "length": 0.27,
+   "parts": [
+    "body",
+    "cylinder"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cylinder": [
+     0.0,
+     0.055,
+     0.062
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.022,
+     0.055,
+     0.062
+    ],
+    "hand_l": [
+     -0.02,
+     0.006,
+     -0.024
+    ],
+    "muzzle": [
+     0.0,
+     0.226,
+     0.0745
+    ],
+    "scope": [
+     0.0,
+     0.055,
+     0.097
+    ],
+    "suppressor": [
+     0.0,
+     0.226,
+     0.0745
+    ],
+    "under": [
+     0.0,
+     0.15,
+     0.043
+    ]
+   },
+   "notes": "Heavy 6-shot revolver, 0.15 m barrel with full under-lug, wood grip. cylinder: origin on its axis (parallel to Y), spins about Y, 60 deg per shot. No real ejection port: 'eject' sits at the cylinder."
+  },
+  {
+   "id": "smg",
+   "glb": "weapons/smg",
+   "category": "Weapons",
+   "size": [
+    0.069,
+    0.462,
+    0.328
+   ],
+   "tris": 836,
+   "length": 0.462,
+   "parts": [
+    "body",
+    "bolt",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bolt": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     0.11,
+     0.012
+    ],
+    "mag_ext": [
+     0.0,
+     0.11,
+     0.012
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.022,
+     0.1,
+     0.078
+    ],
+    "hand_l": [
+     0.0,
+     0.233,
+     0.034
+    ],
+    "muzzle": [
+     0.0,
+     0.31,
+     0.066
+    ],
+    "scope": [
+     0.0,
+     0.0465,
+     0.104
+    ],
+    "suppressor": [
+     0.0,
+     0.31,
+     0.066
+    ],
+    "under": [
+     0.0,
+     0.233,
+     0.0345
+    ]
+   },
+   "notes": "Compact SMG, telescoping wire stock modelled retracted. bolt (cocking handle + carrier, right side): identity origin, travels -Y ~0.05. mag = stick, mag_ext = long stick; origin = magazine top in the well."
+  },
+  {
+   "id": "shotgun_pump",
+   "glb": "weapons/shotgun_pump",
+   "category": "Weapons",
+   "size": [
+    0.049,
+    1.0,
+    0.198
+   ],
+   "tris": 600,
+   "length": 1.0,
+   "parts": [
+    "body",
+    "pump"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "pump": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.021,
+     0.17,
+     0.055
+    ],
+    "hand_l": [
+     0.0,
+     0.43,
+     0.013
+    ],
+    "muzzle": [
+     0.0,
+     0.72,
+     0.062
+    ],
+    "scope": [
+     0.0,
+     0.16,
+     0.084
+    ],
+    "suppressor": [
+     0.0,
+     0.72,
+     0.062
+    ],
+    "under": [
+     0.0,
+     0.555,
+     0.025
+    ]
+   },
+   "notes": "Pump shotgun, wood furniture; origin at the wrist of the stock (semi-pistol grip). pump: identity origin, racks along -Y by 0.085 and returns. hand_l is under the pump."
+  },
+  {
+   "id": "shotgun_auto",
+   "glb": "weapons/shotgun_auto",
+   "category": "Weapons",
+   "size": [
+    0.124,
+    0.95,
+    0.248
+   ],
+   "tris": 880,
+   "length": 0.95,
+   "parts": [
+    "body",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     0.122,
+     0.018
+    ],
+    "mag_ext": [
+     0.0,
+     0.122,
+     0.018
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.023,
+     0.12,
+     0.07
+    ],
+    "hand_l": [
+     0.0,
+     0.32,
+     0.031
+    ],
+    "muzzle": [
+     0.0,
+     0.65,
+     0.072
+    ],
+    "scope": [
+     0.0,
+     0.072,
+     0.105
+    ],
+    "suppressor": [
+     0.0,
+     0.65,
+     0.072
+    ],
+    "under": [
+     0.0,
+     0.341,
+     0.0245
+    ]
+   },
+   "notes": "Semi-auto combat shotgun, polymer stock + pistol grip, perforated heat shield. mag = 8-rd box, mag_ext = drum (axis along Y); origin = magazine top in the well. Charging handle is static (body)."
+  },
+  {
+   "id": "rifle_assault",
+   "glb": "weapons/rifle_assault",
+   "category": "Weapons",
+   "size": [
+    0.06,
+    0.9,
+    0.334
+   ],
+   "tris": 896,
+   "length": 0.9,
+   "parts": [
+    "body",
+    "bolt",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bolt": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     0.105,
+     0.028
+    ],
+    "mag_ext": [
+     0.0,
+     0.105,
+     0.028
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.019,
+     0.105,
+     0.074
+    ],
+    "hand_l": [
+     0.0,
+     0.3,
+     0.033
+    ],
+    "muzzle": [
+     0.0,
+     0.59,
+     0.068
+    ],
+    "scope": [
+     0.0,
+     0.054,
+     0.097
+    ],
+    "suppressor": [
+     0.0,
+     0.59,
+     0.068
+    ],
+    "under": [
+     0.0,
+     0.3,
+     0.033
+    ]
+   },
+   "notes": "Assault rifle. bolt (charging handle + carrier, right side): identity origin, travels -Y ~0.05. mag = 30-rd curved, mag_ext = 45-rd curved; origin = magazine top inside the well."
+  },
+  {
+   "id": "rifle_carbine",
+   "glb": "weapons/rifle_carbine",
+   "category": "Weapons",
+   "size": [
+    0.058,
+    0.8,
+    0.355
+   ],
+   "tris": 836,
+   "length": 0.8,
+   "parts": [
+    "body",
+    "bolt",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bolt": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     -0.155,
+     0.02
+    ],
+    "mag_ext": [
+     0.0,
+     -0.155,
+     0.02
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.027,
+     -0.185,
+     0.074
+    ],
+    "hand_l": [
+     0.0,
+     0.172,
+     0.01
+    ],
+    "muzzle": [
+     0.0,
+     0.44,
+     0.07
+    ],
+    "scope": [
+     0.0,
+     0.046,
+     0.122
+    ],
+    "suppressor": [
+     0.0,
+     0.44,
+     0.07
+    ],
+    "under": [
+     0.0,
+     0.1725,
+     0.0082
+    ]
+   },
+   "notes": "Bullpup carbine: magazine BEHIND the pistol grip, full-hand guard loop, long flat-top rail. bolt = carrier in the rear ejection port (right) + forward charging knob (left): identity origin, travels -Y ~0.05. mag/mag_ext origin = magazine top in the well."
+  },
+  {
+   "id": "rifle_marksman",
+   "glb": "weapons/rifle_marksman",
+   "category": "Weapons",
+   "size": [
+    0.06,
+    1.1,
+    0.241
+   ],
+   "tris": 876,
+   "length": 1.1,
+   "parts": [
+    "body",
+    "bolt",
+    "mag",
+    "mag_ext"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bolt": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mag": [
+     0.0,
+     0.112,
+     0.03
+    ],
+    "mag_ext": [
+     0.0,
+     0.112,
+     0.03
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.021,
+     0.1,
+     0.074
+    ],
+    "hand_l": [
+     0.0,
+     0.33,
+     0.031
+    ],
+    "muzzle": [
+     0.0,
+     0.743,
+     0.07
+    ],
+    "scope": [
+     0.0,
+     0.08,
+     0.1
+    ],
+    "suppressor": [
+     0.0,
+     0.743,
+     0.07
+    ],
+    "under": [
+     0.0,
+     0.3,
+     0.031
+    ]
+   },
+   "notes": "Semi-auto marksman rifle, wood thumbhole stock, ventilated upper handguard, folded bipod stubs. bolt (handle + carrier, right side): identity origin, travels -Y ~0.05. mag = 10-rd, mag_ext = 20-rd."
+  },
+  {
+   "id": "rifle_sniper",
+   "glb": "weapons/rifle_sniper",
+   "category": "Weapons",
+   "size": [
+    0.078,
+    1.251,
+    0.171
+   ],
+   "tris": 888,
+   "length": 1.251,
+   "parts": [
+    "body",
+    "bolt",
+    "mag"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bolt": [
+     0.0,
+     0.0,
+     0.075
+    ],
+    "mag": [
+     0.0,
+     0.108,
+     0.03
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.019,
+     0.048,
+     0.075
+    ],
+    "hand_l": [
+     0.0,
+     0.3,
+     0.022
+    ],
+    "muzzle": [
+     0.0,
+     0.85,
+     0.075
+    ],
+    "scope": [
+     0.0,
+     0.066,
+     0.101
+    ],
+    "suppressor": [
+     0.0,
+     0.85,
+     0.075
+    ],
+    "under": [
+     0.0,
+     0.3925,
+     0.0175
+    ]
+   },
+   "notes": "Bolt-action sniper rifle, chassis stock with adjustable cheek rest + butt hook, fluted heavy barrel, muzzle brake. bolt: origin ON the bolt axis (0,0,0.075): rotate about Y to lift the handle, translate -Y up to 0.09 to cycle. mag origin = magazine top in the well. Scope is an attachment (scope marker)."
+  },
+  {
+   "id": "launcher_rocket",
+   "glb": "weapons/launcher_rocket",
+   "category": "Weapons",
+   "size": [
+    0.126,
+    1.1,
+    0.251
+   ],
+   "tris": 636,
+   "length": 1.1,
+   "parts": [
+    "body",
+    "rocket_loaded"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rocket_loaded": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "back": [
+     0.0,
+     -0.52,
+     0.105
+    ],
+    "eject": [
+     0.0,
+     -0.52,
+     0.105
+    ],
+    "hand_l": [
+     0.0,
+     0.214,
+     0.0
+    ],
+    "muzzle": [
+     0.0,
+     0.52,
+     0.105
+    ],
+    "scope": [
+     0.0,
+     0.08,
+     0.1557
+    ],
+    "suppressor": [
+     0.0,
+     0.52,
+     0.105
+    ],
+    "under": [
+     0.0,
+     0.15,
+     0.0613
+    ]
+   },
+   "notes": "Shoulder rocket launcher. Markers: muzzle = tube front (+Y forward); back = tube rear, rotated 180 deg about Z so its +Y points REARWARD (back-blast direction). hand_l = forward grip. rocket_loaded: identity origin, hide after firing (overall length 1.10 includes the warhead; tube alone 1.04)."
+  },
+  {
+   "id": "launcher_grenade",
+   "glb": "weapons/launcher_grenade",
+   "category": "Weapons",
+   "size": [
+    0.112,
+    0.72,
+    0.224
+   ],
+   "tris": 708,
+   "length": 0.72,
+   "parts": [
+    "body",
+    "cylinder"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cylinder": [
+     0.0,
+     0.098,
+     0.078
+    ]
+   },
+   "markers": {
+    "eject": [
+     0.057,
+     0.098,
+     0.078
+    ],
+    "hand_l": [
+     0.0,
+     0.258,
+     0.022
+    ],
+    "muzzle": [
+     0.0,
+     0.385,
+     0.111
+    ],
+    "scope": [
+     0.0,
+     0.115,
+     0.156
+    ],
+    "suppressor": [
+     0.0,
+     0.385,
+     0.111
+    ],
+    "under": [
+     0.0,
+     0.336,
+     0.0844
+    ]
+   },
+   "notes": "Revolver-style 6-shot 40 mm launcher, skeleton stock, vertical foregrip (hand_l). cylinder: origin on its axis (parallel to Y), spins about Y, 60 deg per shot. 'eject' sits at the cylinder (right side)."
+  },
+  {
+   "id": "knife",
+   "glb": "weapons/knife",
+   "category": "Weapons",
+   "size": [
+    0.023,
+    0.303,
+    0.058
+   ],
+   "tris": 288,
+   "length": 0.303,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "tip": [
+     0.0,
+     0.242,
+     -0.004
+    ]
+   },
+   "notes": "Combat knife: clip-point blade toward +Y, cutting edge down (-Z). Origin = handle centre. Marker tip."
+  },
+  {
+   "id": "bat",
+   "glb": "weapons/bat",
+   "category": "Weapons",
+   "size": [
+    0.066,
+    0.85,
+    0.066
+   ],
+   "tris": 188,
+   "length": 0.85,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "hand_l": [
+     0.0,
+     0.1,
+     0.0
+    ],
+    "tip": [
+     0.0,
+     0.78,
+     0.0
+    ]
+   },
+   "notes": "Baseball bat along +Y, taped handle; origin on the axis at the grip, 7 cm above the knob end. Markers: tip (barrel end), hand_l (second hand, 10 cm up the handle)."
+  },
+  {
+   "id": "crowbar",
+   "glb": "weapons/crowbar",
+   "category": "Weapons",
+   "size": [
+    0.037,
+    0.649,
+    0.122
+   ],
+   "tris": 152,
+   "length": 0.649,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "hand_l": [
+     0.0,
+     0.13,
+     0.0
+    ],
+    "tip": [
+     0.0,
+     0.505,
+     0.05
+    ]
+   },
+   "notes": "Hex-bar crowbar: chisel end behind the hand, gooseneck claw at +Y curling up (+Z) and back. Red paint worn to steel at both ends. Origin on the shaft. Markers: tip (front of the hook), hand_l."
+  },
+  {
+   "id": "nightstick",
+   "glb": "weapons/nightstick",
+   "category": "Weapons",
+   "size": [
+    0.038,
+    0.6,
+    0.147
+   ],
+   "tris": 232,
+   "length": 0.6,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "tip": [
+     0.0,
+     0.465,
+     0.062
+    ]
+   },
+   "notes": "Side-handle police baton. Origin = centre of the SIDE HANDLE (held like a pistol grip, handle axis = Z); the main shaft runs along Y at z=0.062 (short end behind the hand). Marker tip = front end of the shaft."
+  },
+  {
+   "id": "grenade",
+   "glb": "weapons/grenade",
+   "category": "Weapons",
+   "size": [
+    0.069,
+    0.065,
+    0.087
+   ],
+   "tris": 264,
+   "length": 0.065,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {},
+   "notes": "Frag grenade, origin = body centre. Fuse up (+Z), safety lever on the +Y side, pin ring on -X."
+  },
+  {
+   "id": "rocket",
+   "glb": "weapons/rocket",
+   "category": "Weapons",
+   "size": [
+    0.104,
+    0.55,
+    0.104
+   ],
+   "tris": 244,
+   "length": 0.55,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "exhaust": [
+     0.0,
+     -0.275,
+     0.0
+    ]
+   },
+   "notes": "Rocket projectile (matches launcher_rocket__rocket_loaded), origin = centre, flies toward +Y. Marker exhaust at the nozzle, rotated 180 deg about Z so its +Y points backward (trail direction)."
+  },
+  {
+   "id": "grenade_40mm",
+   "glb": "weapons/grenade_40mm",
+   "category": "Weapons",
+   "size": [
+    0.043,
+    0.101,
+    0.043
+   ],
+   "tris": 176,
+   "length": 0.101,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {},
+   "notes": "40 mm launcher round: brass case, copper driving band, gold nose. Origin = centre, nose toward +Y."
+  },
+  {
+   "id": "att_suppressor",
+   "glb": "weapons/att/att_suppressor",
+   "category": "Weapons",
+   "size": [
+    0.04,
+    0.16,
+    0.038
+   ],
+   "tris": 136,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "muzzle": [
+     0.0,
+     0.16,
+     0.0
+    ]
+   },
+   "notes": "Suppressor dia 0.04 x 0.16. Origin = rear face centre (put it on the weapon's 'suppressor' marker), extends +Y. Marker muzzle = new muzzle position."
+  },
+  {
+   "id": "att_suppressor_large",
+   "glb": "weapons/att/att_suppressor_large",
+   "category": "Weapons",
+   "size": [
+    0.05,
+    0.22,
+    0.048
+   ],
+   "tris": 216,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "muzzle": [
+     0.0,
+     0.22,
+     0.0
+    ]
+   },
+   "notes": "Large two-stage suppressor dia 0.05 x 0.22. Origin = rear face centre, extends +Y. Marker muzzle."
+  },
+  {
+   "id": "att_scope_reddot",
+   "glb": "weapons/att/att_scope_reddot",
+   "category": "Weapons",
+   "size": [
+    0.034,
+    0.05,
+    0.046
+   ],
+   "tris": 156,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {},
+   "notes": "Compact reflex sight. Origin = bottom centre of the clamp (put it on the 'scope' marker), window faces the shooter (-Y). Lens uses the Glass material; the dot is led_red."
+  },
+  {
+   "id": "att_scope_4x",
+   "glb": "weapons/att/att_scope_4x",
+   "category": "Weapons",
+   "size": [
+    0.044,
+    0.2,
+    0.065
+   ],
+   "tris": 240,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "eye": [
+     0.0,
+     -0.1,
+     0.04
+    ]
+   },
+   "notes": "4x tube scope, 0.20 long, on a two-ring mount. Origin = bottom centre of the base ('scope' marker); objective toward +Y, optical axis at z=0.040. Marker eye = ocular lens centre."
+  },
+  {
+   "id": "att_scope_sniper",
+   "glb": "weapons/att/att_scope_sniper",
+   "category": "Weapons",
+   "size": [
+    0.056,
+    0.36,
+    0.074
+   ],
+   "tris": 240,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "eye": [
+     0.0,
+     -0.18,
+     0.046
+    ]
+   },
+   "notes": "Long-range scope, 0.36 long, large objective, turrets. Origin = bottom centre of the base ('scope' marker); objective toward +Y, optical axis at z=0.046. Marker eye = ocular lens centre."
+  },
+  {
+   "id": "att_flashlight",
+   "glb": "weapons/att/att_flashlight",
+   "category": "Weapons",
+   "size": [
+    0.033,
+    0.101,
+    0.04
+   ],
+   "tris": 168,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "light": [
+     0.0,
+     0.055,
+     -0.024
+    ]
+   },
+   "notes": "Weapon light. Origin = TOP centre of the clamp (hangs under the barrel from the 'under' marker). Lens = emis_always_white. Marker light at the lens, +Y forward."
+  },
+  {
+   "id": "att_grip",
+   "glb": "weapons/att/att_grip",
+   "category": "Weapons",
+   "size": [
+    0.031,
+    0.048,
+    0.096
+   ],
+   "tris": 188,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "hand_l": [
+     0.0,
+     0.0,
+     -0.052
+    ]
+   },
+   "notes": "Vertical foregrip. Origin = TOP centre of the clamp ('under' marker). Marker hand_l = support-hand palm position on the grip."
+  },
+  {
+   "id": "att_laser",
+   "glb": "weapons/att/att_laser",
+   "category": "Weapons",
+   "size": [
+    0.024,
+    0.053,
+    0.028
+   ],
+   "tris": 120,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "light": [
+     0.0,
+     0.027,
+     -0.017
+    ]
+   },
+   "notes": "Laser sight box. Origin = TOP centre of the clamp ('under' marker). Emitter = led_red. Marker light at the emitter, +Y forward."
+  },
+  {
+   "id": "phone",
+   "glb": "weapons/phone",
+   "category": "Weapons",
+   "size": [
+    0.077,
+    0.012,
+    0.15
+   ],
+   "tris": 228,
+   "parts": [
+    "body"
+   ],
+   "part_origins": {
+    "body": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {},
+   "notes": "Smartphone 0.075 x 0.009 x 0.15 standing upright in the XZ plane, origin = centre. Screen (screen_blue, glows) faces -Y toward the holder, camera bump on the back (+Y) upper +X corner, buttons on both sides. Part body."
+  },
+  {
+   "id": "parachute_canopy",
+   "glb": "weapons/parachute_canopy",
+   "category": "Weapons",
+   "size": [
+    7.499,
+    3.0,
+    5.811
+   ],
+   "tris": 642,
+   "parts": [
+    "mesh"
+   ],
+   "part_origins": {
+    "mesh": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "markers": {
+    "riser_l": [
+     -0.2,
+     0.0,
+     0.0
+    ],
+    "riser_r": [
+     0.2,
+     0.0,
+     0.0
+    ]
+   },
+   "notes": "Ram-air canopy, 8 cells, projected span 7.5 (X) x chord 3.0 (Y) on an 8 m arc, open leading edge toward +Y, double-sided. tint_a = canopy, tint_b = centre stripe + stabilisers (player_moves.gd sets orange / white). 16 lines converge on the riser points (+-0.2, 0, 0); origin = the jumper's shoulders, canopy centre (0, -0.6, 5.5). Single part mesh; markers riser_l / riser_r."
+  }
+ ]
+}

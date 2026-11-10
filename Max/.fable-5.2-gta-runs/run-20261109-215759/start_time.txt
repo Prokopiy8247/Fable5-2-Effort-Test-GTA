@@ -1,0 +1,7 @@
+﻿run_id=run-20261109-215759
+start_iso=2026-11-09T21:57:59.979+01:00
+start_unix=1794257879
+timezone_id=Central European Standard Time
+timezone_display=(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+utc_offset=01:00:00
+working_dir=G:\YouTube\Fable 5.2 Effort Test GTA\Max

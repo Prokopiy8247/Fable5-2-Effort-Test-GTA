@@ -1,0 +1,7 @@
+﻿run_id=run-20261109-215759
+end_iso=2026-11-10T07:56:30.285+01:00
+end_unix=1794293790
+timezone_id=Central European Standard Time
+timezone_display=(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+utc_offset=01:00:00
+note=recorded after the final validation pass and report preparation; only the metrics block and the closing message follow

@@ -1,0 +1,329 @@
+{
+ "_comment": "NEON TIDE pickups (gta/code/world/pickups.gd loads 'pickups/pickup_<kind>'). Single part 'body', origin = bounding-box centre, Blender asset space (x right, y front, z up; Godot = (x, z, -y)). They float and spin about the vertical axis, so every side is dressed.",
+ "assets": [
+  {
+   "id": "pickup_health",
+   "glb": "pickups/pickup_health",
+   "category": "Pickups",
+   "size": [
+    0.46,
+    0.19,
+    0.388
+   ],
+   "tris": 340,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.23,
+    -0.095,
+    -0.194
+   ],
+   "bbox_max": [
+    0.23,
+    0.095,
+    0.194
+   ],
+   "notes": "White med-kit case, raised GREEN plus on front, back and both ends (no red cross), grey lid seam, carry handle on top."
+  },
+  {
+   "id": "pickup_armor",
+   "glb": "pickups/pickup_armor",
+   "category": "Pickups",
+   "size": [
+    0.414,
+    0.194,
+    0.465
+   ],
+   "tris": 408,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.207,
+    -0.097,
+    -0.233
+   ],
+   "bbox_max": [
+    0.207,
+    0.097,
+    0.233
+   ],
+   "notes": "Ballistic vest: police_blue front / back panels with neck and arm openings, navy shoulder straps, side cummerbund and three mag pouches, reflective chest / back strips, gold badge."
+  },
+  {
+   "id": "pickup_ammo",
+   "glb": "pickups/pickup_ammo",
+   "category": "Pickups",
+   "size": [
+    0.348,
+    0.258,
+    0.352
+   ],
+   "tris": 372,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.174,
+    -0.129,
+    -0.176
+   ],
+   "bbox_max": [
+    0.174,
+    0.129,
+    0.176
+   ],
+   "notes": "Olive ammo can with the lid hinged open, two rows of big brass rounds (copper tips) standing in the packing, latch lever, carry handle and yellow stencil labels."
+  },
+  {
+   "id": "pickup_cash",
+   "glb": "pickups/pickup_cash",
+   "category": "Pickups",
+   "size": [
+    0.363,
+    0.185,
+    0.134
+   ],
+   "tris": 292,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.181,
+    -0.093,
+    -0.067
+   ],
+   "bbox_max": [
+    0.181,
+    0.093,
+    0.067
+   ],
+   "notes": "Three slightly offset bundles of green banknotes with yellow paper bands, '$' printed on the middle band (front and back)."
+  },
+  {
+   "id": "pickup_cash_big",
+   "glb": "pickups/pickup_cash_big",
+   "category": "Pickups",
+   "size": [
+    0.486,
+    0.478,
+    0.414
+   ],
+   "tris": 672,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.243,
+    -0.239,
+    -0.207
+   ],
+   "bbox_max": [
+    0.243,
+    0.239,
+    0.207
+   ],
+   "notes": "Open black attache case (aluminium rims, red lining) packed with 8 banded bundles, two more strapped in the lid, handle and latches on the front."
+  },
+  {
+   "id": "pickup_parachute",
+   "glb": "pickups/pickup_parachute",
+   "category": "Pickups",
+   "size": [
+    0.371,
+    0.274,
+    0.595
+   ],
+   "tris": 356,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.185,
+    -0.137,
+    -0.298
+   ],
+   "bbox_max": [
+    0.185,
+    0.137,
+    0.298
+   ],
+   "notes": "Packed parachute rig: navy main + reserve containers with orange flaps, padded back panel, black harness (main lift webs, chest strap with steel buckle, leg loops), red ripcord handle and an orange pilot-chute handle."
+  },
+  {
+   "id": "pickup_scuba",
+   "glb": "pickups/pickup_scuba",
+   "category": "Pickups",
+   "size": [
+    0.297,
+    0.243,
+    0.568
+   ],
+   "tris": 492,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.149,
+    -0.122,
+    -0.284
+   ],
+   "bbox_max": [
+    0.149,
+    0.122,
+    0.284
+   ],
+   "notes": "Yellow scuba tank (rubber boot, white label band, black cam band with buckle), chrome valve with black hand wheel, regulator first stage, hoses to the second stage and to the pressure gauge."
+  },
+  {
+   "id": "pickup_snack",
+   "glb": "pickups/pickup_snack",
+   "category": "Pickups",
+   "size": [
+    0.454,
+    0.269,
+    0.349
+   ],
+   "tris": 568,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.227,
+    -0.134,
+    -0.175
+   ],
+   "bbox_max": [
+    0.227,
+    0.134,
+    0.175
+   ],
+   "notes": "Burger (sesame bun, lettuce, patty, cheese corners, tomato) and a red-banded soda cup with lid and straw on a red tray."
+  },
+  {
+   "id": "pickup_wrench",
+   "glb": "pickups/pickup_wrench",
+   "category": "Pickups",
+   "size": [
+    0.408,
+    0.209,
+    0.506
+   ],
+   "tris": 388,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.204,
+    -0.105,
+    -0.253
+   ],
+   "bbox_max": [
+    0.204,
+    0.105,
+    0.253
+   ],
+   "notes": "Repair pickup: red toolbox (handle, latches, lid seam) with two crossed chrome combination wrenches standing above it."
+  },
+  {
+   "id": "pickup_bribe",
+   "glb": "pickups/pickup_bribe",
+   "category": "Pickups",
+   "size": [
+    0.353,
+    0.07,
+    0.406
+   ],
+   "tris": 336,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.177,
+    -0.035,
+    -0.203
+   ],
+   "bbox_max": [
+    0.177,
+    0.035,
+    0.203
+   ],
+   "notes": "Gold six-point police-style star token with ball tips, raised centre disc with a police_blue inlay and a small gold star (same on both faces)."
+  },
+  {
+   "id": "pickup_weapon_crate",
+   "glb": "pickups/pickup_weapon_crate",
+   "category": "Pickups",
+   "size": [
+    0.668,
+    0.358,
+    0.3
+   ],
+   "tris": 384,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.334,
+    -0.179,
+    -0.15
+   ],
+   "bbox_max": [
+    0.334,
+    0.179,
+    0.15
+   ],
+   "notes": "Small generic military crate: green box with olive frame boards and lid, rope handles, steel latches, tan stencil star and bars (no text)."
+  },
+  {
+   "id": "pickup_treasure",
+   "glb": "pickups/pickup_treasure",
+   "category": "Pickups",
+   "size": [
+    0.472,
+    0.54,
+    0.485
+   ],
+   "tris": 492,
+   "parts": [
+    "body"
+   ],
+   "markers": [],
+   "origin": "bbox_centre",
+   "bbox_min": [
+    -0.236,
+    -0.27,
+    -0.243
+   ],
+   "bbox_max": [
+    0.236,
+    0.27,
+    0.243
+   ],
+   "notes": "Small open treasure chest: wooden body with dark plank seams and brass corners, gold lock plate, barrel lid (brass bands) hinged open, heap of gold coins with loose coins, two gems and a pearl strand."
+  }
+ ]
+}

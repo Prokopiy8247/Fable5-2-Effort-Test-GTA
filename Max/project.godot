@@ -1,0 +1,116 @@
+﻿; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Fable 5.2 GTA (Max)"
+config/description="NEON TIDE: Vesper Bay - an original missionless open-world crime sandbox (Godot 4.7 + Blender MCP benchmark)."
+run/main_scene="res://gta/scenes/bootstrap/main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+run/max_fps=60
+config/icon="res://icon.svg"
+
+[autoload]
+
+Events="*res://gta/code/core/events.gd"
+Settings="*res://gta/code/core/settings.gd"
+Assets="*res://gta/code/core/assets.gd"
+Audio="*res://gta/code/audio/audio_manager.gd"
+Game="*res://gta/code/core/game.gd"
+SaveSystem="*res://gta/code/save/save_system.gd"
+TestRunner="*res://gta/code/debug/test_runner.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/vsync/vsync_mode=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[filesystem]
+
+import/blender/enabled=false
+
+[importer_defaults]
+
+scene={
+"gltf/embedded_image_handling": 3,
+"nodes/use_name_suffixes": false,
+"nodes/use_node_type_suffixes": false,
+"meshes/ensure_tangents": false,
+"meshes/generate_lods": true,
+"meshes/create_shadow_meshes": true,
+"meshes/light_baking": 0,
+"animation/import": true,
+"animation/fps": 30
+}
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="vehicle"
+3d_physics/layer_3="character"
+3d_physics/layer_4="prop"
+3d_physics/layer_5="ragdoll"
+3d_physics/layer_6="trigger"
+3d_physics/layer_7="glass"
+3d_physics/layer_8="vehicle_sensor"
+3d_physics/layer_9="pickup"
+3d_physics/layer_10="projectile"
+3d_physics/layer_11="bounds"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+common/physics_ticks_per_second=60
+common/max_physics_steps_per_frame=4
+
+[shader_globals]
+
+night_factor={
+"type": "float",
+"value": 0.0
+}
+wetness={
+"type": "float",
+"value": 0.0
+}
+window_lit_ratio={
+"type": "float",
+"value": 0.55
+}
+wind_strength={
+"type": "float",
+"value": 0.35
+}
+rain_amount={
+"type": "float",
+"value": 0.0
+}
+water_time={
+"type": "float",
+"value": 0.0
+}
+wave_amp={
+"type": "float",
+"value": 0.28
+}
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=2
+lights_and_shadows/positional_shadow/atlas_size=2048
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_debanding=true
+scaling_3d/scale=1.0
+environment/defaults/default_clear_color=Color(0.05, 0.06, 0.09, 1)

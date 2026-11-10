@@ -1,0 +1,1570 @@
+{
+ "sounds": [
+  {
+   "name": "shot_pistol",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.24
+  },
+  {
+   "name": "shot_revolver",
+   "seconds": 0.7,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.62
+  },
+  {
+   "name": "shot_smg",
+   "seconds": 0.35,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -20.86
+  },
+  {
+   "name": "shot_shotgun",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.31
+  },
+  {
+   "name": "shot_rifle",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -20.16
+  },
+  {
+   "name": "shot_sniper",
+   "seconds": 1.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.68
+  },
+  {
+   "name": "shot_suppressed",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -19.88
+  },
+  {
+   "name": "shot_rocket",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -13.82
+  },
+  {
+   "name": "shot_launcher",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -16.61
+  },
+  {
+   "name": "dry_fire",
+   "seconds": 0.12,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -22.85
+  },
+  {
+   "name": "reload_pistol",
+   "seconds": 0.7,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -25.65
+  },
+  {
+   "name": "reload_rifle",
+   "seconds": 1.1,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -27.96
+  },
+  {
+   "name": "reload_shotgun",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -26.25
+  },
+  {
+   "name": "pump_shotgun",
+   "seconds": 0.45,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -24.25
+  },
+  {
+   "name": "weapon_switch",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -24.39
+  },
+  {
+   "name": "melee_swing",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -19.04
+  },
+  {
+   "name": "melee_hit",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -13.59
+  },
+  {
+   "name": "melee_hit_metal",
+   "seconds": 0.35,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -23.32
+  },
+  {
+   "name": "knife_stab",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -16.26
+  },
+  {
+   "name": "grenade_pin",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -24.32
+  },
+  {
+   "name": "grenade_bounce",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -23.54
+  },
+  {
+   "name": "explosion_big",
+   "seconds": 2.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.81
+  },
+  {
+   "name": "explosion_small",
+   "seconds": 1.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.71
+  },
+  {
+   "name": "explosion_distant",
+   "seconds": 2.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -16.69
+  },
+  {
+   "name": "rocket_fly",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -6.21,
+   "rms_db": -16.0
+  },
+  {
+   "name": "bullet_impact_concrete",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -26.48
+  },
+  {
+   "name": "bullet_impact_metal",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.75
+  },
+  {
+   "name": "bullet_impact_flesh",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -17.08
+  },
+  {
+   "name": "bullet_impact_glass",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -29.74
+  },
+  {
+   "name": "bullet_impact_dirt",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -17.19
+  },
+  {
+   "name": "bullet_impact_water",
+   "seconds": 0.35,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -19.76
+  },
+  {
+   "name": "bullet_whiz",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -19.59
+  },
+  {
+   "name": "glass_break",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -29.81
+  },
+  {
+   "name": "shell_drop",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -27.92
+  },
+  {
+   "name": "footstep_concrete_1",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -25.68
+  },
+  {
+   "name": "footstep_concrete_2",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -23.73
+  },
+  {
+   "name": "footstep_concrete_3",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -22.52
+  },
+  {
+   "name": "footstep_concrete_4",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -23.78
+  },
+  {
+   "name": "footstep_grass_1",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -20.41
+  },
+  {
+   "name": "footstep_grass_2",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -22.09
+  },
+  {
+   "name": "footstep_grass_3",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -22.6
+  },
+  {
+   "name": "footstep_sand_1",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -20.75
+  },
+  {
+   "name": "footstep_sand_2",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -21.53
+  },
+  {
+   "name": "footstep_metal_1",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -22.75
+  },
+  {
+   "name": "footstep_metal_2",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -22.25
+  },
+  {
+   "name": "footstep_wood_1",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -21.55
+  },
+  {
+   "name": "footstep_wood_2",
+   "seconds": 0.18,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -20.96
+  },
+  {
+   "name": "jump",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -17.23
+  },
+  {
+   "name": "land",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -19.16
+  },
+  {
+   "name": "land_hard",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.61
+  },
+  {
+   "name": "body_fall",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.62
+  },
+  {
+   "name": "hurt_1",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.15
+  },
+  {
+   "name": "hurt_2",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.23
+  },
+  {
+   "name": "hurt_3",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -16.69
+  },
+  {
+   "name": "death",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -18.23
+  },
+  {
+   "name": "scream_1",
+   "seconds": 1.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -14.3
+  },
+  {
+   "name": "scream_2",
+   "seconds": 0.85,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -14.0
+  },
+  {
+   "name": "scream_3",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.8
+  },
+  {
+   "name": "swim_stroke",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -20.05
+  },
+  {
+   "name": "splash_big",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.98
+  },
+  {
+   "name": "splash_small",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.78
+  },
+  {
+   "name": "underwater_loop",
+   "seconds": 6.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.83,
+   "rms_db": -17.0
+  },
+  {
+   "name": "breath_gasp",
+   "seconds": 0.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -19.1
+  },
+  {
+   "name": "heartbeat",
+   "seconds": 1.6,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -4.9,
+   "rms_db": -19.0
+  },
+  {
+   "name": "roll",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -15.24
+  },
+  {
+   "name": "climb",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -21.13
+  },
+  {
+   "name": "parachute_open",
+   "seconds": 1.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.01
+  },
+  {
+   "name": "parachute_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -3.67,
+   "rms_db": -17.0
+  },
+  {
+   "name": "wind_fall_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -3.05,
+   "rms_db": -17.0
+  },
+  {
+   "name": "punch_whoosh",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -19.19
+  },
+  {
+   "name": "engine_small_loop",
+   "seconds": 2.5,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.72,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_sedan_loop",
+   "seconds": 2.5,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -4.88,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_sport_loop",
+   "seconds": 2.5,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.94,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_muscle_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.78,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_truck_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.81,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_bike_loop",
+   "seconds": 2.5,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -4.24,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_boat_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.1,
+   "rms_db": -17.0
+  },
+  {
+   "name": "heli_rotor_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.63,
+   "rms_db": -17.0
+  },
+  {
+   "name": "plane_prop_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.82,
+   "rms_db": -17.0
+  },
+  {
+   "name": "jet_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "train_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -4.09,
+   "rms_db": -17.0
+  },
+  {
+   "name": "engine_start",
+   "seconds": 1.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.07
+  },
+  {
+   "name": "engine_off",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.51
+  },
+  {
+   "name": "skid_loop",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -6.99,
+   "rms_db": -17.0
+  },
+  {
+   "name": "tire_roll_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.32,
+   "rms_db": -17.0
+  },
+  {
+   "name": "horn_car",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -11.16
+  },
+  {
+   "name": "horn_truck",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -11.79
+  },
+  {
+   "name": "horn_bike",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -10.3
+  },
+  {
+   "name": "train_horn",
+   "seconds": 1.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -14.21
+  },
+  {
+   "name": "bicycle_bell",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -20.54
+  },
+  {
+   "name": "siren_police_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.73,
+   "rms_db": -15.0
+  },
+  {
+   "name": "siren_police_yelp_loop",
+   "seconds": 1.2,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -5.96,
+   "rms_db": -15.0
+  },
+  {
+   "name": "siren_ambulance_loop",
+   "seconds": 2.4,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -7.09,
+   "rms_db": -15.0
+  },
+  {
+   "name": "siren_fire_loop",
+   "seconds": 4.8,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -4.23,
+   "rms_db": -15.0
+  },
+  {
+   "name": "car_alarm_loop",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -6.28,
+   "rms_db": -15.0
+  },
+  {
+   "name": "crash_small",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.18
+  },
+  {
+   "name": "crash_medium",
+   "seconds": 0.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -20.9
+  },
+  {
+   "name": "crash_big",
+   "seconds": 1.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -21.87
+  },
+  {
+   "name": "metal_scrape_loop",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.24,
+   "rms_db": -17.0
+  },
+  {
+   "name": "door_open",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -23.27
+  },
+  {
+   "name": "door_close",
+   "seconds": 0.35,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -21.45
+  },
+  {
+   "name": "tire_pop",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.11
+  },
+  {
+   "name": "handbrake",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -22.56
+  },
+  {
+   "name": "fire_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.24,
+   "rms_db": -17.0
+  },
+  {
+   "name": "boat_wake_loop",
+   "seconds": 4.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "spray_paint",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.86
+  },
+  {
+   "name": "wrench_ratchet",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -23.03
+  },
+  {
+   "name": "garage_door",
+   "seconds": 2.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -21.9
+  },
+  {
+   "name": "ui_click",
+   "seconds": 0.06,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -3.0,
+   "rms_db": -21.2
+  },
+  {
+   "name": "ui_hover",
+   "seconds": 0.04,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -3.0,
+   "rms_db": -19.13
+  },
+  {
+   "name": "ui_open",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -14.46
+  },
+  {
+   "name": "ui_close",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -14.88
+  },
+  {
+   "name": "ui_deny",
+   "seconds": 0.25,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -13.22
+  },
+  {
+   "name": "ui_buy",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -14.72
+  },
+  {
+   "name": "ui_cash",
+   "seconds": 0.35,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.36
+  },
+  {
+   "name": "ui_notify",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -13.25
+  },
+  {
+   "name": "ui_wheel_tick",
+   "seconds": 0.04,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -3.0,
+   "rms_db": -22.14
+  },
+  {
+   "name": "ui_map_ping",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -16.16
+  },
+  {
+   "name": "ui_wanted_up",
+   "seconds": 0.7,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.16
+  },
+  {
+   "name": "ui_wanted_clear",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -16.4
+  },
+  {
+   "name": "ui_busted",
+   "seconds": 2.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.07
+  },
+  {
+   "name": "ui_wasted",
+   "seconds": 2.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -16.26
+  },
+  {
+   "name": "ui_skill_up",
+   "seconds": 0.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.0
+  },
+  {
+   "name": "ui_checkpoint",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -13.77
+  },
+  {
+   "name": "ui_success",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.14
+  },
+  {
+   "name": "ui_fail",
+   "seconds": 1.0,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -12.55
+  },
+  {
+   "name": "ui_countdown",
+   "seconds": 0.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -7.8
+  },
+  {
+   "name": "ui_go",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -11.54
+  },
+  {
+   "name": "amb_city_day_loop",
+   "seconds": 16.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.38,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_city_night_loop",
+   "seconds": 16.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.88,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_park_loop",
+   "seconds": 16.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.2,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_ocean_loop",
+   "seconds": 16.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_industrial_loop",
+   "seconds": 12.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_wind_loop",
+   "seconds": 12.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.33,
+   "rms_db": -17.0
+  },
+  {
+   "name": "amb_interior_loop",
+   "seconds": 8.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -3.2,
+   "rms_db": -17.0
+  },
+  {
+   "name": "rain_loop",
+   "seconds": 8.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.24,
+   "rms_db": -17.0
+  },
+  {
+   "name": "rain_heavy_loop",
+   "seconds": 8.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "thunder_1",
+   "seconds": 4.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.07
+  },
+  {
+   "name": "thunder_2",
+   "seconds": 4.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.43
+  },
+  {
+   "name": "crowd_murmur_loop",
+   "seconds": 10.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.12,
+   "rms_db": -17.0
+  },
+  {
+   "name": "police_radio_1",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.1
+  },
+  {
+   "name": "police_radio_2",
+   "seconds": 1.2,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.81
+  },
+  {
+   "name": "seagull_1",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.95
+  },
+  {
+   "name": "seagull_2",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -17.92
+  },
+  {
+   "name": "dog_bark_1",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -18.61
+  },
+  {
+   "name": "dog_bark_2",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.26
+  },
+  {
+   "name": "cat_meow",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -12.54
+  },
+  {
+   "name": "deer_snort",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.74
+  },
+  {
+   "name": "bird_flap",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -19.93
+  },
+  {
+   "name": "hydrant_spray_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -17.0
+  },
+  {
+   "name": "auto_door",
+   "seconds": 0.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -15.7
+  },
+  {
+   "name": "shop_bell",
+   "seconds": 0.8,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.51
+  },
+  {
+   "name": "elevator_ding",
+   "seconds": 0.9,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -14.73
+  },
+  {
+   "name": "cash_register",
+   "seconds": 0.7,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -25.12
+  },
+  {
+   "name": "phone_ring",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -2.43,
+   "rms_db": -16.0
+  },
+  {
+   "name": "phone_beep",
+   "seconds": 0.15,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.5,
+   "rms_db": -10.25
+  },
+  {
+   "name": "camera_shutter",
+   "seconds": 0.3,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -23.02
+  },
+  {
+   "name": "pickup_item",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -15.28
+  },
+  {
+   "name": "pickup_health",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -2.0,
+   "rms_db": -15.19
+  },
+  {
+   "name": "pickup_weapon",
+   "seconds": 0.4,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -23.22
+  },
+  {
+   "name": "neon_buzz_loop",
+   "seconds": 3.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -3.54,
+   "rms_db": -17.0
+  },
+  {
+   "name": "shark_bite",
+   "seconds": 0.5,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -19.41
+  },
+  {
+   "name": "sizzle",
+   "seconds": 0.6,
+   "loop": false,
+   "channels": 1,
+   "rate": 44100,
+   "peak_db": -1.5,
+   "rms_db": -22.01
+  },
+  {
+   "name": "radio_neon",
+   "seconds": 38.4,
+   "loop": true,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -15.0
+  },
+  {
+   "name": "radio_lowtide",
+   "seconds": 36.9231,
+   "loop": true,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -2.98,
+   "rms_db": -15.5
+  },
+  {
+   "name": "radio_pulse",
+   "seconds": 38.7097,
+   "loop": true,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -14.5
+  },
+  {
+   "name": "radio_dusty",
+   "seconds": 41.7391,
+   "loop": true,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.25,
+   "rms_db": -15.5
+  },
+  {
+   "name": "radio_ambient",
+   "seconds": 40.0,
+   "loop": true,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -5.71,
+   "rms_db": -17.0
+  },
+  {
+   "name": "radio_static",
+   "seconds": 2.0,
+   "loop": true,
+   "channels": 1,
+   "rate": 32000,
+   "peak_db": -1.24,
+   "rms_db": -16.0
+  },
+  {
+   "name": "radio_jingle_1",
+   "seconds": 2.0,
+   "loop": false,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.5,
+   "rms_db": -17.74
+  },
+  {
+   "name": "radio_jingle_2",
+   "seconds": 2.2,
+   "loop": false,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.5,
+   "rms_db": -16.18
+  },
+  {
+   "name": "radio_jingle_3",
+   "seconds": 1.6,
+   "loop": false,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.5,
+   "rms_db": -14.89
+  },
+  {
+   "name": "radio_jingle_4",
+   "seconds": 2.0,
+   "loop": false,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.5,
+   "rms_db": -18.91
+  },
+  {
+   "name": "radio_jingle_5",
+   "seconds": 2.5,
+   "loop": false,
+   "channels": 2,
+   "rate": 32000,
+   "peak_db": -1.5,
+   "rms_db": -15.95
+  }
+ ]
+}
