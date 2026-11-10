@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_tfuoh"]
+
+[resource]
+script = ExtResource("1_tfuoh")
+id = "grenade"
+name = "Frag Grenade"
+slot = 7
+kind = "thrown"
+hold = "thrown"
+proj = "grenade"
+damage = 180.0
+rate = 0.9
+mag = 1
+max_ammo = 12
+reload = 0.0
+reach = 40.0
+model = "w_grenade"
+price = 180
+ammo_price = 180
+ammo_pack = 1
+driveby = true
+noise = 10.0

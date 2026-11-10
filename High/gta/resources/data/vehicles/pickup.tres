@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_js23g"]
+
+[resource]
+script = ExtResource("1_js23g")
+id = "pickup"
+name = "Drover"
+mass = 2000.0
+engine = 10500.0
+brake = 18000.0
+steer = 30.0
+grip = 0.95
+drive = "awd"
+health = 1400.0
+price = 22000
+traffic = 2.0
+susp_rest = 0.42
+engine_pitch = 0.85

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_t5b68"]
+
+[resource]
+script = ExtResource("1_t5b68")
+id = "grenade_launcher"
+name = "Thumper GL"
+slot = 6
+kind = "projectile"
+hold = "rifle"
+proj = "grenade"
+damage = 170.0
+rate = 1.6
+mag = 6
+max_ammo = 30
+reload = 3.2
+spread = 0.6
+recoil = 3.0
+reach = 200.0
+model = "w_grenade_launcher"
+price = 7000
+ammo_price = 420
+ammo_pack = 6
+noise = 80.0
+mods = ["scope", "grip"]
+sound = "shot_gl"

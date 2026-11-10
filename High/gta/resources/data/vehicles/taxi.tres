@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_wh0la"]
+
+[resource]
+script = ExtResource("1_wh0la")
+id = "taxi"
+name = "Cabbie"
+mass = 1500.0
+engine = 8200.0
+brake = 15000.0
+steer = 33.0
+seats = 4
+health = 1100.0
+price = 15000
+traffic = 1.4
+fixed_color = Color(0.9411765, 0.7647059, 0.1882353, 1)
+tag = "taxi"

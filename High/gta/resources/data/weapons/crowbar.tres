@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_ad2dy"]
+
+[resource]
+script = ExtResource("1_ad2dy")
+id = "crowbar"
+name = "Crowbar"
+kind = "melee"
+hold = "melee"
+damage = 30.0
+rate = 1.9
+reach = 2.0
+model = "w_crowbar"
+price = 110
+noise = 6.0
+knock = 1.3

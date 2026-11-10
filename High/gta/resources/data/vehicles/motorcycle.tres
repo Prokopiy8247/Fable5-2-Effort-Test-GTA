@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_kbcny"]
+
+[resource]
+script = ExtResource("1_kbcny")
+id = "motorcycle"
+name = "Wasp 600"
+kind = "bike"
+mass = 260.0
+engine = 4300.0
+max_speed = 58.0
+brake = 4200.0
+steer = 30.0
+grip = 1.25
+health = 450.0
+price = 14000
+traffic = 0.9
+susp_rest = 0.26
+engine_pitch = 1.6

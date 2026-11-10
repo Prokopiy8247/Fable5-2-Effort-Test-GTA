@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_3o2s2"]
+
+[resource]
+script = ExtResource("1_3o2s2")
+id = "van"
+name = "Hauler"
+mass = 2300.0
+engine = 9500.0
+max_speed = 34.0
+brake = 18000.0
+steer = 31.0
+grip = 0.9
+health = 1500.0
+price = 18000
+traffic = 1.6
+engine_pitch = 0.8

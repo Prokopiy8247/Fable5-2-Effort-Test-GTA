@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_jcn2j"]
+
+[resource]
+script = ExtResource("1_jcn2j")
+id = "firetruck"
+name = "Blaze Engine"
+mass = 7500.0
+engine = 30000.0
+max_speed = 32.0
+brake = 60000.0
+steer = 28.0
+grip = 0.95
+health = 4000.0
+susp_rest = 0.5
+engine_pitch = 0.55
+fixed_color = Color(0.78431374, 0.21960784, 0.16862746, 1)
+tag = "fire"
+siren = true

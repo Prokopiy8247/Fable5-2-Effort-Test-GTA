@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_dflkm"]
+
+[resource]
+script = ExtResource("1_dflkm")
+id = "jet"
+name = "Arrow J1"
+kind = "plane"
+mass = 3200.0
+engine = 42000.0
+max_speed = 115.0
+brake = 20000.0
+seats = 4
+health = 1300.0
+price = 600000
+takeoff_speed = 38.0
+jet = true

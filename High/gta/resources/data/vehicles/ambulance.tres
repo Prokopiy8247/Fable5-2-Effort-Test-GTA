@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_6yb3u"]
+
+[resource]
+script = ExtResource("1_6yb3u")
+id = "ambulance"
+name = "Lifeline"
+mass = 2800.0
+engine = 13000.0
+brake = 24000.0
+steer = 30.0
+grip = 0.95
+health = 1800.0
+engine_pitch = 0.8
+fixed_color = Color(0.94509804, 0.93333334, 0.9019608, 1)
+tag = "ems"
+siren = true

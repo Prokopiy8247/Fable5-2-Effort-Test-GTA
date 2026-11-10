@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_bnyds"]
+
+[resource]
+script = ExtResource("1_bnyds")
+id = "speedboat"
+name = "Skimmer"
+kind = "boat"
+mass = 1300.0
+engine = 16000.0
+max_speed = 30.0
+seats = 4
+price = 40000
+engine_pitch = 1.1

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_jxcsi"]
+
+[resource]
+script = ExtResource("1_jxcsi")
+id = "heli_police"
+name = "Skywatch"
+kind = "heli"
+mass = 1900.0
+engine = 1.0
+max_speed = 60.0
+seats = 4
+health = 1800.0
+fixed_color = Color(0.08235294, 0.09411765, 0.12156863, 1)
+fixed_color2 = Color(0.94509804, 0.93333334, 0.9019608, 1)
+tag = "police"

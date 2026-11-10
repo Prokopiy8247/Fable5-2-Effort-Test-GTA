@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_0o7of"]
+
+[resource]
+script = ExtResource("1_0o7of")
+id = "rocket_launcher"
+name = "Rocket Launcher"
+slot = 6
+kind = "projectile"
+hold = "launcher"
+proj = "rocket"
+damage = 260.0
+rate = 0.5
+mag = 1
+max_ammo = 12
+reload = 2.6
+spread = 0.3
+recoil = 4.0
+reach = 400.0
+model = "w_rocket_launcher"
+price = 9000
+ammo_price = 500
+ammo_pack = 2
+noise = 120.0
+sound = "shot_rocket"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_otn77"]
+
+[resource]
+script = ExtResource("1_otn77")
+id = "marksman"
+name = "Marksman Rifle"
+slot = 5
+hold = "rifle"
+damage = 64.0
+rate = 2.6
+mag = 10
+max_ammo = 120
+reload = 2.4
+spread = 0.3
+recoil = 2.4
+reach = 300.0
+zoom_fov = 26.0
+model = "w_marksman"
+price = 4200
+ammo_price = 120
+noise = 90.0
+mods = ["suppressor", "extmag", "flashlight", "grip"]
+sound = "shot_rifle"

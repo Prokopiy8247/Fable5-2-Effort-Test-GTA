@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_cqpte"]
+
+[resource]
+script = ExtResource("1_cqpte")
+id = "sniper"
+name = "Longshot Sniper"
+slot = 5
+hold = "rifle"
+damage = 150.0
+rate = 0.8
+mag = 5
+max_ammo = 60
+reload = 3.0
+spread = 0.03
+recoil = 4.0
+reach = 600.0
+zoom_fov = 11.0
+scoped = true
+model = "w_sniper"
+price = 6500
+ammo_price = 160
+noise = 110.0
+mods = ["suppressor", "extmag"]
+sound = "shot_sniper"

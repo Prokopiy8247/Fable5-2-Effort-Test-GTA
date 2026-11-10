@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_junxy"]
+
+[resource]
+script = ExtResource("1_junxy")
+id = "carbine"
+name = "Tactical Carbine"
+slot = 4
+hold = "rifle"
+damage = 24.0
+rate = 11.0
+mag = 30
+max_ammo = 360
+reload = 2.0
+spread = 1.1
+recoil = 0.9
+reach = 150.0
+auto = true
+model = "w_carbine"
+price = 3400
+ammo_price = 90
+noise = 80.0
+mods = ["suppressor", "extmag", "flashlight", "scope", "grip"]
+sound = "shot_rifle"

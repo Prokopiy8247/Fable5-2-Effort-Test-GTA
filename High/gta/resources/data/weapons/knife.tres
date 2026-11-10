@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_ntuwv"]
+
+[resource]
+script = ExtResource("1_ntuwv")
+id = "knife"
+name = "Knife"
+kind = "melee"
+hold = "melee"
+damage = 34.0
+rate = 2.8
+reach = 1.8
+model = "w_knife"
+price = 120
+noise = 3.0

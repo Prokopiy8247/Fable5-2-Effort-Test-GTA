@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_d700w"]
+
+[resource]
+script = ExtResource("1_d700w")
+id = "police"
+name = "Interceptor"
+mass = 1600.0
+engine = 13500.0
+max_speed = 56.0
+brake = 20000.0
+steer = 33.0
+grip = 1.25
+drive = "awd"
+seats = 4
+health = 1500.0
+fixed_color = Color(0.08235294, 0.09411765, 0.12156863, 1)
+fixed_color2 = Color(0.94509804, 0.93333334, 0.9019608, 1)
+tag = "police"
+siren = true

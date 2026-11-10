@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_vvyvu"]
+
+[resource]
+script = ExtResource("1_vvyvu")
+id = "policeboat"
+name = "Harbor Patrol"
+kind = "boat"
+mass = 1400.0
+engine = 18000.0
+max_speed = 32.0
+seats = 4
+health = 1400.0
+fixed_color = Color(0.12156863, 0.1764706, 0.3019608, 1)
+tag = "police"
+siren = true

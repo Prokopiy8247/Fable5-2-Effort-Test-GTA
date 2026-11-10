@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_trgec"]
+
+[resource]
+script = ExtResource("1_trgec")
+id = "heavy_pistol"
+name = "Bulldog .50"
+slot = 1
+damage = 52.0
+rate = 2.2
+mag = 6
+max_ammo = 96
+reload = 1.9
+spread = 1.1
+recoil = 3.4
+reach = 110.0
+model = "w_heavy_pistol"
+price = 950
+ammo_price = 60
+driveby = true
+noise = 70.0
+mods = ["scope", "flashlight"]
+sound = "shot_heavy"

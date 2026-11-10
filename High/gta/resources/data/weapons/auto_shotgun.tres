@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_vbsp8"]
+
+[resource]
+script = ExtResource("1_vbsp8")
+id = "auto_shotgun"
+name = "Riot Auto-12"
+slot = 3
+hold = "rifle"
+pellets = 8
+rate = 3.4
+mag = 8
+max_ammo = 96
+reload = 2.8
+spread = 7.0
+recoil = 3.6
+reach = 36.0
+auto = true
+model = "w_auto_shotgun"
+price = 3200
+ammo_price = 90
+noise = 75.0
+mods = ["suppressor", "extmag", "flashlight", "scope", "grip"]
+sound = "shot_shotgun"

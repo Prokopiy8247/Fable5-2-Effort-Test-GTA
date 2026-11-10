@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_isv48"]
+
+[resource]
+script = ExtResource("1_isv48")
+id = "fists"
+name = "Fists"
+kind = "melee"
+hold = "fist"
+damage = 12.0
+rate = 2.4
+reach = 1.7
+noise = 4.0

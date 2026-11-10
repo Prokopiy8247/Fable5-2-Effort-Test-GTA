@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_2c2f4"]
+
+[resource]
+script = ExtResource("1_2c2f4")
+id = "muscle"
+name = "Brawler"
+mass = 1650.0
+engine = 13000.0
+max_speed = 54.0
+brake = 16000.0
+steer = 31.0
+grip = 0.95
+health = 1100.0
+price = 38000
+traffic = 1.2
+engine_pitch = 0.8

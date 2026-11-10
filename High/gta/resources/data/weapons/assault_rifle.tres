@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_j6fen"]
+
+[resource]
+script = ExtResource("1_j6fen")
+id = "assault_rifle"
+name = "AR-7 Rifle"
+slot = 4
+hold = "rifle"
+damage = 28.0
+rate = 9.0
+mag = 30
+max_ammo = 360
+reload = 2.2
+spread = 1.5
+recoil = 1.2
+reach = 150.0
+auto = true
+model = "w_assault_rifle"
+price = 2800
+ammo_price = 90
+noise = 80.0
+mods = ["suppressor", "extmag", "flashlight", "scope", "grip"]
+sound = "shot_rifle"

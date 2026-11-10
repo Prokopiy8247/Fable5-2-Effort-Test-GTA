@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_a7h4k"]
+
+[resource]
+script = ExtResource("1_a7h4k")
+id = "bat"
+name = "Baseball Bat"
+kind = "melee"
+hold = "melee"
+damage = 26.0
+rate = 1.7
+reach = 2.2
+model = "w_bat"
+price = 90
+noise = 6.0
+knock = 1.6

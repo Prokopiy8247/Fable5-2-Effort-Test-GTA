@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_mf68q"]
+
+[resource]
+script = ExtResource("1_mf68q")
+id = "bicycle"
+name = "City Bike"
+kind = "bicycle"
+mass = 90.0
+engine = 520.0
+max_speed = 13.0
+brake = 900.0
+steer = 34.0
+grip = 1.1
+seats = 1
+health = 200.0
+price = 400
+susp_rest = 0.2
+silent = true

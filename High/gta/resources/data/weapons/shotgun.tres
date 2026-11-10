@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_3tcsk"]
+
+[resource]
+script = ExtResource("1_3tcsk")
+id = "shotgun"
+name = "Pump Shotgun"
+slot = 3
+hold = "rifle"
+damage = 13.0
+pellets = 8
+rate = 1.15
+mag = 6
+max_ammo = 72
+reload = 2.6
+spread = 6.0
+recoil = 5.0
+reach = 40.0
+model = "w_shotgun"
+price = 1600
+ammo_price = 60
+noise = 75.0
+mods = ["extmag", "flashlight", "scope"]
+sound = "shot_shotgun"

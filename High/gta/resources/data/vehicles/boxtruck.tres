@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_kxokj"]
+
+[resource]
+script = ExtResource("1_kxokj")
+id = "boxtruck"
+name = "Freightliner"
+mass = 5200.0
+engine = 19000.0
+max_speed = 30.0
+brake = 42000.0
+steer = 28.0
+grip = 0.9
+health = 3000.0
+price = 26000
+traffic = 1.0
+susp_rest = 0.48
+engine_pitch = 0.6

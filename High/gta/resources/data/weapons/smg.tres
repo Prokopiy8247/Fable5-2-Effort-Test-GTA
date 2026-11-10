@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WeaponDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/weapons/weapon_def.gd" id="1_u0ke0"]
+
+[resource]
+script = ExtResource("1_u0ke0")
+id = "smg"
+name = "Viper SMG"
+slot = 2
+damage = 16.0
+rate = 13.0
+mag = 30
+max_ammo = 360
+reload = 1.8
+spread = 2.6
+recoil = 0.7
+reach = 70.0
+auto = true
+model = "w_smg"
+price = 1400
+ammo_price = 70
+driveby = true
+noise = 55.0
+mods = ["suppressor", "extmag", "flashlight", "scope", "grip"]
+sound = "shot_smg"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_dv03x"]
+
+[resource]
+script = ExtResource("1_dv03x")
+id = "swat"
+name = "Bulwark"
+mass = 4200.0
+engine = 21000.0
+brake = 36000.0
+steer = 28.0
+drive = "awd"
+seats = 4
+health = 4000.0
+susp_rest = 0.45
+engine_pitch = 0.65
+fixed_color = Color(0.105882354, 0.13333334, 0.2, 1)
+tag = "police"
+siren = true

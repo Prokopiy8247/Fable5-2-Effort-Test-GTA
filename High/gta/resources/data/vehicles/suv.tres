@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_54sln"]
+
+[resource]
+script = ExtResource("1_54sln")
+id = "suv"
+name = "Ridgeback"
+mass = 2100.0
+engine = 11000.0
+max_speed = 42.0
+brake = 19000.0
+steer = 30.0
+drive = "awd"
+seats = 4
+health = 1400.0
+price = 30000
+traffic = 2.5
+susp_rest = 0.42
+engine_pitch = 0.9

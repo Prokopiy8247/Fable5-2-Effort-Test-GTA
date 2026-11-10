@@ -1,0 +1,21 @@
+# Godot 4 transient data
+.godot/
+*.translation
+export_presets.cfg
+/android/
+# logs / builds / captures
+*.log
+/build/
+/export/
+/screens/
+/tools/_out/
+# Blender autosaves and technical backups
+*.blend1
+*.blend2
+/backups/
+# Python
+__pycache__/
+*.pyc
+# OS
+Thumbs.db
+.DS_Store

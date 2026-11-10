@@ -1,0 +1,2492 @@
+{
+ "ac_unit": {
+  "cat": "props",
+  "max": [
+   0.5,
+   0.9,
+   0.275
+  ],
+  "min": [
+   -0.5,
+   0.0,
+   -0.25
+  ],
+  "path": "res://gta/generated/models/props/ac_unit.glb",
+  "tris": 40
+ },
+ "ambulance": {
+  "cat": "vehicles",
+  "max": [
+   1.18,
+   2.79,
+   2.95
+  ],
+  "min": [
+   -1.18,
+   -0.084,
+   -2.795
+  ],
+  "path": "res://gta/generated/models/vehicles/ambulance.glb",
+  "tris": 2284
+ },
+ "ani_boar": {
+  "cat": "animals",
+  "max": [
+   0.21,
+   0.85,
+   0.525
+  ],
+  "min": [
+   -0.21,
+   -0.002,
+   -1.044
+  ],
+  "path": "res://gta/generated/models/animals/ani_boar.glb",
+  "tris": 236
+ },
+ "ani_cow": {
+  "cat": "animals",
+  "max": [
+   0.35,
+   1.404,
+   1.014
+  ],
+  "min": [
+   -0.35,
+   -0.002,
+   -1.492
+  ],
+  "path": "res://gta/generated/models/animals/ani_cow.glb",
+  "tris": 260
+ },
+ "ani_deer": {
+  "cat": "animals",
+  "max": [
+   0.307,
+   2.168,
+   0.71
+  ],
+  "min": [
+   -0.307,
+   -0.001,
+   -1.24
+  ],
+  "path": "res://gta/generated/models/animals/ani_deer.glb",
+  "tris": 276
+ },
+ "ani_dog": {
+  "cat": "animals",
+  "max": [
+   0.12,
+   0.878,
+   0.556
+  ],
+  "min": [
+   -0.12,
+   -0.002,
+   -0.831
+  ],
+  "path": "res://gta/generated/models/animals/ani_dog.glb",
+  "tris": 240
+ },
+ "ani_fish": {
+  "cat": "animals",
+  "max": [
+   0.099,
+   0.135,
+   0.35
+  ],
+  "min": [
+   -0.099,
+   -0.113,
+   -0.204
+  ],
+  "path": "res://gta/generated/models/animals/ani_fish.glb",
+  "tris": 92
+ },
+ "ani_seagull": {
+  "cat": "animals",
+  "max": [
+   0.69,
+   0.12,
+   0.33
+  ],
+  "min": [
+   -0.69,
+   -0.096,
+   -0.36
+  ],
+  "path": "res://gta/generated/models/animals/ani_seagull.glb",
+  "tris": 70
+ },
+ "ani_shark": {
+  "cat": "animals",
+  "max": [
+   0.612,
+   0.864,
+   2.282
+  ],
+  "min": [
+   -0.612,
+   -0.72,
+   -1.307
+  ],
+  "path": "res://gta/generated/models/animals/ani_shark.glb",
+  "tris": 92
+ },
+ "apt_a": {
+  "cat": "buildings",
+  "max": [
+   19.24,
+   23.2,
+   9.24
+  ],
+  "min": [
+   -19.24,
+   0.0,
+   -9.24
+  ],
+  "path": "res://gta/generated/models/buildings/apt_a.glb",
+  "tris": 6268
+ },
+ "apt_b": {
+  "cat": "buildings",
+  "max": [
+   19.305,
+   20.8,
+   9.305
+  ],
+  "min": [
+   -19.305,
+   0.0,
+   -9.305
+  ],
+  "path": "res://gta/generated/models/buildings/apt_b.glb",
+  "tris": 6160
+ },
+ "apt_c": {
+  "cat": "buildings",
+  "max": [
+   9.24,
+   31.95,
+   9.24
+  ],
+  "min": [
+   -9.24,
+   0.0,
+   -9.24
+  ],
+  "path": "res://gta/generated/models/buildings/apt_c.glb",
+  "tris": 5428
+ },
+ "apt_d": {
+  "cat": "buildings",
+  "max": [
+   16.24,
+   26.6,
+   11.24
+  ],
+  "min": [
+   -16.24,
+   0.0,
+   -11.24
+  ],
+  "path": "res://gta/generated/models/buildings/apt_d.glb",
+  "tris": 7436
+ },
+ "apt_e": {
+  "cat": "buildings",
+  "max": [
+   19.305,
+   19.35,
+   9.305
+  ],
+  "min": [
+   -19.305,
+   0.0,
+   -9.305
+  ],
+  "path": "res://gta/generated/models/buildings/apt_e.glb",
+  "tris": 5152
+ },
+ "atm": {
+  "cat": "props",
+  "max": [
+   0.35,
+   1.507,
+   0.391
+  ],
+  "min": [
+   -0.35,
+   0.0,
+   -0.3
+  ],
+  "path": "res://gta/generated/models/props/atm.glb",
+  "tris": 48
+ },
+ "barrel_blue": {
+  "cat": "props",
+  "max": [
+   0.315,
+   0.9,
+   0.3
+  ],
+  "min": [
+   -0.315,
+   0.0,
+   -0.3
+  ],
+  "path": "res://gta/generated/models/props/barrel_blue.glb",
+  "tris": 144
+ },
+ "barrel_red": {
+  "cat": "props",
+  "max": [
+   0.315,
+   0.9,
+   0.31
+  ],
+  "min": [
+   -0.315,
+   0.0,
+   -0.3
+  ],
+  "path": "res://gta/generated/models/props/barrel_red.glb",
+  "tris": 156
+ },
+ "barrier_jersey": {
+  "cat": "props",
+  "max": [
+   1.5,
+   0.9,
+   0.32
+  ],
+  "min": [
+   -1.5,
+   0.0,
+   -0.32
+  ],
+  "path": "res://gta/generated/models/props/barrier_jersey.glb",
+  "tris": 28
+ },
+ "barrier_plastic": {
+  "cat": "props",
+  "max": [
+   1.01,
+   0.9,
+   0.28
+  ],
+  "min": [
+   -1.01,
+   0.0,
+   -0.28
+  ],
+  "path": "res://gta/generated/models/props/barrier_plastic.glb",
+  "tris": 24
+ },
+ "beach_set": {
+  "cat": "props",
+  "max": [
+   1.5,
+   2.45,
+   1.5
+  ],
+  "min": [
+   -1.5,
+   0.0,
+   -1.5
+  ],
+  "path": "res://gta/generated/models/props/beach_set.glb",
+  "tris": 168
+ },
+ "bench": {
+  "cat": "props",
+  "max": [
+   0.95,
+   0.9,
+   0.25
+  ],
+  "min": [
+   -0.95,
+   0.0,
+   -0.295
+  ],
+  "path": "res://gta/generated/models/props/bench.glb",
+  "tris": 108
+ },
+ "bicycle": {
+  "cat": "vehicles",
+  "max": [
+   0.26,
+   1.033,
+   0.84
+  ],
+  "min": [
+   -0.26,
+   0.009,
+   -0.89
+  ],
+  "path": "res://gta/generated/models/vehicles/bicycle.glb",
+  "tris": 960
+ },
+ "billboard": {
+  "cat": "props",
+  "max": [
+   5.5,
+   11.8,
+   0.36
+  ],
+  "min": [
+   -5.5,
+   0.0,
+   -1.1
+  ],
+  "path": "res://gta/generated/models/props/billboard.glb",
+  "tris": 140
+ },
+ "bin": {
+  "cat": "props",
+  "max": [
+   0.34,
+   0.98,
+   0.34
+  ],
+  "min": [
+   -0.34,
+   0.0,
+   -0.34
+  ],
+  "path": "res://gta/generated/models/props/bin.glb",
+  "tris": 68
+ },
+ "bollard": {
+  "cat": "props",
+  "max": [
+   0.095,
+   0.9,
+   0.095
+  ],
+  "min": [
+   -0.095,
+   0.0,
+   -0.095
+  ],
+  "path": "res://gta/generated/models/props/bollard.glb",
+  "tris": 56
+ },
+ "boxtruck": {
+  "cat": "vehicles",
+  "max": [
+   1.298,
+   3.3,
+   3.95
+  ],
+  "min": [
+   -1.298,
+   -0.101,
+   -3.565
+  ],
+  "path": "res://gta/generated/models/vehicles/boxtruck.glb",
+  "tris": 3156
+ },
+ "buoy": {
+  "cat": "props",
+  "max": [
+   0.7,
+   1.8,
+   0.7
+  ],
+  "min": [
+   -0.7,
+   -0.2,
+   -0.7
+  ],
+  "path": "res://gta/generated/models/props/buoy.glb",
+  "tris": 60
+ },
+ "bus_stop": {
+  "cat": "props",
+  "max": [
+   2.65,
+   2.85,
+   0.8
+  ],
+  "min": [
+   -2.0,
+   0.0,
+   -0.8
+  ],
+  "path": "res://gta/generated/models/props/bus_stop.glb",
+  "tris": 160
+ },
+ "bush": {
+  "cat": "nature",
+  "max": [
+   0.947,
+   1.062,
+   0.658
+  ],
+  "min": [
+   -0.879,
+   -0.1,
+   -0.638
+  ],
+  "path": "res://gta/generated/models/nature/bush.glb",
+  "tris": 60
+ },
+ "canopy": {
+  "cat": "props",
+  "max": [
+   3.2,
+   6.326,
+   1.3
+  ],
+  "min": [
+   -3.2,
+   0.294,
+   -1.3
+  ],
+  "path": "res://gta/generated/models/props/canopy.glb",
+  "tris": 148
+ },
+ "char_female": {
+  "cat": "characters",
+  "max": [
+   0.232,
+   1.789,
+   0.255
+  ],
+  "min": [
+   -0.232,
+   -0.006,
+   -0.195
+  ],
+  "path": "res://gta/generated/models/characters/char_female.glb",
+  "tris": 2024
+ },
+ "char_male": {
+  "cat": "characters",
+  "max": [
+   0.269,
+   1.89,
+   0.255
+  ],
+  "min": [
+   -0.269,
+   0.0,
+   -0.2
+  ],
+  "path": "res://gta/generated/models/characters/char_male.glb",
+  "tris": 2012
+ },
+ "compact": {
+  "cat": "vehicles",
+  "max": [
+   0.998,
+   1.48,
+   1.95
+  ],
+  "min": [
+   -0.998,
+   -0.066,
+   -1.965
+  ],
+  "path": "res://gta/generated/models/vehicles/compact.glb",
+  "tris": 2572
+ },
+ "cone": {
+  "cat": "props",
+  "max": [
+   0.2,
+   0.69,
+   0.2
+  ],
+  "min": [
+   -0.2,
+   0.0,
+   -0.2
+  ],
+  "path": "res://gta/generated/models/props/cone.glb",
+  "tris": 68
+ },
+ "container": {
+  "cat": "props",
+  "max": [
+   1.25,
+   2.61,
+   3.105
+  ],
+  "min": [
+   -1.25,
+   -0.01,
+   -3.04
+  ],
+  "path": "res://gta/generated/models/props/container.glb",
+  "tris": 408
+ },
+ "control_tower": {
+  "cat": "buildings",
+  "max": [
+   5.2,
+   27.125,
+   5.2
+  ],
+  "min": [
+   -5.2,
+   0.0,
+   -5.2
+  ],
+  "path": "res://gta/generated/models/buildings/control_tower.glb",
+  "tris": 256
+ },
+ "coral": {
+  "cat": "nature",
+  "max": [
+   0.631,
+   1.318,
+   0.599
+  ],
+  "min": [
+   -0.537,
+   -0.05,
+   -0.604
+  ],
+  "path": "res://gta/generated/models/nature/coral.glb",
+  "tris": 80
+ },
+ "crate": {
+  "cat": "props",
+  "max": [
+   0.53,
+   1.0,
+   0.53
+  ],
+  "min": [
+   -0.53,
+   0.0,
+   -0.53
+  ],
+  "path": "res://gta/generated/models/props/crate.glb",
+  "tris": 84
+ },
+ "dock_crane": {
+  "cat": "props",
+  "max": [
+   6.5,
+   26.083,
+   30.0
+  ],
+  "min": [
+   -6.5,
+   0.0,
+   -6.0
+  ],
+  "path": "res://gta/generated/models/props/dock_crane.glb",
+  "tris": 204
+ },
+ "dumpster": {
+  "cat": "props",
+  "max": [
+   1.06,
+   1.39,
+   0.6
+  ],
+  "min": [
+   -1.06,
+   -0.0,
+   -0.676
+  ],
+  "path": "res://gta/generated/models/props/dumpster.glb",
+  "tris": 104
+ },
+ "fence_chain": {
+  "cat": "props",
+  "max": [
+   1.54,
+   2.205,
+   0.038
+  ],
+  "min": [
+   -1.532,
+   0.0,
+   -0.038
+  ],
+  "path": "res://gta/generated/models/props/fence_chain.glb",
+  "tris": 56
+ },
+ "fence_wood": {
+  "cat": "props",
+  "max": [
+   1.56,
+   1.5,
+   0.06
+  ],
+  "min": [
+   -1.56,
+   0.0,
+   -0.065
+  ],
+  "path": "res://gta/generated/models/props/fence_wood.glb",
+  "tris": 168
+ },
+ "firetruck": {
+  "cat": "vehicles",
+  "max": [
+   1.38,
+   3.158,
+   4.0
+  ],
+  "min": [
+   -1.38,
+   -0.11,
+   -3.835
+  ],
+  "path": "res://gta/generated/models/vehicles/firetruck.glb",
+  "tris": 4696
+ },
+ "flower": {
+  "cat": "nature",
+  "max": [
+   0.22,
+   0.45,
+   0.191
+  ],
+  "min": [
+   -0.22,
+   0.0,
+   -0.191
+  ],
+  "path": "res://gta/generated/models/nature/flower.glb",
+  "tris": 54
+ },
+ "fountain": {
+  "cat": "props",
+  "max": [
+   4.0,
+   3.1,
+   4.0
+  ],
+  "min": [
+   -4.0,
+   0.0,
+   -4.0
+  ],
+  "path": "res://gta/generated/models/props/fountain.glb",
+  "tris": 208
+ },
+ "garage_mod": {
+  "cat": "buildings",
+  "max": [
+   9.15,
+   8.1,
+   9.5
+  ],
+  "min": [
+   -9.15,
+   0.0,
+   -9.15
+  ],
+  "path": "res://gta/generated/models/buildings/garage_mod.glb",
+  "tris": 6534
+ },
+ "gas_station": {
+  "cat": "buildings",
+  "max": [
+   9.1,
+   7.3,
+   6.29
+  ],
+  "min": [
+   -13.5,
+   0.0,
+   -15.2
+  ],
+  "path": "res://gta/generated/models/buildings/gas_station.glb",
+  "tris": 3808
+ },
+ "gazebo": {
+  "cat": "props",
+  "max": [
+   3.6,
+   4.7,
+   3.6
+  ],
+  "min": [
+   -3.6,
+   0.0,
+   -3.6
+  ],
+  "path": "res://gta/generated/models/props/gazebo.glb",
+  "tris": 180
+ },
+ "grass_tuft": {
+  "cat": "nature",
+  "max": [
+   0.38,
+   0.62,
+   0.329
+  ],
+  "min": [
+   -0.38,
+   0.0,
+   -0.329
+  ],
+  "path": "res://gta/generated/models/nature/grass_tuft.glb",
+  "tris": 9
+ },
+ "hangar": {
+  "cat": "buildings",
+  "max": [
+   15.441,
+   14.151,
+   14.35
+  ],
+  "min": [
+   -15.441,
+   0.0,
+   -14.3
+  ],
+  "path": "res://gta/generated/models/buildings/hangar.glb",
+  "tris": 1412
+ },
+ "hedge": {
+  "cat": "nature",
+  "max": [
+   1.5,
+   1.2,
+   0.4
+  ],
+  "min": [
+   -1.5,
+   0.0,
+   -0.4
+  ],
+  "path": "res://gta/generated/models/nature/hedge.glb",
+  "tris": 12
+ },
+ "heli": {
+  "cat": "vehicles",
+  "max": [
+   4.4,
+   2.89,
+   5.22
+  ],
+  "min": [
+   -2.313,
+   0.02,
+   -3.876
+  ],
+  "path": "res://gta/generated/models/vehicles/heli.glb",
+  "tris": 652
+ },
+ "heli_police": {
+  "cat": "vehicles",
+  "max": [
+   5.1,
+   3.12,
+   6.32
+  ],
+  "min": [
+   -5.1,
+   0.02,
+   -5.1
+  ],
+  "path": "res://gta/generated/models/vehicles/heli_police.glb",
+  "tris": 764
+ },
+ "helipad": {
+  "cat": "props",
+  "max": [
+   8.0,
+   0.115,
+   8.0
+  ],
+  "min": [
+   -8.0,
+   0.0,
+   -8.0
+  ],
+  "path": "res://gta/generated/models/props/helipad.glb",
+  "tris": 264
+ },
+ "hospital": {
+  "cat": "buildings",
+  "max": [
+   18.14,
+   25.8,
+   18.22
+  ],
+  "min": [
+   -18.14,
+   0.0,
+   -12.14
+  ],
+  "path": "res://gta/generated/models/buildings/hospital.glb",
+  "tris": 4904
+ },
+ "hotel": {
+  "cat": "buildings",
+  "max": [
+   19.24,
+   37.8,
+   11.24
+  ],
+  "min": [
+   -19.24,
+   0.0,
+   -11.24
+  ],
+  "path": "res://gta/generated/models/buildings/hotel.glb",
+  "tris": 13268
+ },
+ "house_a": {
+  "cat": "buildings",
+  "max": [
+   10.4,
+   6.05,
+   6.45
+  ],
+  "min": [
+   -5.5,
+   0.0,
+   -4.75
+  ],
+  "path": "res://gta/generated/models/buildings/house_a.glb",
+  "tris": 352
+ },
+ "house_b": {
+  "cat": "buildings",
+  "max": [
+   11.15,
+   9.05,
+   7.2
+  ],
+  "min": [
+   -6.25,
+   0.0,
+   -5.5
+  ],
+  "path": "res://gta/generated/models/buildings/house_b.glb",
+  "tris": 520
+ },
+ "house_c": {
+  "cat": "buildings",
+  "max": [
+   7.0,
+   6.05,
+   6.45
+  ],
+  "min": [
+   -7.0,
+   0.0,
+   -4.75
+  ],
+  "path": "res://gta/generated/models/buildings/house_c.glb",
+  "tris": 256
+ },
+ "house_d": {
+  "cat": "buildings",
+  "max": [
+   10.4,
+   9.05,
+   7.2
+  ],
+  "min": [
+   -5.5,
+   0.0,
+   -5.5
+  ],
+  "path": "res://gta/generated/models/buildings/house_d.glb",
+  "tris": 520
+ },
+ "house_e": {
+  "cat": "buildings",
+  "max": [
+   11.15,
+   6.05,
+   6.45
+  ],
+  "min": [
+   -6.25,
+   0.0,
+   -4.75
+  ],
+  "path": "res://gta/generated/models/buildings/house_e.glb",
+  "tris": 352
+ },
+ "house_f": {
+  "cat": "buildings",
+  "max": [
+   7.0,
+   9.05,
+   7.2
+  ],
+  "min": [
+   -7.0,
+   0.0,
+   -5.5
+  ],
+  "path": "res://gta/generated/models/buildings/house_f.glb",
+  "tris": 424
+ },
+ "hydrant": {
+  "cat": "props",
+  "max": [
+   0.21,
+   0.81,
+   0.19
+  ],
+  "min": [
+   -0.21,
+   0.0,
+   -0.19
+  ],
+  "path": "res://gta/generated/models/props/hydrant.glb",
+  "tris": 152
+ },
+ "jet": {
+  "cat": "vehicles",
+  "max": [
+   5.73,
+   4.2,
+   6.2
+  ],
+  "min": [
+   -5.73,
+   0.008,
+   -5.6
+  ],
+  "path": "res://gta/generated/models/vehicles/jet.glb",
+  "tris": 1568
+ },
+ "ladder": {
+  "cat": "props",
+  "max": [
+   0.28,
+   8.0,
+   0.03
+  ],
+  "min": [
+   -0.28,
+   0.0,
+   -0.3
+  ],
+  "path": "res://gta/generated/models/props/ladder.glb",
+  "tris": 408
+ },
+ "lifeguard": {
+  "cat": "props",
+  "max": [
+   1.5,
+   4.999,
+   3.77
+  ],
+  "min": [
+   -1.5,
+   -0.009,
+   -1.698
+  ],
+  "path": "res://gta/generated/models/props/lifeguard.glb",
+  "tris": 220
+ },
+ "lighthouse": {
+  "cat": "buildings",
+  "max": [
+   4.2,
+   25.7,
+   3.994
+  ],
+  "min": [
+   -4.2,
+   0.0,
+   -3.994
+  ],
+  "path": "res://gta/generated/models/buildings/lighthouse.glb",
+  "tris": 348
+ },
+ "mailbox": {
+  "cat": "props",
+  "max": [
+   0.25,
+   1.225,
+   0.25
+  ],
+  "min": [
+   -0.25,
+   0.0,
+   -0.225
+  ],
+  "path": "res://gta/generated/models/props/mailbox.glb",
+  "tris": 76
+ },
+ "motorcycle": {
+  "cat": "vehicles",
+  "max": [
+   0.34,
+   1.05,
+   1.02
+  ],
+  "min": [
+   -0.34,
+   0.008,
+   -1.1
+  ],
+  "path": "res://gta/generated/models/vehicles/motorcycle.glb",
+  "tris": 1080
+ },
+ "muscle": {
+  "cat": "vehicles",
+  "max": [
+   1.12,
+   1.33,
+   2.55
+  ],
+  "min": [
+   -1.12,
+   -0.077,
+   -2.565
+  ],
+  "path": "res://gta/generated/models/vehicles/muscle.glb",
+  "tris": 2496
+ },
+ "newsbox": {
+  "cat": "props",
+  "max": [
+   0.225,
+   1.0,
+   0.22
+  ],
+  "min": [
+   -0.225,
+   0.0,
+   -0.2
+  ],
+  "path": "res://gta/generated/models/props/newsbox.glb",
+  "tris": 36
+ },
+ "off_a": {
+  "cat": "buildings",
+  "max": [
+   18.18,
+   60.15,
+   19.2
+  ],
+  "min": [
+   -18.18,
+   0.0,
+   -18.18
+  ],
+  "path": "res://gta/generated/models/buildings/off_a.glb",
+  "tris": 9004
+ },
+ "off_b": {
+  "cat": "buildings",
+  "max": [
+   18.18,
+   41.2,
+   19.2
+  ],
+  "min": [
+   -18.18,
+   0.0,
+   -18.18
+  ],
+  "path": "res://gta/generated/models/buildings/off_b.glb",
+  "tris": 6484
+ },
+ "off_c": {
+  "cat": "buildings",
+  "max": [
+   18.18,
+   34.4,
+   9.2
+  ],
+  "min": [
+   -18.18,
+   0.0,
+   -8.18
+  ],
+  "path": "res://gta/generated/models/buildings/off_c.glb",
+  "tris": 4084
+ },
+ "off_d": {
+  "cat": "buildings",
+  "max": [
+   8.18,
+   62.7,
+   9.2
+  ],
+  "min": [
+   -8.18,
+   0.0,
+   -8.18
+  ],
+  "path": "res://gta/generated/models/buildings/off_d.glb",
+  "tris": 4004
+ },
+ "off_e": {
+  "cat": "buildings",
+  "max": [
+   15.18,
+   89.9,
+   16.2
+  ],
+  "min": [
+   -15.18,
+   0.0,
+   -15.18
+  ],
+  "path": "res://gta/generated/models/buildings/off_e.glb",
+  "tris": 12380
+ },
+ "off_f": {
+  "cat": "buildings",
+  "max": [
+   19.305,
+   26.15,
+   9.305
+  ],
+  "min": [
+   -19.305,
+   0.0,
+   -9.305
+  ],
+  "path": "res://gta/generated/models/buildings/off_f.glb",
+  "tris": 4072
+ },
+ "off_g": {
+  "cat": "buildings",
+  "max": [
+   9.305,
+   34.4,
+   9.305
+  ],
+  "min": [
+   -9.305,
+   0.0,
+   -9.305
+  ],
+  "path": "res://gta/generated/models/buildings/off_g.glb",
+  "tris": 3328
+ },
+ "pallet": {
+  "cat": "props",
+  "max": [
+   0.6,
+   0.135,
+   0.55
+  ],
+  "min": [
+   -0.6,
+   0.0,
+   -0.55
+  ],
+  "path": "res://gta/generated/models/props/pallet.glb",
+  "tris": 96
+ },
+ "palm": {
+  "cat": "nature",
+  "max": [
+   4.804,
+   8.542,
+   3.204
+  ],
+  "min": [
+   -1.604,
+   -0.023,
+   -3.204
+  ],
+  "path": "res://gta/generated/models/nature/palm.glb",
+  "tris": 268
+ },
+ "parking": {
+  "cat": "buildings",
+  "max": [
+   18.045,
+   13.2,
+   15.3
+  ],
+  "min": [
+   -18.045,
+   0.0,
+   -15.045
+  ],
+  "path": "res://gta/generated/models/buildings/parking.glb",
+  "tris": 1500
+ },
+ "parking_meter": {
+  "cat": "props",
+  "max": [
+   0.08,
+   1.36,
+   0.07
+  ],
+  "min": [
+   -0.08,
+   0.0,
+   -0.06
+  ],
+  "path": "res://gta/generated/models/props/parking_meter.glb",
+  "tris": 40
+ },
+ "pickup": {
+  "cat": "vehicles",
+  "max": [
+   1.13,
+   1.8,
+   2.75
+  ],
+  "min": [
+   -1.13,
+   -0.088,
+   -2.765
+  ],
+  "path": "res://gta/generated/models/vehicles/pickup.glb",
+  "tris": 3488
+ },
+ "picnic_table": {
+  "cat": "props",
+  "max": [
+   0.9,
+   0.78,
+   0.84
+  ],
+  "min": [
+   -0.9,
+   0.014,
+   -0.84
+  ],
+  "path": "res://gta/generated/models/props/picnic_table.glb",
+  "tris": 108
+ },
+ "pier": {
+  "cat": "props",
+  "max": [
+   2.0,
+   1.79,
+   4.0
+  ],
+  "min": [
+   -2.0,
+   -7.5,
+   -4.0
+  ],
+  "path": "res://gta/generated/models/props/pier.glb",
+  "tris": 316
+ },
+ "pine": {
+  "cat": "nature",
+  "max": [
+   2.1,
+   8.9,
+   2.047
+  ],
+  "min": [
+   -1.892,
+   0.0,
+   -2.047
+  ],
+  "path": "res://gta/generated/models/nature/pine.glb",
+  "tris": 116
+ },
+ "pk_ammo": {
+  "cat": "props",
+  "max": [
+   0.19,
+   0.285,
+   0.11
+  ],
+  "min": [
+   -0.19,
+   0.0,
+   -0.11
+  ],
+  "path": "res://gta/generated/models/props/pk_ammo.glb",
+  "tris": 48
+ },
+ "pk_armor": {
+  "cat": "props",
+  "max": [
+   0.21,
+   0.55,
+   0.115
+  ],
+  "min": [
+   -0.21,
+   0.02,
+   -0.1
+  ],
+  "path": "res://gta/generated/models/props/pk_armor.glb",
+  "tris": 48
+ },
+ "pk_cash": {
+  "cat": "props",
+  "max": [
+   0.191,
+   0.222,
+   0.17
+  ],
+  "min": [
+   -0.191,
+   0.018,
+   -0.17
+  ],
+  "path": "res://gta/generated/models/props/pk_cash.glb",
+  "tris": 72
+ },
+ "pk_health": {
+  "cat": "props",
+  "max": [
+   0.21,
+   0.36,
+   0.11
+  ],
+  "min": [
+   -0.21,
+   0.0,
+   -0.1
+  ],
+  "path": "res://gta/generated/models/props/pk_health.glb",
+  "tris": 48
+ },
+ "pk_parachute": {
+  "cat": "props",
+  "max": [
+   0.18,
+   0.4,
+   0.11
+  ],
+  "min": [
+   -0.18,
+   0.0,
+   -0.1
+  ],
+  "path": "res://gta/generated/models/props/pk_parachute.glb",
+  "tris": 36
+ },
+ "pk_scuba": {
+  "cat": "props",
+  "max": [
+   0.1,
+   0.59,
+   0.15
+  ],
+  "min": [
+   -0.1,
+   0.01,
+   -0.09
+  ],
+  "path": "res://gta/generated/models/props/pk_scuba.glb",
+  "tris": 60
+ },
+ "pk_weapon": {
+  "cat": "props",
+  "max": [
+   0.46,
+   0.31,
+   0.2
+  ],
+  "min": [
+   -0.46,
+   0.0,
+   -0.19
+  ],
+  "path": "res://gta/generated/models/props/pk_weapon.glb",
+  "tris": 60
+ },
+ "plane": {
+  "cat": "vehicles",
+  "max": [
+   5.23,
+   3.1,
+   4.6
+  ],
+  "min": [
+   -5.23,
+   0.007,
+   -3.95
+  ],
+  "path": "res://gta/generated/models/vehicles/plane.glb",
+  "tris": 1616
+ },
+ "planter": {
+  "cat": "props",
+  "max": [
+   0.8,
+   1.48,
+   0.8
+  ],
+  "min": [
+   -0.8,
+   0.0,
+   -0.8
+  ],
+  "path": "res://gta/generated/models/props/planter.glb",
+  "tris": 64
+ },
+ "police": {
+  "cat": "vehicles",
+  "max": [
+   1.088,
+   1.615,
+   2.48
+  ],
+  "min": [
+   -1.088,
+   -0.075,
+   -2.495
+  ],
+  "path": "res://gta/generated/models/vehicles/police.glb",
+  "tris": 2352
+ },
+ "police_station": {
+  "cat": "buildings",
+  "max": [
+   15.16,
+   22.7,
+   13.52
+  ],
+  "min": [
+   -15.16,
+   0.0,
+   -10.16
+  ],
+  "path": "res://gta/generated/models/buildings/police_station.glb",
+  "tris": 3944
+ },
+ "policeboat": {
+  "cat": "vehicles",
+  "max": [
+   1.22,
+   1.735,
+   3.67
+  ],
+  "min": [
+   -1.22,
+   -0.399,
+   -3.5
+  ],
+  "path": "res://gta/generated/models/vehicles/policeboat.glb",
+  "tris": 470
+ },
+ "radio_tower": {
+  "cat": "props",
+  "max": [
+   2.113,
+   40.15,
+   1.844
+  ],
+  "min": [
+   -1.115,
+   -0.008,
+   -1.845
+  ],
+  "path": "res://gta/generated/models/props/radio_tower.glb",
+  "tris": 152
+ },
+ "rail_beam": {
+  "cat": "props",
+  "max": [
+   0.45,
+   0.05,
+   5.0
+  ],
+  "min": [
+   -0.45,
+   -0.7,
+   -5.0
+  ],
+  "path": "res://gta/generated/models/props/rail_beam.glb",
+  "tris": 24
+ },
+ "rail_pillar": {
+  "cat": "props",
+  "max": [
+   1.2,
+   6.45,
+   0.8
+  ],
+  "min": [
+   -1.2,
+   0.0,
+   -0.8
+  ],
+  "path": "res://gta/generated/models/props/rail_pillar.glb",
+  "tris": 36
+ },
+ "ramp": {
+  "cat": "props",
+  "max": [
+   2.1,
+   2.4,
+   4.1
+  ],
+  "min": [
+   -2.1,
+   0.0,
+   -4.1
+  ],
+  "path": "res://gta/generated/models/props/ramp.glb",
+  "tris": 68
+ },
+ "rock_a": {
+  "cat": "nature",
+  "max": [
+   1.164,
+   0.996,
+   0.898
+  ],
+  "min": [
+   -0.925,
+   -0.1,
+   -0.807
+  ],
+  "path": "res://gta/generated/models/nature/rock_a.glb",
+  "tris": 20
+ },
+ "rock_b": {
+  "cat": "nature",
+  "max": [
+   1.898,
+   1.655,
+   1.559
+  ],
+  "min": [
+   -1.551,
+   -0.1,
+   -1.66
+  ],
+  "path": "res://gta/generated/models/nature/rock_b.glb",
+  "tris": 20
+ },
+ "rock_c": {
+  "cat": "nature",
+  "max": [
+   0.616,
+   0.503,
+   0.382
+  ],
+  "min": [
+   -0.532,
+   -0.1,
+   -0.425
+  ],
+  "path": "res://gta/generated/models/nature/rock_c.glb",
+  "tris": 20
+ },
+ "safehouse": {
+  "cat": "buildings",
+  "max": [
+   13.1,
+   9.3,
+   7.7
+  ],
+  "min": [
+   -7.0,
+   0.0,
+   -6.0
+  ],
+  "path": "res://gta/generated/models/buildings/safehouse.glb",
+  "tris": 688
+ },
+ "seaweed": {
+  "cat": "nature",
+  "max": [
+   0.548,
+   2.606,
+   0.233
+  ],
+  "min": [
+   -0.35,
+   -0.024,
+   -0.35
+  ],
+  "path": "res://gta/generated/models/nature/seaweed.glb",
+  "tris": 64
+ },
+ "sedan": {
+  "cat": "vehicles",
+  "max": [
+   1.068,
+   1.44,
+   2.4
+  ],
+  "min": [
+   -1.068,
+   -0.073,
+   -2.415
+  ],
+  "path": "res://gta/generated/models/vehicles/sedan.glb",
+  "tris": 2620
+ },
+ "shop_a": {
+  "cat": "buildings",
+  "max": [
+   18.2,
+   7.2,
+   8.305
+  ],
+  "min": [
+   -18.2,
+   0.0,
+   -7.1
+  ],
+  "path": "res://gta/generated/models/buildings/shop_a.glb",
+  "tris": 3168
+ },
+ "shop_b": {
+  "cat": "buildings",
+  "max": [
+   18.2,
+   10.6,
+   8.305
+  ],
+  "min": [
+   -18.2,
+   0.0,
+   -7.16
+  ],
+  "path": "res://gta/generated/models/buildings/shop_b.glb",
+  "tris": 4856
+ },
+ "shop_barber": {
+  "cat": "buildings",
+  "max": [
+   8.2,
+   7.2,
+   8.305
+  ],
+  "min": [
+   -8.2,
+   0.0,
+   -7.1
+  ],
+  "path": "res://gta/generated/models/buildings/shop_barber.glb",
+  "tris": 1964
+ },
+ "shop_c": {
+  "cat": "buildings",
+  "max": [
+   8.2,
+   7.2,
+   8.305
+  ],
+  "min": [
+   -8.2,
+   0.0,
+   -7.1
+  ],
+  "path": "res://gta/generated/models/buildings/shop_c.glb",
+  "tris": 1044
+ },
+ "shop_clothing": {
+  "cat": "buildings",
+  "max": [
+   8.2,
+   7.2,
+   8.305
+  ],
+  "min": [
+   -8.2,
+   0.0,
+   -7.1
+  ],
+  "path": "res://gta/generated/models/buildings/shop_clothing.glb",
+  "tris": 1288
+ },
+ "shop_d": {
+  "cat": "buildings",
+  "max": [
+   18.2,
+   10.6,
+   9.305
+  ],
+  "min": [
+   -18.2,
+   0.0,
+   -8.16
+  ],
+  "path": "res://gta/generated/models/buildings/shop_d.glb",
+  "tris": 4160
+ },
+ "shop_food": {
+  "cat": "buildings",
+  "max": [
+   8.2,
+   7.2,
+   8.305
+  ],
+  "min": [
+   -8.2,
+   0.0,
+   -7.1
+  ],
+  "path": "res://gta/generated/models/buildings/shop_food.glb",
+  "tris": 1792
+ },
+ "shop_gun": {
+  "cat": "buildings",
+  "max": [
+   8.15,
+   6.05,
+   6.92
+  ],
+  "min": [
+   -8.15,
+   0.0,
+   -6.65
+  ],
+  "path": "res://gta/generated/models/buildings/shop_gun.glb",
+  "tris": 5332
+ },
+ "sign_parking": {
+  "cat": "props",
+  "max": [
+   0.3,
+   2.8,
+   0.08
+  ],
+  "min": [
+   -0.3,
+   0.0,
+   -0.033
+  ],
+  "path": "res://gta/generated/models/props/sign_parking.glb",
+  "tris": 52
+ },
+ "sign_speed": {
+  "cat": "props",
+  "max": [
+   0.36,
+   2.86,
+   0.09
+  ],
+  "min": [
+   -0.36,
+   0.0,
+   -0.033
+  ],
+  "path": "res://gta/generated/models/props/sign_speed.glb",
+  "tris": 116
+ },
+ "sign_stop": {
+  "cat": "props",
+  "max": [
+   0.351,
+   2.851,
+   0.08
+  ],
+  "min": [
+   -0.351,
+   0.0,
+   -0.033
+  ],
+  "path": "res://gta/generated/models/props/sign_stop.glb",
+  "tris": 56
+ },
+ "sign_street": {
+  "cat": "props",
+  "max": [
+   0.55,
+   2.72,
+   0.075
+  ],
+  "min": [
+   -0.55,
+   0.0,
+   -0.033
+  ],
+  "path": "res://gta/generated/models/props/sign_street.glb",
+  "tris": 40
+ },
+ "speedboat": {
+  "cat": "vehicles",
+  "max": [
+   1.22,
+   1.52,
+   3.67
+  ],
+  "min": [
+   -1.22,
+   -0.399,
+   -3.5
+  ],
+  "path": "res://gta/generated/models/vehicles/speedboat.glb",
+  "tris": 410
+ },
+ "sports": {
+  "cat": "vehicles",
+  "max": [
+   1.088,
+   1.16,
+   2.3
+  ],
+  "min": [
+   -1.088,
+   -0.073,
+   -2.315
+  ],
+  "path": "res://gta/generated/models/vehicles/sports.glb",
+  "tris": 2964
+ },
+ "stall": {
+  "cat": "props",
+  "max": [
+   1.4,
+   2.62,
+   0.84
+  ],
+  "min": [
+   -1.4,
+   0.0,
+   -0.8
+  ],
+  "path": "res://gta/generated/models/props/stall.glb",
+  "tris": 144
+ },
+ "station": {
+  "cat": "buildings",
+  "max": [
+   20.729,
+   9.325,
+   2.62
+  ],
+  "min": [
+   -11.0,
+   0.0,
+   -3.0
+  ],
+  "path": "res://gta/generated/models/buildings/station.glb",
+  "tris": 1136
+ },
+ "statue": {
+  "cat": "props",
+  "max": [
+   1.3,
+   4.65,
+   1.1
+  ],
+  "min": [
+   -1.1,
+   0.0,
+   -1.1
+  ],
+  "path": "res://gta/generated/models/props/statue.glb",
+  "tris": 116
+ },
+ "street_clock": {
+  "cat": "props",
+  "max": [
+   0.55,
+   4.45,
+   0.18
+  ],
+  "min": [
+   -0.55,
+   0.0,
+   -0.16
+  ],
+  "path": "res://gta/generated/models/props/street_clock.glb",
+  "tris": 132
+ },
+ "street_lamp": {
+  "cat": "props",
+  "max": [
+   0.2,
+   7.388,
+   2.6
+  ],
+  "min": [
+   -0.2,
+   0.0,
+   -0.2
+  ],
+  "path": "res://gta/generated/models/props/street_lamp.glb",
+  "tris": 92
+ },
+ "suv": {
+  "cat": "vehicles",
+  "max": [
+   1.13,
+   1.78,
+   2.5
+  ],
+  "min": [
+   -1.13,
+   -0.088,
+   -2.515
+  ],
+  "path": "res://gta/generated/models/vehicles/suv.glb",
+  "tris": 3548
+ },
+ "swat": {
+  "cat": "vehicles",
+  "max": [
+   1.298,
+   2.695,
+   3.05
+  ],
+  "min": [
+   -1.298,
+   -0.101,
+   -3.14
+  ],
+  "path": "res://gta/generated/models/vehicles/swat.glb",
+  "tris": 3324
+ },
+ "target": {
+  "cat": "props",
+  "max": [
+   0.45,
+   2.0,
+   0.25
+  ],
+  "min": [
+   -0.45,
+   0.0,
+   -0.25
+  ],
+  "path": "res://gta/generated/models/props/target.glb",
+  "tris": 204
+ },
+ "taxi": {
+  "cat": "vehicles",
+  "max": [
+   1.068,
+   1.7,
+   2.35
+  ],
+  "min": [
+   -1.068,
+   -0.073,
+   -2.365
+  ],
+  "path": "res://gta/generated/models/vehicles/taxi.glb",
+  "tris": 2408
+ },
+ "terminal": {
+  "cat": "buildings",
+  "max": [
+   21.5,
+   9.937,
+   8.75
+  ],
+  "min": [
+   -21.5,
+   0.0,
+   -8.5
+  ],
+  "path": "res://gta/generated/models/buildings/terminal.glb",
+  "tris": 2912
+ },
+ "traffic_light": {
+  "cat": "props",
+  "max": [
+   0.22,
+   6.0,
+   0.225
+  ],
+  "min": [
+   -3.85,
+   0.0,
+   -0.22
+  ],
+  "path": "res://gta/generated/models/props/traffic_light.glb",
+  "tris": 272
+ },
+ "train_car": {
+  "cat": "props",
+  "max": [
+   1.395,
+   3.0,
+   6.0
+  ],
+  "min": [
+   -1.395,
+   -0.15,
+   -6.0
+  ],
+  "path": "res://gta/generated/models/props/train_car.glb",
+  "tris": 152
+ },
+ "tree_a": {
+  "cat": "nature",
+  "max": [
+   2.455,
+   6.988,
+   2.267
+  ],
+  "min": [
+   -2.306,
+   -0.008,
+   -2.339
+  ],
+  "path": "res://gta/generated/models/nature/tree_a.glb",
+  "tris": 152
+ },
+ "tree_b": {
+  "cat": "nature",
+  "max": [
+   2.902,
+   9.137,
+   2.981
+  ],
+  "min": [
+   -3.207,
+   -0.006,
+   -3.102
+  ],
+  "path": "res://gta/generated/models/nature/tree_b.glb",
+  "tris": 152
+ },
+ "tree_c": {
+  "cat": "nature",
+  "max": [
+   1.821,
+   5.375,
+   1.8
+  ],
+  "min": [
+   -1.743,
+   -0.011,
+   -1.734
+  ],
+  "path": "res://gta/generated/models/nature/tree_c.glb",
+  "tris": 152
+ },
+ "utility_box": {
+  "cat": "props",
+  "max": [
+   0.5,
+   1.4,
+   0.3
+  ],
+  "min": [
+   -0.5,
+   0.0,
+   -0.3
+  ],
+  "path": "res://gta/generated/models/props/utility_box.glb",
+  "tris": 36
+ },
+ "van": {
+  "cat": "vehicles",
+  "max": [
+   1.179,
+   2.2,
+   2.7
+  ],
+  "min": [
+   -1.179,
+   -0.081,
+   -2.715
+  ],
+  "path": "res://gta/generated/models/vehicles/van.glb",
+  "tris": 2524
+ },
+ "vending": {
+  "cat": "props",
+  "max": [
+   0.5,
+   1.9,
+   0.42
+  ],
+  "min": [
+   -0.5,
+   0.0,
+   -0.4
+  ],
+  "path": "res://gta/generated/models/props/vending.glb",
+  "tris": 48
+ },
+ "w_assault_rifle": {
+  "cat": "weapons",
+  "max": [
+   0.055,
+   0.175,
+   0.335
+  ],
+  "min": [
+   -0.03,
+   -0.175,
+   -0.92
+  ],
+  "path": "res://gta/generated/models/weapons/w_assault_rifle.glb",
+  "tris": 324
+ },
+ "w_auto_shotgun": {
+  "cat": "weapons",
+  "max": [
+   0.031,
+   0.17,
+   0.39
+  ],
+  "min": [
+   -0.031,
+   -0.109,
+   -0.8
+  ],
+  "path": "res://gta/generated/models/weapons/w_auto_shotgun.glb",
+  "tris": 284
+ },
+ "w_bat": {
+  "cat": "weapons",
+  "max": [
+   0.031,
+   0.031,
+   0.113
+  ],
+  "min": [
+   -0.031,
+   -0.031,
+   -0.72
+  ],
+  "path": "res://gta/generated/models/weapons/w_bat.glb",
+  "tris": 76
+ },
+ "w_carbine": {
+  "cat": "weapons",
+  "max": [
+   0.055,
+   0.175,
+   0.335
+  ],
+  "min": [
+   -0.03,
+   -0.175,
+   -0.86
+  ],
+  "path": "res://gta/generated/models/weapons/w_carbine.glb",
+  "tris": 336
+ },
+ "w_crowbar": {
+  "cat": "weapons",
+  "max": [
+   0.015,
+   0.085,
+   0.145
+  ],
+  "min": [
+   -0.015,
+   -0.014,
+   -0.643
+  ],
+  "path": "res://gta/generated/models/weapons/w_crowbar.glb",
+  "tris": 64
+ },
+ "w_grenade": {
+  "cat": "weapons",
+  "max": [
+   0.04,
+   0.085,
+   0.038
+  ],
+  "min": [
+   -0.046,
+   -0.054,
+   -0.038
+  ],
+  "path": "res://gta/generated/models/weapons/w_grenade.glb",
+  "tris": 72
+ },
+ "w_grenade_launcher": {
+  "cat": "weapons",
+  "max": [
+   0.055,
+   0.16,
+   0.345
+  ],
+  "min": [
+   -0.055,
+   -0.131,
+   -0.5
+  ],
+  "path": "res://gta/generated/models/weapons/w_grenade_launcher.glb",
+  "tris": 156
+ },
+ "w_heavy_pistol": {
+  "cat": "weapons",
+  "max": [
+   0.03,
+   0.145,
+   0.051
+  ],
+  "min": [
+   -0.03,
+   -0.114,
+   -0.29
+  ],
+  "path": "res://gta/generated/models/weapons/w_heavy_pistol.glb",
+  "tris": 204
+ },
+ "w_knife": {
+  "cat": "weapons",
+  "max": [
+   0.013,
+   0.03,
+   0.055
+  ],
+  "min": [
+   -0.013,
+   -0.03,
+   -0.255
+  ],
+  "path": "res://gta/generated/models/weapons/w_knife.glb",
+  "tris": 40
+ },
+ "w_marksman": {
+  "cat": "weapons",
+  "max": [
+   0.055,
+   0.16,
+   0.335
+  ],
+  "min": [
+   -0.022,
+   -0.155,
+   -1.14
+  ],
+  "path": "res://gta/generated/models/weapons/w_marksman.glb",
+  "tris": 296
+ },
+ "w_molotov": {
+  "cat": "weapons",
+  "max": [
+   0.035,
+   0.236,
+   0.035
+  ],
+  "min": [
+   -0.035,
+   -0.065,
+   -0.035
+  ],
+  "path": "res://gta/generated/models/weapons/w_molotov.glb",
+  "tris": 88
+ },
+ "w_pistol": {
+  "cat": "weapons",
+  "max": [
+   0.02,
+   0.105,
+   0.056
+  ],
+  "min": [
+   -0.02,
+   -0.164,
+   -0.305
+  ],
+  "path": "res://gta/generated/models/weapons/w_pistol.glb",
+  "tris": 180
+ },
+ "w_rocket": {
+  "cat": "weapons",
+  "max": [
+   0.09,
+   0.09,
+   0.18
+  ],
+  "min": [
+   -0.09,
+   -0.09,
+   -0.29
+  ],
+  "path": "res://gta/generated/models/weapons/w_rocket.glb",
+  "tris": 104
+ },
+ "w_rocket_launcher": {
+  "cat": "weapons",
+  "max": [
+   0.075,
+   0.175,
+   0.49
+  ],
+  "min": [
+   -0.07,
+   -0.109,
+   -0.69
+  ],
+  "path": "res://gta/generated/models/weapons/w_rocket_launcher.glb",
+  "tris": 172
+ },
+ "w_shotgun": {
+  "cat": "weapons",
+  "max": [
+   0.05,
+   0.14,
+   0.353
+  ],
+  "min": [
+   -0.024,
+   -0.076,
+   -0.74
+  ],
+  "path": "res://gta/generated/models/weapons/w_shotgun.glb",
+  "tris": 220
+ },
+ "w_smg": {
+  "cat": "weapons",
+  "max": [
+   0.02,
+   0.16,
+   0.207
+  ],
+  "min": [
+   -0.02,
+   -0.205,
+   -0.47
+  ],
+  "path": "res://gta/generated/models/weapons/w_smg.glb",
+  "tris": 248
+ },
+ "w_sniper": {
+  "cat": "weapons",
+  "max": [
+   0.104,
+   0.184,
+   0.41
+  ],
+  "min": [
+   -0.104,
+   -0.162,
+   -1.3
+  ],
+  "path": "res://gta/generated/models/weapons/w_sniper.glb",
+  "tris": 236
+ },
+ "wall_low": {
+  "cat": "props",
+  "max": [
+   1.55,
+   0.99,
+   0.25
+  ],
+  "min": [
+   -1.55,
+   0.0,
+   -0.25
+  ],
+  "path": "res://gta/generated/models/props/wall_low.glb",
+  "tris": 24
+ },
+ "water_tower": {
+  "cat": "props",
+  "max": [
+   4.3,
+   20.3,
+   4.3
+  ],
+  "min": [
+   -4.3,
+   -0.011,
+   -4.3
+  ],
+  "path": "res://gta/generated/models/props/water_tower.glb",
+  "tris": 216
+ },
+ "wh_a": {
+  "cat": "buildings",
+  "max": [
+   18.3,
+   13.54,
+   12.4
+  ],
+  "min": [
+   -18.3,
+   0.0,
+   -12.4
+  ],
+  "path": "res://gta/generated/models/buildings/wh_a.glb",
+  "tris": 4376
+ },
+ "wh_b": {
+  "cat": "buildings",
+  "max": [
+   15.3,
+   10.26,
+   8.4
+  ],
+  "min": [
+   -15.3,
+   0.0,
+   -8.4
+  ],
+  "path": "res://gta/generated/models/buildings/wh_b.glb",
+  "tris": 1324
+ },
+ "wh_c": {
+  "cat": "buildings",
+  "max": [
+   18.3,
+   21.45,
+   18.4
+  ],
+  "min": [
+   -18.3,
+   0.0,
+   -18.4
+  ],
+  "path": "res://gta/generated/models/buildings/wh_c.glb",
+  "tris": 4232
+ },
+ "wh_d": {
+  "cat": "buildings",
+  "max": [
+   8.3,
+   9.26,
+   8.4
+  ],
+  "min": [
+   -8.3,
+   0.0,
+   -8.4
+  ],
+  "path": "res://gta/generated/models/buildings/wh_d.glb",
+  "tris": 1000
+ },
+ "wheels_lib": {
+  "cat": "vehicles",
+  "max": [
+   6.95,
+   2.06,
+   1.051
+  ],
+  "min": [
+   -0.5,
+   -0.06,
+   -1.051
+  ],
+  "path": "res://gta/generated/models/vehicles/wheels_lib.glb",
+  "tris": 2144
+ },
+ "windsock": {
+  "cat": "props",
+  "max": [
+   1.8,
+   5.2,
+   0.26
+  ],
+  "min": [
+   -0.04,
+   0.0,
+   -0.26
+  ],
+  "path": "res://gta/generated/models/props/windsock.glb",
+  "tris": 56
+ },
+ "wreck": {
+  "cat": "props",
+  "max": [
+   4.062,
+   5.871,
+   5.0
+  ],
+  "min": [
+   -4.084,
+   -0.266,
+   -7.0
+  ],
+  "path": "res://gta/generated/models/props/wreck.glb",
+  "tris": 130
+ }
+}

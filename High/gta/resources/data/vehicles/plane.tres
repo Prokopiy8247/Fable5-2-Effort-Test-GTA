@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="VehicleDef" format=3]
+
+[ext_resource type="Script" path="res://gta/code/vehicles/vehicle_def.gd" id="1_04jqt"]
+
+[resource]
+script = ExtResource("1_04jqt")
+id = "plane"
+name = "Kestrel"
+kind = "plane"
+mass = 1100.0
+engine = 13000.0
+max_speed = 62.0
+brake = 6000.0
+seats = 4
+health = 900.0
+price = 150000
+takeoff_speed = 26.0
