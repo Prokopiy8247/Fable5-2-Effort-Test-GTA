@@ -1,0 +1,7 @@
+.godot/
+*.import.bak
+*.blend1
+*.log
+build/
+export/
+.fable-5.2-gta-runs/*/tmp/

@@ -1,0 +1,1 @@
+2026-11-09T22:01:47.443+01:00 (segment 2: resumed after Blender MCP registered; segment 1 ended blocked ~21:50)
