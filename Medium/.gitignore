@@ -1,0 +1,9 @@
+﻿.godot/
+*.blend1
+*.blend2
+*.log
+*.tmp
+build/
+export/
+.fable-5.2-gta-runs/*/backups/
+screenshots/tmp/
