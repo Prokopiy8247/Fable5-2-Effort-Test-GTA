@@ -1,0 +1,1951 @@
+{
+ "author": "street_furniture",
+ "props": [
+  {
+   "id": "traffic_light",
+   "file": "traffic_light.glb",
+   "category": "signal",
+   "size": [
+    5.571,
+    6.92,
+    0.911
+   ],
+   "physics": "static",
+   "mass": 340.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    2.516,
+    3.46,
+    -0.114
+   ],
+   "tris": 812,
+   "children": [
+    "Lamp_Green",
+    "Lamp_Red",
+    "Lamp_Yellow",
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Pole at the kerb, mast arm reaches 5.3 m toward +X (Godot +X), lamps face +Y (Godot -Z). Lamp_Red/Lamp_Yellow/Lamp_Green each hold the arm lens and the pole repeater lens; node origin = arm lens centre. Lens materials M_Signal_* are unlit (dark) by default."
+  },
+  {
+   "id": "traffic_light_ped",
+   "file": "traffic_light_ped.glb",
+   "category": "signal",
+   "size": [
+    0.34,
+    2.955,
+    0.55
+   ],
+   "physics": "breakable",
+   "mass": 45.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.478,
+    -0.145
+   ],
+   "tris": 536,
+   "children": [
+    "Lamp_Stop",
+    "Lamp_Walk",
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Pedestrian signal on a post, faces +Y. Lamp_Stop (upper, standing figure) and Lamp_Walk (lower, walking figure) are separate unlit lens meshes; node origin = lens centre."
+  },
+  {
+   "id": "street_lamp_a",
+   "file": "street_lamp_a.glb",
+   "category": "lamp",
+   "size": [
+    0.54,
+    8.82,
+    3.55
+   ],
+   "physics": "breakable",
+   "mass": 180.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    4.41,
+    -1.505
+   ],
+   "tris": 368,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Light"
+   ],
+   "vis_range": 260,
+   "notes": "Tall road lamp; the arm reaches 3.3 m toward +Y (Godot -Z, over the road). Lens = material M_LampGlow; marker 'Light' just below the lens."
+  },
+  {
+   "id": "street_lamp_b",
+   "file": "street_lamp_b.glb",
+   "category": "lamp",
+   "size": [
+    0.64,
+    4.64,
+    0.609
+   ],
+   "physics": "breakable",
+   "mass": 70.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    2.32,
+    -0.0
+   ],
+   "tris": 494,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Light"
+   ],
+   "vis_range": 260,
+   "notes": "Promenade / park lamp, 4.6 m. Lantern lens = M_LampGlow; marker 'Light' at the lens centre."
+  },
+  {
+   "id": "wall_lamp",
+   "file": "wall_lamp.glb",
+   "category": "lamp",
+   "size": [
+    0.4,
+    0.422,
+    0.75
+   ],
+   "physics": "static",
+   "mass": 4.0,
+   "surface": "metal",
+   "anchor": "wall",
+   "center": [
+    0.0,
+    0.051,
+    -0.375
+   ],
+   "tris": 324,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Light"
+   ],
+   "vis_range": 70,
+   "notes": "Wall-mounted gooseneck lamp. Origin = centre of the wall plate (wall plane y = 0), lamp hangs 0.56 m out toward +Y. Lens = M_LampGlow; marker 'Light' under the shade."
+  },
+  {
+   "id": "sign_stop",
+   "file": "sign_stop.glb",
+   "category": "sign",
+   "size": [
+    0.776,
+    2.95,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 14.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.475,
+    -0.0
+   ],
+   "tris": 248,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Red octagon with a white raised-hand pictogram."
+  },
+  {
+   "id": "sign_yield",
+   "file": "sign_yield.glb",
+   "category": "sign",
+   "size": [
+    0.901,
+    2.95,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 12.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.475,
+    -0.0
+   ],
+   "tris": 104,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Inverted white triangle with a red border."
+  },
+  {
+   "id": "sign_speed",
+   "file": "sign_speed.glb",
+   "category": "sign",
+   "size": [
+    0.8,
+    2.95,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 12.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.475,
+    -0.0
+   ],
+   "tris": 380,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Round speed-limit sign, '40' built from geometry."
+  },
+  {
+   "id": "sign_oneway",
+   "file": "sign_oneway.glb",
+   "category": "sign",
+   "size": [
+    0.98,
+    2.975,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 11.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.488,
+    -0.0
+   ],
+   "tris": 156,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Double-sided blade on top of the post; the arrow points toward local +X (Godot +X) on both faces."
+  },
+  {
+   "id": "sign_parking",
+   "file": "sign_parking.glb",
+   "category": "sign",
+   "size": [
+    0.62,
+    2.95,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 12.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.475,
+    -0.0
+   ],
+   "tris": 164,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Blue square with a white geometric 'P'."
+  },
+  {
+   "id": "sign_street",
+   "file": "sign_street.glb",
+   "category": "sign",
+   "size": [
+    0.96,
+    3.5,
+    0.96
+   ],
+   "physics": "breakable",
+   "mass": 13.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.75,
+    -0.0
+   ],
+   "tris": 406,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Two crossed street-name blades (one along X, one along Y) with abstract name blocks."
+  },
+  {
+   "id": "sign_noentry",
+   "file": "sign_noentry.glb",
+   "category": "sign",
+   "size": [
+    0.8,
+    2.95,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 12.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.475,
+    -0.0
+   ],
+   "tris": 272,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Red disc with a white bar."
+  },
+  {
+   "id": "barrier_concrete",
+   "file": "barrier_concrete.glb",
+   "category": "barrier",
+   "size": [
+    2.98,
+    0.851,
+    0.615
+   ],
+   "physics": "static",
+   "mass": 1800.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.426,
+    -0.0
+   ],
+   "tris": 212,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 3.0,
+   "notes": "Jersey barrier, 3.0 m long along X, 0.84 m high (cover). Tiles end to end at a 3.0 m pitch."
+  },
+  {
+   "id": "barrier_plastic",
+   "file": "barrier_plastic.glb",
+   "category": "barrier",
+   "size": [
+    2.14,
+    0.933,
+    0.55
+   ],
+   "physics": "dynamic",
+   "mass": 60.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.466,
+    -0.0
+   ],
+   "tris": 304,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "tile": 2.0,
+   "notes": "Water-filled plastic barrier (orange with white panels), 2.0 m pitch along X."
+  },
+  {
+   "id": "barrier_fence",
+   "file": "barrier_fence.glb",
+   "category": "barrier",
+   "size": [
+    2.31,
+    1.102,
+    0.62
+   ],
+   "physics": "dynamic",
+   "mass": 18.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.005,
+    0.551,
+    -0.0
+   ],
+   "tris": 468,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "tile": 2.3,
+   "notes": "Crowd-control barrier, 2.2 m wide tube frame with flat feet."
+  },
+  {
+   "id": "roadblock_police",
+   "file": "roadblock_police.glb",
+   "category": "barrier",
+   "size": [
+    2.6,
+    1.211,
+    0.743
+   ],
+   "physics": "dynamic",
+   "mass": 22.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.61,
+    -0.0
+   ],
+   "tris": 628,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Police A-frame barricade, 2.6 m wide, blue / white banded boards on both sides, two blue beacons (material P_SirenBlue, mildly emissive)."
+  },
+  {
+   "id": "cone",
+   "file": "cone.glb",
+   "category": "barrier",
+   "size": [
+    0.4,
+    0.75,
+    0.4
+   ],
+   "physics": "dynamic",
+   "mass": 3.5,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.375,
+    -0.0
+   ],
+   "tris": 200,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Traffic cone, 0.75 m."
+  },
+  {
+   "id": "delineator",
+   "file": "delineator.glb",
+   "category": "barrier",
+   "size": [
+    0.3,
+    1.1,
+    0.3
+   ],
+   "physics": "dynamic",
+   "mass": 4.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.55,
+    -0.0
+   ],
+   "tris": 182,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Flexible lane delineator post, 1.1 m."
+  },
+  {
+   "id": "bollard",
+   "file": "bollard.glb",
+   "category": "barrier",
+   "size": [
+    0.27,
+    0.96,
+    0.257
+   ],
+   "physics": "static",
+   "mass": 60.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.48,
+    -0.0
+   ],
+   "tris": 178,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Steel street bollard with a yellow band, 0.96 m."
+  },
+  {
+   "id": "bollard_light",
+   "file": "bollard_light.glb",
+   "category": "barrier",
+   "size": [
+    0.25,
+    0.895,
+    0.238
+   ],
+   "physics": "static",
+   "mass": 25.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.447,
+    -0.0
+   ],
+   "tris": 334,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Light"
+   ],
+   "vis_range": 70,
+   "notes": "Illuminated path bollard, 0.9 m. Lit section = M_LampGlow; marker 'Light' at its centre."
+  },
+  {
+   "id": "curb_straight",
+   "file": "curb_straight.glb",
+   "category": "road",
+   "size": [
+    3.992,
+    0.15,
+    0.3
+   ],
+   "physics": "static",
+   "mass": 320.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.075,
+    -0.0
+   ],
+   "tris": 192,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Kerb, 4 stones = 4.0 m along X, 0.30 deep, 0.15 high; chamfered road face toward +Y."
+  },
+  {
+   "id": "curb_corner",
+   "file": "curb_corner.glb",
+   "category": "road",
+   "size": [
+    1.144,
+    0.15,
+    1.144
+   ],
+   "physics": "static",
+   "mass": 130.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.577,
+    0.075,
+    -0.577
+   ],
+   "tris": 228,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Quarter-circle kerb, centre-line radius 1.0 m. ORIGIN = centre of the arc (not the bbox centre); the arc runs from (1,0) to (0,1) in Blender XY = Godot (1,0,0) to (0,0,-1). Road on the outside."
+  },
+  {
+   "id": "speed_bump",
+   "file": "speed_bump.glb",
+   "category": "road",
+   "size": [
+    3.0,
+    0.072,
+    0.42
+   ],
+   "physics": "static",
+   "mass": 45.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.036,
+    -0.0
+   ],
+   "tris": 196,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "collision": "trimesh",
+   "notes": "Rubber speed bump 3.0 m (X) x 0.42 m x 0.065 m, yellow / black segments."
+  },
+  {
+   "id": "guardrail",
+   "file": "guardrail.glb",
+   "category": "road",
+   "size": [
+    4.0,
+    0.8,
+    0.234
+   ],
+   "physics": "static",
+   "mass": 110.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.4,
+    0.067
+   ],
+   "tris": 196,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "W-beam guardrail, 4.0 m along X, posts at x = -1 and +1 (2 m spacing when tiled). Road side = +Y."
+  },
+  {
+   "id": "jersey_end",
+   "file": "jersey_end.glb",
+   "category": "road",
+   "size": [
+    1.49,
+    0.828,
+    0.6
+   ],
+   "physics": "static",
+   "mass": 700.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.005,
+    0.414,
+    0.0
+   ],
+   "tris": 172,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Sloped terminal for barrier_concrete, 1.5 m. Full profile at x = -0.75 (mates with a barrier end), nose with hazard bands at x = +0.75."
+  },
+  {
+   "id": "parking_stop",
+   "file": "parking_stop.glb",
+   "category": "road",
+   "size": [
+    1.8,
+    0.108,
+    0.187
+   ],
+   "physics": "static",
+   "mass": 95.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.054,
+    -0.0
+   ],
+   "tris": 120,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "collision": "box",
+   "notes": "Parking-bay wheel stop, 1.8 m x 0.18 m x 0.10 m, yellow bands."
+  },
+  {
+   "id": "bench",
+   "file": "bench.glb",
+   "category": "furniture",
+   "size": [
+    1.72,
+    0.865,
+    0.696
+   ],
+   "physics": "breakable",
+   "mass": 55.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.433,
+    0.035
+   ],
+   "tris": 732,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Street bench 1.8 m, cast side frames + wooden slats. Sitter faces +Y; seat height 0.44 m."
+  },
+  {
+   "id": "bench_park",
+   "file": "bench_park.glb",
+   "category": "furniture",
+   "size": [
+    2.0,
+    0.905,
+    0.593
+   ],
+   "physics": "breakable",
+   "mass": 120.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.453,
+    0.048
+   ],
+   "tris": 380,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Park bench 2.0 m, concrete pedestals + dark timber planks. Sitter faces +Y."
+  },
+  {
+   "id": "bin",
+   "file": "bin.glb",
+   "category": "furniture",
+   "size": [
+    0.58,
+    1.1,
+    0.552
+   ],
+   "physics": "dynamic",
+   "mass": 28.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.55,
+    -0.0
+   ],
+   "tris": 462,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Round slatted litter bin with a teal rain hood, 1.1 m."
+  },
+  {
+   "id": "dumpster",
+   "file": "dumpster.glb",
+   "category": "furniture",
+   "size": [
+    1.96,
+    1.2,
+    1.238
+   ],
+   "physics": "static",
+   "mass": 380.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.6,
+    -0.006
+   ],
+   "tris": 644,
+   "children": [
+    "Lid",
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Steel dumpster 1.9 x 1.2 x 1.3 m (good cover). Child 'Lid' has its origin on the rear hinge line (rotate about local X to open)."
+  },
+  {
+   "id": "recycling_bins",
+   "file": "recycling_bins.glb",
+   "category": "furniture",
+   "size": [
+    1.76,
+    0.999,
+    0.736
+   ],
+   "physics": "dynamic",
+   "mass": 42.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.5,
+    -0.022
+   ],
+   "tris": 672,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Three wheelie bins in a row (blue / green / yellow lids), one rigid group."
+  },
+  {
+   "id": "hydrant",
+   "file": "hydrant.glb",
+   "category": "furniture",
+   "size": [
+    0.49,
+    0.795,
+    0.431
+   ],
+   "physics": "breakable",
+   "mass": 65.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.397,
+    -0.049
+   ],
+   "tris": 552,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Fire hydrant 0.8 m; big outlet toward +Y, two side outlets along X."
+  },
+  {
+   "id": "mailbox",
+   "file": "mailbox.glb",
+   "category": "furniture",
+   "size": [
+    0.552,
+    1.178,
+    0.52
+   ],
+   "physics": "breakable",
+   "mass": 70.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.589,
+    -0.014
+   ],
+   "tris": 232,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Street mailbox, vaulted top, pull-down flap toward +Y, white envelope pictogram."
+  },
+  {
+   "id": "newspaper_box",
+   "file": "newspaper_box.glb",
+   "category": "furniture",
+   "size": [
+    0.48,
+    1.245,
+    0.43
+   ],
+   "physics": "breakable",
+   "mass": 38.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.622,
+    -0.015
+   ],
+   "tris": 208,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Coin-operated newspaper box on a pedestal, window toward +Y."
+  },
+  {
+   "id": "parking_meter",
+   "file": "parking_meter.glb",
+   "category": "furniture",
+   "size": [
+    0.435,
+    1.385,
+    0.17
+   ],
+   "physics": "breakable",
+   "mass": 22.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.692,
+    -0.0
+   ],
+   "tris": 408,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Twin-head parking meter, 1.4 m."
+  },
+  {
+   "id": "bike_rack",
+   "file": "bike_rack.glb",
+   "category": "furniture",
+   "size": [
+    2.3,
+    0.902,
+    0.64
+   ],
+   "physics": "static",
+   "mass": 60.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.451,
+    -0.0
+   ],
+   "tris": 592,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Five hoops on two floor rails, 2.3 m long (X), hoops 0.9 m high."
+  },
+  {
+   "id": "bus_stop",
+   "file": "bus_stop.glb",
+   "category": "furniture",
+   "size": [
+    4.0,
+    2.95,
+    1.84
+   ],
+   "physics": "breakable",
+   "mass": 420.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.04,
+    1.475,
+    -0.08
+   ],
+   "tris": 828,
+   "children": [
+    "Glass",
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "collision": "trimesh",
+   "notes": "Bus shelter 3.9 x 1.8 x 2.65 m, open toward +Y (road). Child 'Glass' = rear panes (M_Glass, breakable); lit advert panel (M_ScreenGlow) on the -X end; bench inside; flag sign with a bus pictogram on a pole at the +X front corner."
+  },
+  {
+   "id": "phone_kiosk",
+   "file": "phone_kiosk.glb",
+   "category": "furniture",
+   "size": [
+    0.96,
+    2.2,
+    0.639
+   ],
+   "physics": "static",
+   "mass": 160.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.1,
+    -0.039
+   ],
+   "tris": 584,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Public phone kiosk 0.95 x 0.6 x 2.2 m, open toward +Y. Small lit display (M_ScreenGlow)."
+  },
+  {
+   "id": "vending_machine",
+   "file": "vending_machine.glb",
+   "category": "furniture",
+   "size": [
+    1.014,
+    1.86,
+    0.834
+   ],
+   "physics": "static",
+   "mass": 260.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.93,
+    -0.037
+   ],
+   "tris": 868,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Drinks vending machine 1.0 x 0.8 x 1.86 m, lit front (M_ScreenGlow) toward +Y.",
+   "emissive": "M_ScreenGlow front + header"
+  },
+  {
+   "id": "atm",
+   "file": "atm.glb",
+   "category": "furniture",
+   "size": [
+    0.9,
+    1.94,
+    0.97
+   ],
+   "physics": "static",
+   "mass": 300.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.97,
+    -0.115
+   ],
+   "tris": 564,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Free-standing cash machine 0.9 x 0.95 x 1.95 m, lit screen (M_ScreenGlow) toward +Y.",
+   "emissive": "M_ScreenGlow screen + light bar"
+  },
+  {
+   "id": "planter",
+   "file": "planter.glb",
+   "category": "furniture",
+   "size": [
+    1.1,
+    1.171,
+    1.1
+   ],
+   "physics": "static",
+   "mass": 450.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.585,
+    -0.0
+   ],
+   "tris": 382,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Concrete street planter 1.1 x 1.1 m with shrubs and flowers, 1.2 m high."
+  },
+  {
+   "id": "tree_grate",
+   "file": "tree_grate.glb",
+   "category": "furniture",
+   "size": [
+    1.2,
+    0.03,
+    1.2
+   ],
+   "physics": "static",
+   "mass": 90.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.015,
+    -0.0
+   ],
+   "tris": 372,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "collision": "none",
+   "notes": "Cast-iron tree grate 1.2 x 1.2 m, 3 cm high, open centre (r 0.24 m) for the trunk."
+  },
+  {
+   "id": "manhole",
+   "file": "manhole.glb",
+   "category": "furniture",
+   "size": [
+    0.88,
+    0.036,
+    0.88
+   ],
+   "physics": "static",
+   "mass": 80.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.018,
+    -0.0
+   ],
+   "tris": 376,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "collision": "none",
+   "notes": "Manhole cover with a concrete collar, diameter 0.88 m, 3.6 cm high."
+  },
+  {
+   "id": "drain",
+   "file": "drain.glb",
+   "category": "furniture",
+   "size": [
+    0.72,
+    0.03,
+    0.46
+   ],
+   "physics": "static",
+   "mass": 45.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.015,
+    -0.0
+   ],
+   "tris": 156,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "collision": "none",
+   "notes": "Storm-drain grate 0.72 x 0.46 m, 3 cm high; bars run along Y."
+  },
+  {
+   "id": "utility_box",
+   "file": "utility_box.glb",
+   "category": "utility",
+   "size": [
+    1.245,
+    1.43,
+    0.56
+   ],
+   "physics": "static",
+   "mass": 180.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    -0.012,
+    0.715,
+    -0.0
+   ],
+   "tris": 364,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Street utility cabinet 1.2 x 0.55 x 1.45 m on a concrete plinth; doors toward +Y."
+  },
+  {
+   "id": "transformer",
+   "file": "transformer.glb",
+   "category": "utility",
+   "size": [
+    1.9,
+    1.75,
+    1.5
+   ],
+   "physics": "static",
+   "mass": 1400.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.875,
+    -0.0
+   ],
+   "tris": 884,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Pad-mounted transformer 1.9 x 1.5 x 1.75 m with cooling fins and three bushings."
+  },
+  {
+   "id": "power_pole",
+   "file": "power_pole.glb",
+   "category": "utility",
+   "size": [
+    2.5,
+    9.54,
+    0.866
+   ],
+   "physics": "static",
+   "mass": 520.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    4.77,
+    -0.258
+   ],
+   "tris": 666,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Wire_1",
+    "Wire_2",
+    "Wire_3",
+    "Wire_4"
+   ],
+   "vis_range": 260,
+   "notes": "Wooden power pole 9.7 m with crossarm (2.5 m along X), pole transformer and climbing pegs. Markers Wire_1..Wire_4 sit on the insulator tops (string wires between poles)."
+  },
+  {
+   "id": "ac_unit",
+   "file": "ac_unit.glb",
+   "category": "utility",
+   "size": [
+    1.196,
+    0.71,
+    0.5
+   ],
+   "physics": "static",
+   "mass": 55.0,
+   "surface": "metal",
+   "anchor": "roof",
+   "center": [
+    0.123,
+    0.355,
+    0.01
+   ],
+   "tris": 764,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "AC condenser 1.05 x 0.5 x 0.72 m on two rails; fan grille toward +Y. For rooftops / alleys."
+  },
+  {
+   "id": "satellite_dish",
+   "file": "satellite_dish.glb",
+   "category": "utility",
+   "size": [
+    1.27,
+    1.712,
+    0.904
+   ],
+   "physics": "static",
+   "mass": 18.0,
+   "surface": "metal",
+   "anchor": "roof",
+   "center": [
+    0.0,
+    0.856,
+    -0.232
+   ],
+   "tris": 344,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Rooftop satellite dish (diameter 1.25 m) on a mast, aimed +Y and 35 degrees up."
+  },
+  {
+   "id": "water_tank",
+   "file": "water_tank.glb",
+   "category": "utility",
+   "size": [
+    2.5,
+    4.25,
+    2.528
+   ],
+   "physics": "static",
+   "mass": 2200.0,
+   "surface": "wood",
+   "anchor": "roof",
+   "center": [
+    0.0,
+    2.125,
+    -0.014
+   ],
+   "tris": 730,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Rooftop timber water tank on a steel frame, 2.5 m wide, 4.25 m high, ladder on the +Y side."
+  },
+  {
+   "id": "vent_pipe",
+   "file": "vent_pipe.glb",
+   "category": "utility",
+   "size": [
+    1.27,
+    1.42,
+    0.722
+   ],
+   "physics": "static",
+   "mass": 30.0,
+   "surface": "metal",
+   "anchor": "roof",
+   "center": [
+    -0.085,
+    0.71,
+    -0.06
+   ],
+   "tris": 448,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Rooftop vent cluster: capped flue (1.45 m), gooseneck pipe and a low turbine vent."
+  },
+  {
+   "id": "fire_escape_ladder",
+   "file": "fire_escape_ladder.glb",
+   "category": "utility",
+   "size": [
+    0.57,
+    4.0,
+    0.215
+   ],
+   "physics": "static",
+   "mass": 45.0,
+   "surface": "metal",
+   "anchor": "wall",
+   "center": [
+    0.0,
+    2.0,
+    0.093
+   ],
+   "tris": 324,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [
+    "Ladder_Bottom",
+    "Ladder_Top"
+   ],
+   "vis_range": 260,
+   "notes": "4.0 m ladder section, 0.48 m wide, rungs every 0.30 m; stackable. Origin = bottom centre of the ladder plane; climb side is +Y, the wall is at y = -0.20 (Godot z = +0.20). Markers 'Ladder_Bottom' / 'Ladder_Top' on the climb side."
+  },
+  {
+   "id": "fence_chainlink",
+   "file": "fence_chainlink.glb",
+   "category": "fence",
+   "size": [
+    4.104,
+    2.08,
+    0.12
+   ],
+   "physics": "breakable",
+   "mass": 60.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.04,
+    -0.0
+   ],
+   "tris": 522,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Chain-link fence, 4.0 m x 2.05 m, posts at x = -2, 0, +2. The mesh is real geometry (lattice)."
+  },
+  {
+   "id": "fence_wood",
+   "file": "fence_wood.glb",
+   "category": "fence",
+   "size": [
+    4.12,
+    1.85,
+    0.159
+   ],
+   "physics": "breakable",
+   "mass": 85.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.925,
+    0.056
+   ],
+   "tris": 416,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Timber plank fence, 4.0 m x 1.85 m; planks on the +Y face, rails and posts behind."
+  },
+  {
+   "id": "fence_metal",
+   "file": "fence_metal.glb",
+   "category": "fence",
+   "size": [
+    4.13,
+    1.19,
+    0.13
+   ],
+   "physics": "breakable",
+   "mass": 70.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.595,
+    -0.0
+   ],
+   "tris": 456,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Steel bar railing, 4.0 m x 1.15 m, posts with ball finials at x = -2, 0, +2."
+  },
+  {
+   "id": "wall_low",
+   "file": "wall_low.glb",
+   "category": "fence",
+   "size": [
+    4.0,
+    1.0,
+    0.38
+   ],
+   "physics": "static",
+   "mass": 1900.0,
+   "surface": "concrete",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.5,
+    -0.0
+   ],
+   "tris": 376,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Low concrete wall, 4.0 m x 0.38 m x 1.0 m (cover height), four 1 m panels with cap stones."
+  },
+  {
+   "id": "hedge",
+   "file": "hedge.glb",
+   "category": "fence",
+   "size": [
+    4.0,
+    1.214,
+    1.017
+   ],
+   "physics": "static",
+   "mass": 120.0,
+   "surface": "foliage",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.607,
+    -0.006
+   ],
+   "tris": 268,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "tile": 4.0,
+   "notes": "Clipped hedge, 4.0 m x 0.9 m x 1.2 m, faceted; flat ends so segments tile."
+  },
+  {
+   "id": "gate_chainlink",
+   "file": "gate_chainlink.glb",
+   "category": "fence",
+   "size": [
+    4.18,
+    2.23,
+    0.18
+   ],
+   "physics": "breakable",
+   "mass": 110.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    1.115,
+    -0.0
+   ],
+   "tris": 752,
+   "children": [
+    "Gate_L",
+    "Gate_R",
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "notes": "Double chain-link gate for a 4.0 m opening. 'Mesh' = the two hinge posts (x = -2 / +2); leaves 'Gate_L' (-X side) and 'Gate_R' (+X side) are separate children with their origin on the hinge axis: rotate them about local Z (Godot Y) to open."
+  },
+  {
+   "id": "crate_wood",
+   "file": "crate_wood.glb",
+   "category": "container",
+   "size": [
+    0.906,
+    0.903,
+    0.906
+   ],
+   "physics": "dynamic",
+   "mass": 45.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.451,
+    -0.0
+   ],
+   "tris": 216,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Wooden shipping crate, 0.9 m cube."
+  },
+  {
+   "id": "crate_stack",
+   "file": "crate_stack.glb",
+   "category": "container",
+   "size": [
+    1.868,
+    1.603,
+    1.536
+   ],
+   "physics": "dynamic",
+   "mass": 150.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    -0.026,
+    0.801,
+    0.25
+   ],
+   "tris": 816,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Stack of four crates (one rigid group), about 1.9 x 1.6 x 1.6 m."
+  },
+  {
+   "id": "pallet",
+   "file": "pallet.glb",
+   "category": "container",
+   "size": [
+    1.2,
+    0.144,
+    1.0
+   ],
+   "physics": "dynamic",
+   "mass": 22.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.072,
+    -0.0
+   ],
+   "tris": 228,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Timber pallet 1.2 x 1.0 x 0.15 m."
+  },
+  {
+   "id": "barrel",
+   "file": "barrel.glb",
+   "category": "container",
+   "size": [
+    0.582,
+    0.886,
+    0.582
+   ],
+   "physics": "dynamic",
+   "mass": 30.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.443,
+    -0.0
+   ],
+   "tris": 480,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Steel drum (200 l), 0.58 x 0.89 m, blue."
+  },
+  {
+   "id": "barrel_explosive",
+   "file": "barrel_explosive.glb",
+   "category": "container",
+   "size": [
+    0.582,
+    0.886,
+    0.582
+   ],
+   "physics": "dynamic",
+   "mass": 60.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.443,
+    -0.0
+   ],
+   "tris": 540,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Explosive fuel drum: red, yellow hazard band, flame diamonds front and back. The game makes it damageable / explosive."
+  },
+  {
+   "id": "gas_canister",
+   "file": "gas_canister.glb",
+   "category": "container",
+   "size": [
+    0.332,
+    0.605,
+    0.333
+   ],
+   "physics": "dynamic",
+   "mass": 24.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    0.303,
+    -0.009
+   ],
+   "tris": 392,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 70,
+   "notes": "Propane cylinder 0.33 x 0.62 m, orange; meant as an explosive physics prop."
+  },
+  {
+   "id": "tire_stack",
+   "file": "tire_stack.glb",
+   "category": "container",
+   "size": [
+    1.036,
+    0.84,
+    0.717
+   ],
+   "physics": "dynamic",
+   "mass": 45.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    0.163,
+    0.42,
+    -0.003
+   ],
+   "tris": 636,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Four stacked tyres plus one leaning against the stack, 0.85 m high."
+  },
+  {
+   "id": "trash_bags",
+   "file": "trash_bags.glb",
+   "category": "container",
+   "size": [
+    1.198,
+    0.602,
+    0.975
+   ],
+   "physics": "dynamic",
+   "mass": 14.0,
+   "surface": "rubber",
+   "anchor": "ground",
+   "center": [
+    -0.002,
+    0.301,
+    0.063
+   ],
+   "tris": 312,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Pile of three tied rubbish bags (one rigid group), about 1.2 x 1.0 x 0.75 m."
+  },
+  {
+   "id": "cardboard_boxes",
+   "file": "cardboard_boxes.glb",
+   "category": "container",
+   "size": [
+    1.416,
+    0.709,
+    1.112
+   ],
+   "physics": "dynamic",
+   "mass": 9.0,
+   "surface": "wood",
+   "anchor": "ground",
+   "center": [
+    0.042,
+    0.351,
+    -0.021
+   ],
+   "tris": 192,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Pile of cardboard cartons, one of them open (one rigid group), about 1.25 x 1.0 x 0.75 m."
+  },
+  {
+   "id": "shopping_cart",
+   "file": "shopping_cart.glb",
+   "category": "container",
+   "size": [
+    0.567,
+    1.007,
+    1.022
+   ],
+   "physics": "dynamic",
+   "mass": 22.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.001,
+    0.504,
+    -0.021
+   ],
+   "tris": 664,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Wire shopping trolley 0.6 x 1.0 x 1.03 m; push handle at -Y, nose toward +Y."
+  },
+  {
+   "id": "neon_sign_a",
+   "file": "neon_sign_a.glb",
+   "category": "signage",
+   "size": [
+    1.327,
+    1.85,
+    0.106
+   ],
+   "physics": "static",
+   "mass": 14.0,
+   "surface": "metal",
+   "anchor": "wall",
+   "center": [
+    0.0,
+    0.035,
+    -0.053
+   ],
+   "tris": 364,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Neon arrow pointing down, 1.35 x 1.75 m. Wall-mounted: origin = centre of the back face.",
+   "emissive": "P_NeonMagenta, P_NeonYellow"
+  },
+  {
+   "id": "neon_sign_b",
+   "file": "neon_sign_b.glb",
+   "category": "signage",
+   "size": [
+    1.642,
+    1.741,
+    0.11
+   ],
+   "physics": "static",
+   "mass": 16.0,
+   "surface": "metal",
+   "anchor": "wall",
+   "center": [
+    0.0,
+    0.049,
+    -0.055
+   ],
+   "tris": 464,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Round neon star sign, diameter 1.7 m. Wall-mounted: origin = centre of the back face.",
+   "emissive": "P_NeonYellow, P_NeonCyan, P_NeonOrange"
+  },
+  {
+   "id": "neon_sign_c",
+   "file": "neon_sign_c.glb",
+   "category": "signage",
+   "size": [
+    2.1,
+    1.07,
+    0.106
+   ],
+   "physics": "static",
+   "mass": 18.0,
+   "surface": "metal",
+   "anchor": "wall",
+   "center": [
+    0.0,
+    0.035,
+    -0.053
+   ],
+   "tris": 656,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 120,
+   "notes": "Neon 'sun over waves' panel, 2.1 x 1.0 m. Wall-mounted: origin = centre of the back face.",
+   "emissive": "P_NeonCyan, P_NeonBlue, P_NeonOrange, P_NeonYellow"
+  },
+  {
+   "id": "billboard",
+   "file": "billboard.glb",
+   "category": "signage",
+   "size": [
+    7.2,
+    7.58,
+    2.069
+   ],
+   "physics": "static",
+   "mass": 2600.0,
+   "surface": "metal",
+   "anchor": "ground",
+   "center": [
+    0.0,
+    3.79,
+    -0.3
+   ],
+   "tris": 880,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "collision": "trimesh",
+   "notes": "Roadside billboard: face 7.0 x 3.2 m (bottom edge 4.3 m up) on two steel posts, total 7.6 m high, catwalk, four up-lights (M_LampGlow), ladder. Face = material M_Billboard_A with 0-1 UVs; original 'sun over the bay' artwork in geometry in front of it. Front = +Y."
+  },
+  {
+   "id": "billboard_roof",
+   "file": "billboard_roof.glb",
+   "category": "signage",
+   "size": [
+    6.14,
+    3.677,
+    2.662
+   ],
+   "physics": "static",
+   "mass": 900.0,
+   "surface": "metal",
+   "anchor": "roof",
+   "center": [
+    0.0,
+    1.839,
+    0.579
+   ],
+   "tris": 628,
+   "children": [
+    "Mesh"
+   ],
+   "markers": [],
+   "vis_range": 260,
+   "collision": "trimesh",
+   "notes": "Rooftop billboard: face 6.0 x 2.4 m on a raked steel frame (footprint 6.2 x 2.2 m, 3.5 m high), three down-lights (M_LampGlow) and a cyan neon strip. Face = material M_Billboard_B with 0-1 UVs. Front = +Y; put the origin on the roof surface near the parapet."
+  }
+ ]
+}

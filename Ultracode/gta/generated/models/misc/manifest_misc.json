@@ -1,0 +1,1877 @@
+{
+ "author": "misc_props",
+ "axes": "Godot: +X right, +Y up, -Z front. size = [x, y, z]; markers = local positions (also present as Node3D children in the GLB).",
+ "misc": [
+  {
+   "id": "tram",
+   "file": "tram.glb",
+   "category": "transit",
+   "family": "transit",
+   "size": [
+    2.87,
+    4.59,
+    18.38
+   ],
+   "aabb_min": [
+    -1.435,
+    0.03,
+    -9.19
+   ],
+   "aabb_max": [
+    1.435,
+    4.62,
+    9.19
+   ],
+   "collision": "trimesh",
+   "tris": 6500,
+   "markers": {
+    "Door_1": [
+     1.45,
+     0.35,
+     -3.8
+    ],
+    "Door_2": [
+     1.45,
+     0.35,
+     3.8
+    ],
+    "Light_Head_L": [
+     -0.9,
+     0.85,
+     -8.9
+    ],
+    "Light_Head_R": [
+     0.9,
+     0.85,
+     -8.9
+    ],
+    "Light_Tail_L": [
+     -0.9,
+     0.85,
+     8.9
+    ],
+    "Light_Tail_R": [
+     0.9,
+     0.85,
+     8.9
+    ],
+    "Pantograph_Top": [
+     0.0,
+     4.62,
+     -3.2
+    ],
+    "Seat_1": [
+     0.83,
+     0.82,
+     -6.625
+    ],
+    "Seat_2": [
+     -0.83,
+     0.82,
+     -6.625
+    ],
+    "Seat_3": [
+     0.83,
+     0.82,
+     -2.525
+    ],
+    "Seat_4": [
+     -0.83,
+     0.82,
+     -2.525
+    ],
+    "Stand_1": [
+     0.0,
+     0.35,
+     -3.45
+    ],
+    "Stand_2": [
+     0.0,
+     0.35,
+     -4.15
+    ],
+    "Stand_3": [
+     0.0,
+     0.35,
+     3.45
+    ],
+    "Stand_4": [
+     0.0,
+     0.35,
+     4.15
+    ]
+   },
+   "marker_yaw_deg": {
+    "Door_1": 90.0,
+    "Door_2": 90.0
+   },
+   "nodes": [
+    "Body",
+    "Door_L1_A",
+    "Door_L1_B",
+    "Door_L2_A",
+    "Door_L2_B",
+    "Door_R1_A",
+    "Door_R1_B",
+    "Door_R2_A",
+    "Door_R2_B",
+    "Glass_Front",
+    "Glass_L",
+    "Glass_R",
+    "Glass_Rear",
+    "Pantograph"
+   ],
+   "groups": [
+    "Doors_L",
+    "Doors_R"
+   ],
+   "note": "front = -Z. Doors_R / Doors_L are Node3D groups, each with four sliding leaf meshes Door_<side><n>_<A|B> (slide a leaf 0.7 m along Z away from its partner, or hide the group). Door_1 / Door_2 = boarding points on the right side at floor level (marker -Z looks into the tram). Seat_n = hip points facing forward, Stand_n = floor points",
+   "floor_height": 0.35,
+   "interior_clear_height": 2.21,
+   "wire_height": 4.62,
+   "track_gauge": 1.435,
+   "bogie_centres_z": [
+    -5.9,
+    -1.8,
+    1.8,
+    5.9
+   ],
+   "collision_boxes": [
+    [
+     0.0,
+     0.3,
+     0.0,
+     2.36,
+     0.1,
+     17.6
+    ],
+    [
+     0.0,
+     2.7,
+     0.0,
+     2.44,
+     0.2,
+     17.2
+    ],
+    [
+     1.215,
+     1.475,
+     -6.2,
+     0.07,
+     2.25,
+     3.4
+    ],
+    [
+     -1.215,
+     1.475,
+     -6.2,
+     0.07,
+     2.25,
+     3.4
+    ],
+    [
+     1.215,
+     1.475,
+     0.0,
+     0.07,
+     2.25,
+     6.2
+    ],
+    [
+     -1.215,
+     1.475,
+     0.0,
+     0.07,
+     2.25,
+     6.2
+    ],
+    [
+     1.215,
+     1.475,
+     6.2,
+     0.07,
+     2.25,
+     3.4
+    ],
+    [
+     -1.215,
+     1.475,
+     6.2,
+     0.07,
+     2.25,
+     3.4
+    ],
+    [
+     0.0,
+     1.45,
+     -7.28,
+     2.36,
+     2.2,
+     0.06
+    ],
+    [
+     0.0,
+     1.45,
+     7.28,
+     2.36,
+     2.2,
+     0.06
+    ],
+    [
+     0.0,
+     1.4,
+     -8.2,
+     1.9,
+     2.4,
+     1.7
+    ],
+    [
+     0.0,
+     1.4,
+     8.2,
+     1.9,
+     2.4,
+     1.7
+    ]
+   ]
+  },
+  {
+   "id": "rail_straight",
+   "file": "rail_straight.glb",
+   "category": "transit",
+   "family": "transit",
+   "size": [
+    2.5,
+    0.05,
+    4.0
+   ],
+   "aabb_min": [
+    -1.25,
+    0.0,
+    -2.0
+   ],
+   "aabb_max": [
+    1.25,
+    0.05,
+    2.0
+   ],
+   "collision": "none",
+   "tris": 152,
+   "markers": {},
+   "nodes": [
+    "Track"
+   ],
+   "length": 4.0,
+   "track_gauge": 1.435
+  },
+  {
+   "id": "rail_post",
+   "file": "rail_post.glb",
+   "category": "transit",
+   "family": "transit",
+   "size": [
+    3.033,
+    6.88,
+    0.56
+   ],
+   "aabb_min": [
+    -0.28,
+    0.0,
+    -0.28
+   ],
+   "aabb_max": [
+    2.753,
+    6.88,
+    0.28
+   ],
+   "collision": "box",
+   "tris": 352,
+   "markers": {
+    "Wire": [
+     2.4,
+     4.62,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Post"
+   ],
+   "wire_height": 4.62,
+   "note": "pole stands 2.4 m left of the track centre; the arm reaches toward +X"
+  },
+  {
+   "id": "shipwreck",
+   "file": "shipwreck.glb",
+   "category": "set_piece",
+   "family": "wreck",
+   "size": [
+    10.685,
+    10.993,
+    25.047
+   ],
+   "aabb_min": [
+    -5.193,
+    -1.488,
+    -13.058
+   ],
+   "aabb_max": [
+    5.491,
+    9.506,
+    11.989
+   ],
+   "collision": "trimesh",
+   "tris": 5878,
+   "markers": {
+    "Treasure": [
+     0.55,
+     0.35,
+     -1.15
+    ]
+   },
+   "nodes": [
+    "Debris",
+    "Hull_Bow",
+    "Hull_Stern",
+    "Seaweed",
+    "Treasure_Chest"
+   ],
+   "note": "origin = seabed level at the centre; the two hull halves are sunk up to ~1 m into the seabed by design"
+  },
+  {
+   "id": "container_a",
+   "file": "container_a.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    2.468,
+    2.6,
+    6.132
+   ],
+   "aabb_min": [
+    -1.234,
+    -0.005,
+    -3.09
+   ],
+   "aabb_max": [
+    1.234,
+    2.595,
+    3.042
+   ],
+   "collision": "box",
+   "tris": 850,
+   "markers": {
+    "Top": [
+     0.0,
+     2.59,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Container"
+   ]
+  },
+  {
+   "id": "container_b",
+   "file": "container_b.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    2.468,
+    2.6,
+    6.132
+   ],
+   "aabb_min": [
+    -1.234,
+    -0.005,
+    -3.09
+   ],
+   "aabb_max": [
+    1.234,
+    2.595,
+    3.042
+   ],
+   "collision": "box",
+   "tris": 850,
+   "markers": {
+    "Top": [
+     0.0,
+     2.59,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Container"
+   ]
+  },
+  {
+   "id": "container_c",
+   "file": "container_c.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    2.468,
+    2.6,
+    6.132
+   ],
+   "aabb_min": [
+    -1.234,
+    -0.005,
+    -3.09
+   ],
+   "aabb_max": [
+    1.234,
+    2.595,
+    3.042
+   ],
+   "collision": "box",
+   "tris": 850,
+   "markers": {
+    "Top": [
+     0.0,
+     2.59,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Container"
+   ]
+  },
+  {
+   "id": "container_open",
+   "file": "container_open.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    2.972,
+    2.6,
+    7.142
+   ],
+   "aabb_min": [
+    -1.521,
+    -0.005,
+    -4.1
+   ],
+   "aabb_max": [
+    1.451,
+    2.595,
+    3.042
+   ],
+   "collision": "trimesh",
+   "tris": 904,
+   "markers": {
+    "Inside": [
+     0.0,
+     0.17,
+     1.5
+    ],
+    "Top": [
+     0.0,
+     2.59,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Container"
+   ],
+   "note": "walk-in: doors open at the front (-Z), interior 2.28 x 5.9 x 2.34 m, floor 0.17 m above the ground, reached over a 0.8 m steel ramp plate (12 deg) at the doorway"
+  },
+  {
+   "id": "cargo_stack",
+   "file": "cargo_stack.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    7.767,
+    7.77,
+    6.315
+   ],
+   "aabb_min": [
+    -3.927,
+    0.0,
+    -3.185
+   ],
+   "aabb_max": [
+    3.84,
+    7.77,
+    3.13
+   ],
+   "collision": "trimesh",
+   "tris": 2436,
+   "markers": {
+    "Top_1": [
+     2.62,
+     2.59,
+     -0.0
+    ],
+    "Top_2": [
+     0.0,
+     5.18,
+     -0.0
+    ],
+    "Top_3": [
+     -2.55,
+     7.77,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Stack"
+   ],
+   "note": "stepped 3-2-1 stack of six containers: climbable cover"
+  },
+  {
+   "id": "dock_crane",
+   "file": "dock_crane.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    12.84,
+    18.42,
+    22.23
+   ],
+   "aabb_min": [
+    -6.42,
+    0.0,
+    -13.63
+   ],
+   "aabb_max": [
+    6.42,
+    18.42,
+    8.6
+   ],
+   "collision": "trimesh",
+   "tris": 2390,
+   "markers": {
+    "Boom_Tip": [
+     0.0,
+     12.4,
+     -13.5
+    ],
+    "Cab": [
+     2.55,
+     9.55,
+     -5.15
+    ],
+    "Hook": [
+     0.0,
+     7.38,
+     -8.5
+    ]
+   },
+   "nodes": [
+    "Crane"
+   ],
+   "note": "rail gantry crane; rails run along X (quay direction), the boom reaches forward (-Z) over the water; trucks pass under it along X (clear 4.4 m under the sill ties, 6.4 m wide)"
+  },
+  {
+   "id": "buoy",
+   "file": "buoy.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    1.845,
+    5.215,
+    1.94
+   ],
+   "aabb_min": [
+    -0.923,
+    -1.915,
+    -0.97
+   ],
+   "aabb_max": [
+    0.923,
+    3.3,
+    0.97
+   ],
+   "collision": "box",
+   "tris": 588,
+   "markers": {
+    "Light": [
+     0.0,
+     2.8,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Buoy"
+   ],
+   "note": "origin at the WATERLINE (float body spans y -0.65..0.75, tail down to -1.9): place it at the wave height"
+  },
+  {
+   "id": "mooring_bollard",
+   "file": "mooring_bollard.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    0.68,
+    0.72,
+    1.297
+   ],
+   "aabb_min": [
+    -0.34,
+    0.0,
+    -0.957
+   ],
+   "aabb_max": [
+    0.34,
+    0.72,
+    0.34
+   ],
+   "collision": "box",
+   "tris": 488,
+   "markers": {},
+   "nodes": [
+    "Bollard"
+   ]
+  },
+  {
+   "id": "boat_ramp",
+   "file": "boat_ramp.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    6.82,
+    5.064,
+    14.035
+   ],
+   "aabb_min": [
+    -3.41,
+    -2.6,
+    -7.035
+   ],
+   "aabb_max": [
+    3.41,
+    2.464,
+    7.0
+   ],
+   "collision": "trimesh",
+   "tris": 744,
+   "markers": {
+    "Top": [
+     0.0,
+     1.5,
+     6.2
+    ],
+    "Water_End": [
+     0.0,
+     -1.5,
+     -7.0
+    ]
+   },
+   "nodes": [
+    "Ramp"
+   ],
+   "note": "origin = centre at SEA LEVEL; flat landing at +1.5 m at the back (z +5.5..+7), slopes down to -1.5 m at the front (z -7 = water end); solid body down to -2.6 m",
+   "top_height": 1.5,
+   "slope_deg": 13.5
+  },
+  {
+   "id": "lifebuoy_stand",
+   "file": "lifebuoy_stand.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    1.0,
+    2.2,
+    0.39
+   ],
+   "aabb_min": [
+    -0.5,
+    0.0,
+    -0.22
+   ],
+   "aabb_max": [
+    0.5,
+    2.2,
+    0.17
+   ],
+   "collision": "box",
+   "tris": 388,
+   "markers": {},
+   "nodes": [
+    "Stand"
+   ]
+  },
+  {
+   "id": "fishing_boat_static",
+   "file": "fishing_boat_static.glb",
+   "category": "harbour",
+   "family": "harbour",
+   "size": [
+    3.38,
+    4.9,
+    8.495
+   ],
+   "aabb_min": [
+    -1.69,
+    -0.6,
+    -4.284
+   ],
+   "aabb_max": [
+    1.69,
+    4.3,
+    4.211
+   ],
+   "collision": "trimesh",
+   "tris": 1750,
+   "markers": {
+    "Deck": [
+     0.0,
+     0.56,
+     2.2
+    ],
+    "Mooring_Bow": [
+     0.0,
+     1.0,
+     -4.0
+    ],
+    "Mooring_Stern": [
+     0.0,
+     0.9,
+     4.1
+    ]
+   },
+   "nodes": [
+    "Boat"
+   ],
+   "note": "origin at the WATERLINE; draft 0.6 m, deck 0.55 m above the water"
+  },
+  {
+   "id": "beach_umbrella",
+   "file": "beach_umbrella.glb",
+   "category": "beach",
+   "family": "park",
+   "size": [
+    2.653,
+    2.394,
+    2.634
+   ],
+   "aabb_min": [
+    -1.443,
+    -0.003,
+    -1.11
+   ],
+   "aabb_max": [
+    1.21,
+    2.391,
+    1.524
+   ],
+   "collision": "none",
+   "tris": 284,
+   "markers": {
+    "Shade": [
+     0.0,
+     0.0,
+     -0.25
+    ]
+   },
+   "nodes": [
+    "Umbrella"
+   ],
+   "note": "decorative; add a thin pole collider (r 0.04) if needed"
+  },
+  {
+   "id": "lounger",
+   "file": "lounger.glb",
+   "category": "beach",
+   "family": "park",
+   "size": [
+    0.67,
+    0.863,
+    1.893
+   ],
+   "aabb_min": [
+    -0.335,
+    -0.004,
+    -1.14
+   ],
+   "aabb_max": [
+    0.335,
+    0.859,
+    0.753
+   ],
+   "collision": "box",
+   "tris": 328,
+   "markers": {
+    "Lie": [
+     0.0,
+     0.38,
+     -0.3
+    ]
+   },
+   "nodes": [
+    "Lounger"
+   ],
+   "note": "head end at the back (+Z), feet toward the front (-Z)"
+  },
+  {
+   "id": "lifeguard_tower",
+   "file": "lifeguard_tower.glb",
+   "category": "beach",
+   "family": "park",
+   "size": [
+    4.011,
+    6.874,
+    7.621
+   ],
+   "aabb_min": [
+    -1.999,
+    -0.074,
+    -5.671
+   ],
+   "aabb_max": [
+    2.013,
+    6.8,
+    1.95
+   ],
+   "collision": "trimesh",
+   "tris": 1244,
+   "markers": {
+    "Lookout": [
+     0.4,
+     2.5,
+     0.6
+    ],
+    "Platform": [
+     0.0,
+     2.5,
+     -1.05
+    ],
+    "Ramp_Bottom": [
+     0.0,
+     0.0,
+     -6.0
+    ]
+   },
+   "nodes": [
+    "Tower"
+   ],
+   "platform_height": 2.5,
+   "note": "walk-up ramp (32 deg) at the front (-Z), hollow hut with a door on the platform"
+  },
+  {
+   "id": "volleyball_net",
+   "file": "volleyball_net.glb",
+   "category": "beach",
+   "family": "park",
+   "size": [
+    12.28,
+    3.25,
+    2.647
+   ],
+   "aabb_min": [
+    -6.14,
+    -0.02,
+    -1.607
+   ],
+   "aabb_max": [
+    6.14,
+    3.23,
+    1.04
+   ],
+   "collision": "none",
+   "tris": 780,
+   "markers": {
+    "Court_A": [
+     0.0,
+     0.0,
+     -4.5
+    ],
+    "Court_B": [
+     0.0,
+     0.0,
+     4.5
+    ]
+   },
+   "nodes": [
+    "Net"
+   ],
+   "note": "net spans X (9.5 m), top tape at 2.43 m; posts at x = +-5.0"
+  },
+  {
+   "id": "picnic_table",
+   "file": "picnic_table.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    1.85,
+    0.803,
+    2.02
+   ],
+   "aabb_min": [
+    -0.925,
+    -0.025,
+    -1.01
+   ],
+   "aabb_max": [
+    0.925,
+    0.777,
+    1.01
+   ],
+   "collision": "box",
+   "tris": 428,
+   "markers": {
+    "Seat_1": [
+     -0.45,
+     0.48,
+     -0.78
+    ],
+    "Seat_2": [
+     0.45,
+     0.48,
+     -0.78
+    ],
+    "Seat_3": [
+     -0.45,
+     0.48,
+     0.78
+    ],
+    "Seat_4": [
+     0.45,
+     0.48,
+     0.78
+    ]
+   },
+   "marker_yaw_deg": {
+    "Seat_1": -180.0,
+    "Seat_2": -180.0
+   },
+   "nodes": [
+    "Table"
+   ],
+   "note": "table runs along X, benches on the +Z and -Z sides"
+  },
+  {
+   "id": "fountain",
+   "file": "fountain.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    6.8,
+    3.32,
+    6.8
+   ],
+   "aabb_min": [
+    -3.4,
+    0.0,
+    -3.4
+   ],
+   "aabb_max": [
+    3.4,
+    3.32,
+    3.4
+   ],
+   "collision": "trimesh",
+   "tris": 2052,
+   "markers": {
+    "Jet_Top": [
+     0.0,
+     3.35,
+     -0.0
+    ],
+    "Seat_1": [
+     0.0,
+     0.73,
+     -3.25
+    ],
+    "Seat_2": [
+     3.25,
+     0.73,
+     -0.0
+    ]
+   },
+   "marker_yaw_deg": {
+    "Seat_2": -90.0
+   },
+   "nodes": [
+    "Fountain",
+    "Water"
+   ],
+   "note": "child 'Water' (P_Sky) holds every water surface / stream so the game can swap in a water material or hide it"
+  },
+  {
+   "id": "playground_slide",
+   "file": "playground_slide.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    1.7,
+    3.401,
+    6.095
+   ],
+   "aabb_min": [
+    -0.85,
+    -0.011,
+    -4.75
+   ],
+   "aabb_max": [
+    0.85,
+    3.39,
+    1.345
+   ],
+   "collision": "trimesh",
+   "tris": 584,
+   "markers": {
+    "Exit": [
+     0.0,
+     0.0,
+     -5.0
+    ],
+    "Top": [
+     0.0,
+     1.5,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Slide"
+   ],
+   "note": "ladder at the back (+Z), chute runs toward the front (-Z)"
+  },
+  {
+   "id": "gazebo",
+   "file": "gazebo.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    6.051,
+    5.42,
+    6.365
+   ],
+   "aabb_min": [
+    -3.025,
+    0.0,
+    -3.34
+   ],
+   "aabb_max": [
+    3.025,
+    5.42,
+    3.025
+   ],
+   "collision": "trimesh",
+   "tris": 1580,
+   "markers": {
+    "Center": [
+     0.0,
+     0.3,
+     -0.0
+    ],
+    "Entrance": [
+     0.0,
+     0.0,
+     -3.6
+    ]
+   },
+   "marker_yaw_deg": {
+    "Entrance": -180.0
+   },
+   "nodes": [
+    "Gazebo"
+   ],
+   "note": "octagonal, entrance (steps) at the front (-Z), floor 0.3 m high, clear height 2.4 m"
+  },
+  {
+   "id": "viewpoint_binoculars",
+   "file": "viewpoint_binoculars.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    0.6,
+    1.555,
+    1.039
+   ],
+   "aabb_min": [
+    -0.3,
+    0.0,
+    -0.409
+   ],
+   "aabb_max": [
+    0.3,
+    1.555,
+    0.63
+   ],
+   "collision": "box",
+   "tris": 762,
+   "markers": {
+    "Eye": [
+     0.0,
+     1.46,
+     0.32
+    ],
+    "Use": [
+     0.0,
+     0.0,
+     0.75
+    ]
+   },
+   "nodes": [
+    "Viewer"
+   ],
+   "note": "looks toward the front (-Z); the user stands behind it (marker 'Use')"
+  },
+  {
+   "id": "park_statue",
+   "file": "park_statue.glb",
+   "category": "park",
+   "family": "park",
+   "size": [
+    4.2,
+    4.4,
+    2.444
+   ],
+   "aabb_min": [
+    -2.1,
+    0.0,
+    -1.222
+   ],
+   "aabb_max": [
+    2.1,
+    4.4,
+    1.222
+   ],
+   "collision": "box",
+   "tris": 636,
+   "markers": {},
+   "nodes": [
+    "Statue"
+   ],
+   "note": "original abstract sculpture 'Sun over the Bay': brass ring, teal wave ribbon, coral sun"
+  },
+  {
+   "id": "windsock",
+   "file": "windsock.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    0.96,
+    6.37,
+    3.2
+   ],
+   "aabb_min": [
+    -0.48,
+    0.0,
+    -2.85
+   ],
+   "aabb_max": [
+    0.48,
+    6.37,
+    0.35
+   ],
+   "collision": "box",
+   "tris": 538,
+   "markers": {
+    "Light": [
+     0.0,
+     6.32,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Mast",
+    "Sock"
+   ],
+   "note": "child 'Sock' has its origin on the mast axis and points toward -Z (downwind) at rest: rotate it around Y with the wind"
+  },
+  {
+   "id": "runway_light",
+   "file": "runway_light.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    0.32,
+    0.47,
+    0.32
+   ],
+   "aabb_min": [
+    -0.16,
+    0.0,
+    -0.16
+   ],
+   "aabb_max": [
+    0.16,
+    0.47,
+    0.16
+   ],
+   "collision": "none",
+   "tris": 192,
+   "markers": {
+    "Light": [
+     0.0,
+     0.4,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Body"
+   ],
+   "note": "lens material P_LampWarm (emissive); the game may tint it per use (edge white, threshold green/red, taxiway blue)"
+  },
+  {
+   "id": "runway_sign",
+   "file": "runway_sign.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    1.96,
+    1.02,
+    0.3
+   ],
+   "aabb_min": [
+    -0.98,
+    0.0,
+    -0.15
+   ],
+   "aabb_max": [
+    0.98,
+    1.02,
+    0.15
+   ],
+   "collision": "box",
+   "tris": 296,
+   "markers": {},
+   "nodes": [
+    "Sign"
+   ],
+   "note": "taxiway guidance board, readable from both sides (+Z / -Z); glyphs are abstract (arrow / bars), no lettering"
+  },
+  {
+   "id": "helipad_beacon",
+   "file": "helipad_beacon.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    0.64,
+    2.025,
+    0.71
+   ],
+   "aabb_min": [
+    -0.32,
+    0.0,
+    -0.32
+   ],
+   "aabb_max": [
+    0.32,
+    2.025,
+    0.39
+   ],
+   "collision": "box",
+   "tris": 440,
+   "markers": {
+    "Light": [
+     0.0,
+     1.58,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Base",
+    "Lamp"
+   ],
+   "note": "child 'Lamp' (origin on the vertical axis) carries a green and a white lens on opposite sides: spin it around the vertical axis"
+  },
+  {
+   "id": "aircraft_stairs",
+   "file": "aircraft_stairs.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    1.77,
+    3.655,
+    6.2
+   ],
+   "aabb_min": [
+    -0.885,
+    0.0,
+    -2.74
+   ],
+   "aabb_max": [
+    0.885,
+    3.655,
+    3.46
+   ],
+   "collision": "trimesh",
+   "tris": 1244,
+   "markers": {
+    "Platform": [
+     0.0,
+     2.6,
+     -2.05
+    ],
+    "Stairs_Bottom": [
+     0.0,
+     0.0,
+     2.9
+    ],
+    "Stairs_Top": [
+     0.0,
+     2.6,
+     -1.4
+    ]
+   },
+   "nodes": [
+    "Stairs"
+   ],
+   "note": "mobile airstairs; climb from the back (+Z) up to the platform at the front (-Z, aircraft side, 2.6 m). Steps: rise 0.2 m / run 0.3 m - use markers Stairs_Bottom / Stairs_Top for a ramp collider if the character controller cannot step"
+  },
+  {
+   "id": "fuel_truck_static",
+   "file": "fuel_truck_static.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    2.94,
+    3.445,
+    7.933
+   ],
+   "aabb_min": [
+    -1.47,
+    0.0,
+    -3.755
+   ],
+   "aabb_max": [
+    1.47,
+    3.445,
+    4.178
+   ],
+   "collision": "box",
+   "tris": 2078,
+   "markers": {
+    "Driver_Door": [
+     -1.6,
+     0.0,
+     -2.4
+    ],
+    "Hose": [
+     -0.5,
+     1.0,
+     4.2
+    ]
+   },
+   "nodes": [
+    "Truck"
+   ],
+   "note": "decorative aviation fuel bowser (not a driveable vehicle)"
+  },
+  {
+   "id": "radar_dish",
+   "file": "radar_dish.glb",
+   "category": "airport",
+   "family": "airport",
+   "size": [
+    4.637,
+    7.857,
+    3.282
+   ],
+   "aabb_min": [
+    -2.318,
+    0.0,
+    -1.762
+   ],
+   "aabb_max": [
+    2.318,
+    7.857,
+    1.52
+   ],
+   "collision": "box",
+   "tris": 1030,
+   "markers": {
+    "Light": [
+     0.0,
+     7.35,
+     0.2
+    ]
+   },
+   "nodes": [
+    "Dish",
+    "Tower"
+   ],
+   "note": "child 'Dish' (origin on the vertical axis at the turntable) is the rotating antenna: spin it around the vertical axis"
+  },
+  {
+   "id": "target_round",
+   "file": "target_round.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    0.975,
+    1.965,
+    1.142
+   ],
+   "aabb_min": [
+    -0.487,
+    -0.011,
+    -0.167
+   ],
+   "aabb_max": [
+    0.487,
+    1.954,
+    0.975
+   ],
+   "collision": "box",
+   "tris": 396,
+   "markers": {
+    "Bullseye": [
+     0.0,
+     1.3,
+     -0.15
+    ]
+   },
+   "nodes": [
+    "Stand",
+    "Target"
+   ],
+   "note": "child 'Target' = ring face (origin at the bullseye, faces the front (-Z), radius 0.45, leans back 6 deg); child 'Stand' = easel",
+   "target_radius": 0.45,
+   "ring_radii": [
+    0.45,
+    0.36,
+    0.27,
+    0.18,
+    0.09
+   ]
+  },
+  {
+   "id": "target_silhouette",
+   "file": "target_silhouette.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    0.9,
+    1.662,
+    0.6
+   ],
+   "aabb_min": [
+    -0.45,
+    0.0,
+    -0.3
+   ],
+   "aabb_max": [
+    0.45,
+    1.662,
+    0.3
+   ],
+   "collision": "box",
+   "tris": 228,
+   "markers": {
+    "Hit_Center": [
+     0.0,
+     0.97,
+     -0.02
+    ]
+   },
+   "nodes": [
+    "Base",
+    "Target"
+   ],
+   "note": "knock-down steel target shaped like a BOTTLE (abstract, not a figure). Child 'Target' has its origin on the hinge axis (local X) and faces the front (-Z): set rotation.x = +PI/2 to lay it down backward."
+  },
+  {
+   "id": "stunt_ramp_small",
+   "file": "stunt_ramp_small.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    2.4,
+    1.035,
+    3.09
+   ],
+   "aabb_min": [
+    -1.2,
+    0.0,
+    -1.53
+   ],
+   "aabb_max": [
+    1.2,
+    1.035,
+    1.56
+   ],
+   "collision": "trimesh",
+   "tris": 240,
+   "markers": {
+    "Entry": [
+     0.0,
+     0.0,
+     1.8
+    ],
+    "Lip": [
+     0.0,
+     1.0,
+     -1.5
+    ]
+   },
+   "nodes": [
+    "Ramp"
+   ],
+   "note": "kicker: drive toward the model's front (-Z); 3 m long, 1 m lip, 2.4 m wide",
+   "lip_height": 1.0,
+   "lip_angle_deg": 26.0
+  },
+  {
+   "id": "stunt_ramp_big",
+   "file": "stunt_ramp_big.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    5.092,
+    2.974,
+    7.781
+   ],
+   "aabb_min": [
+    -2.546,
+    -0.059,
+    -3.43
+   ],
+   "aabb_max": [
+    2.546,
+    2.915,
+    4.351
+   ],
+   "collision": "trimesh",
+   "tris": 1140,
+   "markers": {
+    "Entry": [
+     0.0,
+     0.0,
+     4.6
+    ],
+    "Lip": [
+     0.0,
+     2.6,
+     -3.3
+    ]
+   },
+   "nodes": [
+    "Ramp"
+   ],
+   "note": "scaffold stunt ramp: drive toward the model's front (-Z); 8 m long, 5 m wide, lip 2.6 m",
+   "lip_height": 2.6,
+   "lip_angle_deg": 31.0
+  },
+  {
+   "id": "checkpoint_arch",
+   "file": "checkpoint_arch.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    13.3,
+    5.56,
+    5.3
+   ],
+   "aabb_min": [
+    -6.65,
+    -0.01,
+    -2.65
+   ],
+   "aabb_max": [
+    6.65,
+    5.55,
+    2.65
+   ],
+   "collision": "trimesh",
+   "tris": 1008,
+   "markers": {
+    "Gate": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "Post_L": [
+     -5.0,
+     0.0,
+     -0.0
+    ],
+    "Post_R": [
+     5.0,
+     0.0,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Arch"
+   ],
+   "note": "inflatable start/finish arch; drive through along Z. Clear opening 8.1 m wide (between the feet) x 3.65 m (under the banner)",
+   "opening_width": 8.1,
+   "opening_height": 3.65
+  },
+  {
+   "id": "race_flag",
+   "file": "race_flag.glb",
+   "category": "activities",
+   "family": "activities",
+   "size": [
+    1.413,
+    2.855,
+    0.723
+   ],
+   "aabb_min": [
+    -0.38,
+    0.005,
+    -0.361
+   ],
+   "aabb_max": [
+    1.033,
+    2.86,
+    0.361
+   ],
+   "collision": "none",
+   "tris": 394,
+   "markers": {},
+   "nodes": [
+    "Flag"
+   ],
+   "note": "chequered marker flag in a weighted tyre base; flag flies toward +X"
+  },
+  {
+   "id": "spike_strip",
+   "file": "spike_strip.glb",
+   "category": "police",
+   "family": "police",
+   "size": [
+    5.414,
+    0.138,
+    0.4
+   ],
+   "aabb_min": [
+    -2.06,
+    -0.0,
+    -0.2
+   ],
+   "aabb_max": [
+    3.354,
+    0.138,
+    0.2
+   ],
+   "collision": "none",
+   "tris": 940,
+   "markers": {},
+   "nodes": [
+    "Strip"
+   ],
+   "note": "lies across the road along X (4 m); vehicles cross it along Z. Spikes 14 cm high",
+   "length": 4.0
+  },
+  {
+   "id": "police_light_stand",
+   "file": "police_light_stand.glb",
+   "category": "police",
+   "family": "police",
+   "size": [
+    1.576,
+    2.804,
+    1.395
+   ],
+   "aabb_min": [
+    -0.788,
+    0.0,
+    -0.485
+   ],
+   "aabb_max": [
+    0.788,
+    2.804,
+    0.91
+   ],
+   "collision": "box",
+   "tris": 460,
+   "markers": {
+    "Light_Blue": [
+     0.26,
+     2.36,
+     0.12
+    ],
+    "Light_Flood": [
+     0.0,
+     2.68,
+     -0.05
+    ],
+    "Light_Red": [
+     -0.26,
+     2.36,
+     0.12
+    ]
+   },
+   "nodes": [
+    "Stand"
+   ],
+   "note": "portable scene light: red / blue lamps use M_Siren_Red / M_Siren_Blue, floods P_HeadlightWhite"
+  },
+  {
+   "id": "parachute_canopy",
+   "file": "parachute_canopy.glb",
+   "category": "parachute",
+   "family": "parachute",
+   "size": [
+    7.423,
+    5.207,
+    2.921
+   ],
+   "aabb_min": [
+    -3.712,
+    -0.001,
+    -1.46
+   ],
+   "aabb_max": [
+    3.712,
+    5.206,
+    1.46
+   ],
+   "collision": "none",
+   "tris": 556,
+   "markers": {
+    "Canopy_Center": [
+     0.0,
+     4.75,
+     -0.0
+    ],
+    "Harness": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "Toggle_L": [
+     -0.33,
+     0.62,
+     0.12
+    ],
+    "Toggle_R": [
+     0.33,
+     0.62,
+     0.12
+    ]
+   },
+   "nodes": [
+    "Canopy",
+    "Lines"
+   ],
+   "note": "ram-air canopy, 7 m span; ORIGIN = harness point (pilot's shoulders), canopy 4.6 m above; leading edge toward the front (-Z)",
+   "span": 7.0,
+   "chord": 2.9
+  },
+  {
+   "id": "parachute_pack",
+   "file": "parachute_pack.glb",
+   "category": "parachute",
+   "family": "parachute",
+   "size": [
+    0.45,
+    0.729,
+    0.46
+   ],
+   "aabb_min": [
+    -0.225,
+    -0.432,
+    -0.262
+   ],
+   "aabb_max": [
+    0.225,
+    0.297,
+    0.198
+   ],
+   "collision": "none",
+   "tris": 440,
+   "markers": {
+    "Deploy": [
+     0.0,
+     0.2,
+     0.1
+    ]
+   },
+   "nodes": [
+    "Pack",
+    "Straps"
+   ],
+   "note": "worn rig: ORIGIN = centre of the wearer's back (pack surface that touches the back); the pack extends backward (+Z). Child 'Straps' (harness webbing sized for the 1.8 m humanoid) can be hidden if it clips an outfit"
+  },
+  {
+   "id": "traffic_barrier_arm",
+   "file": "traffic_barrier_arm.glb",
+   "category": "service",
+   "family": "service",
+   "size": [
+    5.06,
+    1.28,
+    0.75
+   ],
+   "aabb_min": [
+    -2.76,
+    0.0,
+    -0.45
+   ],
+   "aabb_max": [
+    2.3,
+    1.28,
+    0.3
+   ],
+   "collision": "box",
+   "tris": 486,
+   "markers": {
+    "Lane": [
+     0.0,
+     0.0,
+     -0.0
+    ]
+   },
+   "nodes": [
+    "Arm",
+    "Housing"
+   ],
+   "note": "boom gate across X; child 'Arm' pivots at the housing (origin on the hinge, hinge axis = local Y / Godot Z): rotate it by +80 deg around Godot Z to open. Origin = lane centre",
+   "arm_length": 4.2
+  },
+  {
+   "id": "vfx_checkpoint_ring",
+   "file": "vfx_checkpoint_ring.glb",
+   "category": "vfx",
+   "family": "vfx",
+   "size": [
+    2.0,
+    1.0,
+    2.0
+   ],
+   "aabb_min": [
+    -1.0,
+    0.0,
+    -1.0
+   ],
+   "aabb_max": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collision": "none",
+   "tris": 48,
+   "markers": {},
+   "nodes": [
+    "Ring"
+   ],
+   "note": "open cylinder wall, radius 1, height 1, origin at the base centre. UV: u = around (0..1), v = height (0..1). Single-sided (outside): scale it in game (e.g. 4 x 6 x 4) and give it an additive fading shader with cull_disabled"
+  },
+  {
+   "id": "vfx_light_cone",
+   "file": "vfx_light_cone.glb",
+   "category": "vfx",
+   "family": "vfx",
+   "size": [
+    0.7,
+    0.7,
+    1.0
+   ],
+   "aabb_min": [
+    -0.35,
+    -0.35,
+    -1.0
+   ],
+   "aabb_max": [
+    0.35,
+    0.35,
+    -0.0
+   ],
+   "collision": "none",
+   "tris": 32,
+   "markers": {},
+   "nodes": [
+    "Cone"
+   ],
+   "note": "search-light / beacon beam cone: apex at the origin, axis toward +Y in Blender (= -Z in Godot, like SpotLight3D), length 1, end radius 0.35. UV: u = around, v = 0 at the apex .. 1 at the far end. Single-sided (outside): scale in game, use an additive unshaded shader with cull_disabled"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+# Godot 4 transient data
+.godot/
+*.translation
+export/
+build/
+*.tmp
+
+# Blender autosave/backup copies (the master .blend itself IS tracked)
+*.blend1
+*.blend2
+backups/
+
+# QA output, logs, screenshots, previews
+qa/logs/
+qa/screenshots/
+qa/tmp/
+*.log
+
+# Session bookkeeping is tracked (timestamps), but raw usage dumps are not
+.fable-5.2-gta-runs/**/raw_usage*
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+__pycache__/
+*.pyc
+
+# Large / transient QA artefacts kept on disk only
+qa/blender_previews/
+qa/handoff/
+qa/progress/
+

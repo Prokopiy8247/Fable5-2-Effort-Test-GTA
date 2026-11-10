@@ -1,0 +1,1066 @@
+{
+ "about": "Halcyon Bay weapon models. Godot space: -Z = barrel, +Y = up, +X = right, origin = right-hand grip. Att_* meshes are authored in place (hide by default); hide Mag while Att_ExtMag is shown.",
+ "finish_material": "M_Weapon_Finish",
+ "weapons": [
+  {
+   "id": "knife",
+   "file": "knife.glb",
+   "tris": 380,
+   "size": [
+    0.026,
+    0.059,
+    0.322
+   ],
+   "aabb_min": [
+    -0.0128,
+    -0.0336,
+    -0.24
+   ],
+   "aabb_max": [
+    0.0128,
+    0.0257,
+    0.082
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_OliveDrab",
+    "P_Steel",
+    "P_SteelDark"
+   ],
+   "markers": {
+    "Grip_L": [
+     0.0,
+     0.0,
+     0.03
+    ],
+    "Muzzle": [
+     0.0,
+     0.001,
+     -0.24
+    ]
+   }
+  },
+  {
+   "id": "bat",
+   "file": "bat.glb",
+   "tris": 700,
+   "size": [
+    0.068,
+    0.068,
+    0.83
+   ],
+   "aabb_min": [
+    -0.0338,
+    -0.0338,
+    -0.69
+   ],
+   "aabb_max": [
+    0.0338,
+    0.0338,
+    0.14
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_Charcoal",
+    "P_Teal",
+    "P_Wood",
+    "P_WoodDark"
+   ],
+   "markers": {
+    "Grip_L": [
+     0.0,
+     0.0,
+     0.085
+    ],
+    "Muzzle": [
+     0.0,
+     0.0,
+     -0.69
+    ]
+   }
+  },
+  {
+   "id": "crowbar",
+   "file": "crowbar.glb",
+   "tris": 384,
+   "size": [
+    0.033,
+    0.111,
+    0.603
+   ],
+   "aabb_min": [
+    -0.0165,
+    -0.0107,
+    -0.385
+   ],
+   "aabb_max": [
+    0.0165,
+    0.1001,
+    0.2184
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_CarRed",
+    "P_GunMetalDark",
+    "P_Steel"
+   ],
+   "markers": {
+    "Grip_L": [
+     0.0,
+     0.0,
+     0.1
+    ],
+    "Muzzle": [
+     0.0,
+     0.07,
+     -0.372
+    ]
+   }
+  },
+  {
+   "id": "pistol",
+   "file": "pistol.glb",
+   "tris": 1248,
+   "size": [
+    0.036,
+    0.177,
+    0.185
+   ],
+   "aabb_min": [
+    -0.0178,
+    -0.0868,
+    -0.1375
+   ],
+   "aabb_max": [
+    0.0178,
+    0.0898,
+    0.0478
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_SafetyOrange",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.018,
+     0.079,
+     -0.068
+    ],
+    "Flashlight": [
+     0.0,
+     0.0205,
+     -0.1415
+    ],
+    "Grip_L": [
+     -0.004,
+     -0.028,
+     -0.022
+    ],
+    "Muzzle": [
+     0.0,
+     0.064,
+     -0.1375
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.064,
+     -0.2625
+    ]
+   }
+  },
+  {
+   "id": "heavy_pistol",
+   "file": "heavy_pistol.glb",
+   "tris": 1228,
+   "size": [
+    0.05,
+    0.23,
+    0.284
+   ],
+   "aabb_min": [
+    -0.025,
+    -0.093,
+    -0.238
+   ],
+   "aabb_max": [
+    0.025,
+    0.137,
+    0.0464
+   ],
+   "meshes": [
+    "Att_Flashlight",
+    "Att_Scope",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_Flashlight",
+    "Att_Scope"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_Brass",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunWood",
+    "P_SafetyOrange",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.027,
+     0.076,
+     -0.037
+    ],
+    "Flashlight": [
+     0.0,
+     0.0365,
+     -0.2085
+    ],
+    "Grip_L": [
+     -0.004,
+     -0.045,
+     -0.014
+    ],
+    "Muzzle": [
+     0.0,
+     0.076,
+     -0.238
+    ]
+   }
+  },
+  {
+   "id": "smg",
+   "file": "smg.glb",
+   "tris": 1588,
+   "size": [
+    0.055,
+    0.271,
+    0.608
+   ],
+   "aabb_min": [
+    -0.034,
+    -0.15,
+    -0.3
+   ],
+   "aabb_max": [
+    0.0207,
+    0.121,
+    0.308
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_SafetyOrange",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.022,
+     0.082,
+     -0.094
+    ],
+    "Flashlight": [
+     0.032,
+     0.072,
+     -0.282
+    ],
+    "Grip_L": [
+     0.0,
+     -0.03,
+     -0.098
+    ],
+    "Muzzle": [
+     0.0,
+     0.072,
+     -0.3
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.072,
+     -0.45
+    ]
+   }
+  },
+  {
+   "id": "pump_shotgun",
+   "file": "pump_shotgun.glb",
+   "tris": 1320,
+   "size": [
+    0.073,
+    0.192,
+    1.021
+   ],
+   "aabb_min": [
+    -0.0451,
+    -0.1053,
+    -0.67
+   ],
+   "aabb_max": [
+    0.0283,
+    0.087,
+    0.351
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": false,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_Brass",
+    "P_CarRed",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_GunWood",
+    "P_Leather",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.024,
+     0.056,
+     -0.148
+    ],
+    "Flashlight": [
+     0.03,
+     0.047,
+     -0.61
+    ],
+    "Grip_L": [
+     0.0,
+     0.02,
+     -0.41
+    ],
+    "Muzzle": [
+     0.0,
+     0.062,
+     -0.67
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.062,
+     -0.85
+    ]
+   }
+  },
+  {
+   "id": "auto_shotgun",
+   "file": "auto_shotgun.glb",
+   "tris": 1776,
+   "size": [
+    0.064,
+    0.322,
+    1.053
+   ],
+   "aabb_min": [
+    -0.0247,
+    -0.181,
+    -0.705
+   ],
+   "aabb_max": [
+    0.0392,
+    0.1405,
+    0.348
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_Brass",
+    "P_CarRed",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.025,
+     0.088,
+     -0.1
+    ],
+    "Flashlight": [
+     -0.037,
+     0.076,
+     -0.475
+    ],
+    "Grip_L": [
+     0.0,
+     0.04,
+     -0.385
+    ],
+    "Muzzle": [
+     0.0,
+     0.078,
+     -0.705
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.078,
+     -0.895
+    ]
+   }
+  },
+  {
+   "id": "assault_rifle",
+   "file": "assault_rifle.glb",
+   "tris": 1664,
+   "size": [
+    0.06,
+    0.293,
+    0.929
+   ],
+   "aabb_min": [
+    -0.0242,
+    -0.1493,
+    -0.602
+   ],
+   "aabb_max": [
+    0.036,
+    0.144,
+    0.327
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_CarRed",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_GunTan",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.024,
+     0.085,
+     -0.072
+    ],
+    "Flashlight": [
+     0.0365,
+     0.078,
+     -0.398
+    ],
+    "Grip_L": [
+     0.0,
+     0.045,
+     -0.3
+    ],
+    "Muzzle": [
+     0.0,
+     0.082,
+     -0.602
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.082,
+     -0.767
+    ]
+   }
+  },
+  {
+   "id": "carbine",
+   "file": "carbine.glb",
+   "tris": 1792,
+   "size": [
+    0.058,
+    0.29,
+    0.821
+   ],
+   "aabb_min": [
+    -0.0268,
+    -0.1394,
+    -0.512
+   ],
+   "aabb_max": [
+    0.031,
+    0.1505,
+    0.309
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.022,
+     0.088,
+     -0.05
+    ],
+    "Flashlight": [
+     0.0355,
+     0.084,
+     -0.394
+    ],
+    "Grip_L": [
+     0.0,
+     0.05,
+     -0.28
+    ],
+    "Muzzle": [
+     0.0,
+     0.084,
+     -0.512
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.084,
+     -0.667
+    ]
+   }
+  },
+  {
+   "id": "marksman_rifle",
+   "file": "marksman_rifle.glb",
+   "tris": 1788,
+   "size": [
+    0.061,
+    0.217,
+    1.122
+   ],
+   "aabb_min": [
+    -0.025,
+    -0.1008,
+    -0.76
+   ],
+   "aabb_max": [
+    0.036,
+    0.116,
+    0.362
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Flashlight",
+    "Att_Grip",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_GunWood",
+    "P_Leather",
+    "P_Steel",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.022,
+     0.078,
+     -0.13
+    ],
+    "Flashlight": [
+     0.031,
+     0.076,
+     -0.468
+    ],
+    "Grip_L": [
+     0.0,
+     0.016,
+     -0.33
+    ],
+    "Muzzle": [
+     0.0,
+     0.072,
+     -0.76
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.072,
+     -0.96
+    ]
+   }
+  },
+  {
+   "id": "sniper_rifle",
+   "file": "sniper_rifle.glb",
+   "tris": 1776,
+   "size": [
+    0.093,
+    0.27,
+    1.254
+   ],
+   "aabb_min": [
+    -0.025,
+    -0.0836,
+    -0.858
+   ],
+   "aabb_max": [
+    0.068,
+    0.1867,
+    0.396
+   ],
+   "meshes": [
+    "Att_ExtMag",
+    "Att_Scope",
+    "Att_Suppressor",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_ExtMag",
+    "Att_Scope",
+    "Att_Suppressor"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_OliveDrab",
+    "P_Steel",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.024,
+     0.104,
+     -0.095
+    ],
+    "Grip_L": [
+     0.0,
+     0.035,
+     -0.3
+    ],
+    "Muzzle": [
+     0.0,
+     0.092,
+     -0.858
+    ],
+    "Muzzle_Suppressed": [
+     0.0,
+     0.092,
+     -1.098
+    ]
+   }
+  },
+  {
+   "id": "grenade",
+   "file": "grenade.glb",
+   "tris": 464,
+   "size": [
+    0.075,
+    0.126,
+    0.068
+   ],
+   "aabb_min": [
+    -0.0442,
+    -0.05,
+    -0.0372
+   ],
+   "aabb_max": [
+    0.0308,
+    0.0759,
+    0.0308
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_Chrome",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_HazardYellow",
+    "P_OliveDrab",
+    "P_Steel"
+   ],
+   "markers": {}
+  },
+  {
+   "id": "molotov",
+   "file": "molotov.glb",
+   "tris": 408,
+   "size": [
+    0.071,
+    0.296,
+    0.071
+   ],
+   "aabb_min": [
+    -0.0354,
+    -0.062,
+    -0.0354
+   ],
+   "aabb_max": [
+    0.0354,
+    0.234,
+    0.0354
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_Charcoal",
+    "P_Coral",
+    "P_Cream",
+    "P_LeafDark",
+    "P_ShirtWhite"
+   ],
+   "markers": {
+    "Muzzle": [
+     0.007,
+     0.234,
+     -0.003
+    ]
+   }
+  },
+  {
+   "id": "rocket_launcher",
+   "file": "rocket_launcher.glb",
+   "tris": 1088,
+   "size": [
+    0.157,
+    0.282,
+    1.263
+   ],
+   "aabb_min": [
+    -0.092,
+    -0.0776,
+    -0.715
+   ],
+   "aabb_max": [
+    0.0647,
+    0.204,
+    0.548
+   ],
+   "meshes": [
+    "Body",
+    "Mag"
+   ],
+   "attachments": [],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_Black",
+    "P_Charcoal",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_HazardYellow",
+    "P_OliveDrab",
+    "P_Steel",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.0,
+     0.118,
+     0.548
+    ],
+    "Grip_L": [
+     0.0,
+     0.01,
+     -0.222
+    ],
+    "Muzzle": [
+     0.0,
+     0.118,
+     -0.52
+    ]
+   }
+  },
+  {
+   "id": "grenade_launcher",
+   "file": "grenade_launcher.glb",
+   "tris": 1352,
+   "size": [
+    0.115,
+    0.258,
+    0.715
+   ],
+   "aabb_min": [
+    -0.0577,
+    -0.0815,
+    -0.4412
+   ],
+   "aabb_max": [
+    0.0577,
+    0.1765,
+    0.274
+   ],
+   "meshes": [
+    "Att_Flashlight",
+    "Att_Scope",
+    "Body",
+    "Mag"
+   ],
+   "attachments": [
+    "Att_Flashlight",
+    "Att_Scope"
+   ],
+   "has_mag": true,
+   "tintable": true,
+   "materials": [
+    "M_Weapon_Finish",
+    "P_Black",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_GunPolymer",
+    "P_White",
+    "P_Window"
+   ],
+   "markers": {
+    "Eject": [
+     0.062,
+     0.046,
+     -0.155
+    ],
+    "Flashlight": [
+     0.041,
+     0.08,
+     -0.38
+    ],
+    "Grip_L": [
+     0.0,
+     0.0,
+     -0.314
+    ],
+    "Muzzle": [
+     0.0,
+     0.08,
+     -0.441
+    ]
+   }
+  },
+  {
+   "id": "rocket",
+   "file": "rocket.glb",
+   "tris": 364,
+   "size": [
+    0.142,
+    0.142,
+    0.576
+   ],
+   "aabb_min": [
+    -0.0709,
+    -0.0709,
+    -0.275
+   ],
+   "aabb_max": [
+    0.0709,
+    0.0709,
+    0.301
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_Charcoal",
+    "P_GunMetalDark",
+    "P_HazardYellow",
+    "P_OliveDrab",
+    "P_Steel"
+   ],
+   "markers": {
+    "Exhaust": [
+     0.0,
+     0.0,
+     0.301
+    ]
+   }
+  },
+  {
+   "id": "grenade_round",
+   "file": "grenade_round.glb",
+   "tris": 276,
+   "size": [
+    0.043,
+    0.043,
+    0.106
+   ],
+   "aabb_min": [
+    -0.0213,
+    -0.0213,
+    -0.0525
+   ],
+   "aabb_max": [
+    0.0213,
+    0.0213,
+    0.0535
+   ],
+   "meshes": [
+    "Body"
+   ],
+   "attachments": [],
+   "has_mag": false,
+   "tintable": false,
+   "materials": [
+    "P_Brass",
+    "P_HazardYellow",
+    "P_OliveDrab",
+    "P_Steel"
+   ],
+   "markers": {
+    "Exhaust": [
+     0.0,
+     0.0,
+     0.053
+    ]
+   }
+  }
+ ]
+}

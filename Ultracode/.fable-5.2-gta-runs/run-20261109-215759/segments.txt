@@ -1,0 +1,7 @@
+﻿segment 1: 2026-11-09T21:57:59+01:00 -> ~2026-11-09T23:31:44+01:00 (Wave 1 workflow stopped: account usage limit reached; last agent activity 23:31:44)
+pause 1:   ~2026-11-09T23:31:44+01:00 -> 2026-11-09T23:45:09+01:00 (waiting for usage limit / user 'Try again'; no work performed)
+segment 2: 2026-11-09T23:45:09+01:00 -> ~2026-11-10T01:21:52+01:00 (resumed Wave 1; stopped again by the account usage limit for model claude-fable-5-2; last agent activity 01:21:52)
+pause 2:   ~2026-11-10T01:21:52+01:00 -> 2026-11-10T05:49:46+01:00 (usage limit; no work performed; user switched the session model to claude-opus-5-5 and said "continue")
+segment 3: 2026-11-10T05:49:46+01:00 -> 2026-11-10T06:00:20+01:00 model: claude-opus-5-5 (second resume of Wave 1, ~10 min; stopped on user request "stop the project for now")
+pause 3:   2026-11-10T06:00:20+01:00 -> 2026-11-10T08:32:55.198+01:00 user-requested stop; no work performed
+segment 4: 2026-11-10T08:32:55.198+01:00 -> 2026-11-10T15:50:52.049+01:00 (Waves 1-3, integration, final report; user asked to finish quickly)

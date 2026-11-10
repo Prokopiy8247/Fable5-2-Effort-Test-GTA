@@ -1,0 +1,278 @@
+{
+ "about": "Pickup props (origin bottom centre, single mesh 'Body').",
+ "props": [
+  {
+   "id": "ammo_box",
+   "file": "ammo_box.glb",
+   "category": "pickup",
+   "size": [
+    0.208,
+    0.219,
+    0.315
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 568,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Brass",
+    "P_GunMetal",
+    "P_GunMetalDark",
+    "P_HazardYellow",
+    "P_OliveDrab",
+    "P_Rust"
+   ],
+   "aabb_min": [
+    -0.0808,
+    0.0,
+    -0.1595
+   ],
+   "aabb_max": [
+    0.1274,
+    0.219,
+    0.156
+   ]
+  },
+  {
+   "id": "medkit",
+   "file": "medkit.glb",
+   "category": "pickup",
+   "size": [
+    0.304,
+    0.249,
+    0.121
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 340,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_CarRed",
+    "P_GunMetalDark",
+    "P_Steel",
+    "P_White"
+   ],
+   "aabb_min": [
+    -0.1518,
+    -0.0017,
+    -0.0606
+   ],
+   "aabb_max": [
+    0.1518,
+    0.247,
+    0.0606
+   ]
+  },
+  {
+   "id": "armor_vest",
+   "file": "armor_vest.glb",
+   "category": "pickup",
+   "size": [
+    0.365,
+    0.446,
+    0.299
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 548,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Black",
+    "P_Charcoal",
+    "P_Sky",
+    "P_Steel",
+    "P_TacticalBlack",
+    "P_UniformNavy"
+   ],
+   "aabb_min": [
+    -0.1825,
+    0.0,
+    -0.148
+   ],
+   "aabb_max": [
+    0.1825,
+    0.446,
+    0.151
+   ]
+  },
+  {
+   "id": "cash_stack",
+   "file": "cash_stack.glb",
+   "category": "pickup",
+   "size": [
+    0.173,
+    0.05,
+    0.18
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 240,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Cream",
+    "P_Mint",
+    "P_ShirtGreen"
+   ],
+   "aabb_min": [
+    -0.0867,
+    -0.0011,
+    -0.09
+   ],
+   "aabb_max": [
+    0.0859,
+    0.0491,
+    0.09
+   ]
+  },
+  {
+   "id": "cash_bag",
+   "file": "cash_bag.glb",
+   "category": "pickup",
+   "size": [
+    0.285,
+    0.371,
+    0.267
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 448,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Khaki",
+    "P_Mint",
+    "P_ShirtGreen",
+    "P_TrunkLight"
+   ],
+   "aabb_min": [
+    -0.1427,
+    0.0,
+    -0.1382
+   ],
+   "aabb_max": [
+    0.1427,
+    0.3713,
+    0.129
+   ]
+  },
+  {
+   "id": "parachute_pack",
+   "file": "parachute_pack.glb",
+   "category": "pickup",
+   "size": [
+    0.33,
+    0.472,
+    0.229
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 380,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Charcoal",
+    "P_Navy",
+    "P_SafetyOrange",
+    "P_Steel",
+    "P_Teal"
+   ],
+   "aabb_min": [
+    -0.165,
+    0.0,
+    -0.1
+   ],
+   "aabb_max": [
+    0.165,
+    0.472,
+    0.1285
+   ]
+  },
+  {
+   "id": "scuba_tank",
+   "file": "scuba_tank.glb",
+   "category": "pickup",
+   "size": [
+    0.226,
+    0.648,
+    0.28
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 632,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_Charcoal",
+    "P_Chrome",
+    "P_HazardYellow",
+    "P_Navy",
+    "P_Steel"
+   ],
+   "aabb_min": [
+    -0.1,
+    0.0,
+    -0.1052
+   ],
+   "aabb_max": [
+    0.126,
+    0.648,
+    0.175
+   ]
+  },
+  {
+   "id": "weapon_crate",
+   "file": "weapon_crate.glb",
+   "category": "pickup",
+   "size": [
+    0.983,
+    0.33,
+    0.435
+   ],
+   "physics": "static",
+   "mass": 0.0,
+   "surface": "metal",
+   "tris": 796,
+   "meshes": [
+    "Body"
+   ],
+   "materials": [
+    "P_GunMetalDark",
+    "P_HazardYellow",
+    "P_Khaki",
+    "P_Olive",
+    "P_OliveDrab",
+    "P_SafetyOrange",
+    "P_Steel",
+    "P_WoodDark"
+   ],
+   "aabb_min": [
+    -0.4916,
+    0.0,
+    -0.222
+   ],
+   "aabb_max": [
+    0.4916,
+    0.33,
+    0.213
+   ]
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+  "session": "f0ccccf9-8795-4dac-a29e-5a331b39db1d",
+  "files": 91,
+  "raw_usage_lines": 15641,
+  "deduplicated_requests": 7226,
+  "first_request": "2026-11-09T20:57:39.710Z",
+  "last_request": "2026-11-10T14:50:28.384Z",
+  "models": {
+    "claude-fable-5-2 | main": {
+      "requests": 65,
+      "input": 134,
+      "cache_read": 22080022,
+      "cache_write": 467031,
+      "cache_write_5m": 0,
+      "cache_write_1h": 467031,
+      "output": 328440,
+      "thinking_included_in_output": 137893,
+      "tier_standard": 65,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 22875627
+    },
+    "claude-fable-5-2 | sub": {
+      "requests": 2578,
+      "input": 5172,
+      "cache_read": 721792156,
+      "cache_write": 22011122,
+      "cache_write_5m": 22011122,
+      "cache_write_1h": 0,
+      "output": 7930260,
+      "thinking_included_in_output": 4164642,
+      "tier_standard": 2578,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 751738710
+    },
+    "claude-opus-5-5 | main": {
+      "requests": 90,
+      "input": 198,
+      "cache_read": 41745863,
+      "cache_write": 874506,
+      "cache_write_5m": 0,
+      "cache_write_1h": 874506,
+      "output": 86015,
+      "thinking_included_in_output": 16820,
+      "tier_standard": 90,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 42706582
+    },
+    "claude-opus-5-5 | sub": {
+      "requests": 4493,
+      "input": 9012,
+      "cache_read": 1452404249,
+      "cache_write": 31319157,
+      "cache_write_5m": 31319157,
+      "cache_write_1h": 0,
+      "output": 6161374,
+      "thinking_included_in_output": 2809196,
+      "tier_standard": 4493,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 1489893792
+    }
+  },
+  "per_model": {
+    "claude-fable-5-2": {
+      "requests": 2643,
+      "input": 5306,
+      "cache_read": 743872178,
+      "cache_write": 22478153,
+      "cache_write_5m": 22011122,
+      "cache_write_1h": 467031,
+      "output": 8258700,
+      "thinking_included_in_output": 4302535,
+      "tier_standard": 2643,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 774614337
+    },
+    "claude-opus-5-5": {
+      "requests": 4583,
+      "input": 9210,
+      "cache_read": 1494150112,
+      "cache_write": 32193663,
+      "cache_write_5m": 31319157,
+      "cache_write_1h": 874506,
+      "output": 6247389,
+      "thinking_included_in_output": 2826016,
+      "tier_standard": 4583,
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "total": 1532600374
+    }
+  },
+  "grand_total": {
+    "requests": 7226,
+    "input": 14516,
+    "cache_read": 2238022290,
+    "cache_write": 54671816,
+    "cache_write_5m": 53330279,
+    "cache_write_1h": 1341537,
+    "output": 14506089,
+    "thinking_included_in_output": 7128551,
+    "tier_standard": 7226,
+    "web_search_requests": 0,
+    "web_fetch_requests": 0,
+    "total": 2307214711
+  }
+}
