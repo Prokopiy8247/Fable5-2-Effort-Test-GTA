@@ -1,0 +1,4 @@
+﻿start: 2026-11-09T21:48:43.339+01:00
+timezone: Central European Standard Time
+run_id: run-20261109-214843
+cwd: G:\YouTube\Fable 5.2 Effort Test GTA\Extra

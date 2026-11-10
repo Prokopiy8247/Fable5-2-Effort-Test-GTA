@@ -1,0 +1,81 @@
+﻿; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Cinder Bay - Free Roam (Fable 5.2 GTA Extra)"
+config/description="Original missionless open-world sandbox. Godot 4.7 + Blender MCP benchmark."
+run/main_scene="res://gta/scenes/bootstrap/main.tscn"
+run/max_fps=60
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+G="*res://gta/code/core/game.gd"
+Assets="*res://gta/code/core/assets.gd"
+Sfx="*res://gta/code/audio/sfx.gd"
+Save="*res://gta/code/save/save.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/vsync/vsync_mode=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[filesystem]
+
+import/blender/enabled=false
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="vehicle"
+3d_physics/layer_3="character"
+3d_physics/layer_4="prop"
+3d_physics/layer_5="trigger"
+3d_physics/layer_6="debris"
+3d_physics/layer_7="water"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+common/physics_ticks_per_second=60
+common/max_physics_steps_per_frame=4
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=1
+scaling_3d/scale=1.0
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=2
+lights_and_shadows/positional_shadow/atlas_size=2048
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=1
+limits/cluster_builder/max_clustered_elements=256.0
+textures/default_filters/anisotropic_filtering_level=2
+
+[shader_globals]
+
+night_factor={
+"type": "float",
+"value": 0.0
+}
+wetness={
+"type": "float",
+"value": 0.0
+}
+wind_time={
+"type": "float",
+"value": 0.0
+}
