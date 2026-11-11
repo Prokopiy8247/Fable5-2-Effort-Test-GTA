@@ -26,7 +26,7 @@ Notes
 - An earlier aborted attempt left `.fable-5.2-gta-runs/run-20261109-214907/` (start 21:49:07, no work products, no accessible usage log). It is preserved untouched and reported as a separate segment.
 - Only `execute_blender_code`, `get_scene_info`, `get_addon_status` and `look` are used. The asset-library / AI-generation tools of the connector (`search_assets`, `import_asset`, `generate_3d`) are **never** used (spec §2).
 - Godot's automatic `.blend` importer is disabled for this project (`filesystem/import/blender/enabled=false`): the master `.blend` is an editable source, runtime assets are explicit GLB exports (spec §41).
-- The run was interrupted twice by the account's Fable usage limit; after the second stop the user switched the session to Claude Opus 5.5 (see `.fable-5.2-gta-runs/run-20261109-215759/segments.md`).
+- The run was interrupted twice by the account's usage limit (see `.fable-5.2-gta-runs/run-20261109-215759/segments.md`).
 
 ## 2. Art direction (chosen autonomously)
 

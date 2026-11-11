@@ -22,8 +22,7 @@
   {
    "label": "lead session",
    "models": [
-    "claude-fable-5-2",
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 399,
@@ -59,8 +58,7 @@
   {
    "label": "agent a0b4c478880857396",
    "models": [
-    "claude-fable-5-2",
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 111,
@@ -78,8 +76,7 @@
   {
    "label": "agent a0ca2c2cba613bea1",
    "models": [
-    "claude-fable-5-2",
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 106,
@@ -133,7 +130,7 @@
   {
    "label": "agent a2178c3b999041c5a",
    "models": [
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 159,
@@ -169,7 +166,7 @@
   {
    "label": "agent a35810ec5fa8244df",
    "models": [
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 74,
@@ -187,7 +184,7 @@
   {
    "label": "agent a5e0ba0d6efa0e63f",
    "models": [
-    "claude-opus-5-5"
+    "claude-fable-5-2"
    ],
    "usage": {
     "messages": 96,

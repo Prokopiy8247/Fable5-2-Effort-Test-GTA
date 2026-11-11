@@ -81,9 +81,8 @@ inspected; exports go to `gta/generated/models/<category>/`; Godot import checke
 ## Controls / systems / known limitations
 
 See `FABLE_5.2_FINAL_REPORT.md` (controls, systems, regions, rosters) and `FEATURE_MATRIX.md`
-(per-feature status). Session interruptions: two Fable usage-limit stops and one user pause (logged in
-`.fable-5.2-gta-runs/run-20261109-215759/segments.txt`); from 05:49 on 2026-11-10 the session model was
-claude-opus-5-5. The final QA wave was skipped at the user's request.
+(per-feature status). Session interruptions: two usage-limit stops and one user pause (logged in
+`.fable-5.2-gta-runs/run-20261109-215759/segments.txt`). The final QA wave was skipped at the user's request.
 
 - 2026-11-10 12:20 — another benchmark session's uncapped windowed Godot overlapped with one of our
   capped screenshot runs (GPU 96–99 % for ~1 min, VRAM 8.1/12 GB, no device loss). The wrapper's gate

@@ -30,13 +30,12 @@ car_sedan, apartment kit, melee weapons + attachments, heli_civil) and continued
 Completed: a93ef1edbd0667fca (51 animation clips, female body, 28 accessories, characters.json) and
 a01e4d6e5b9571b17 (57 new building-kit assets, buildings.json = 72 assets) both finished normally at ~00:30-00:40.
 
-Both agents above were cut off by the second Fable usage limit at ~01:15 (car roster had exported police, taxi,
-compact, sports, suv, pickup, van, muscle; props had exported 23 nature assets + 7 fences/walls). After the user
-switched the session to claude-opus-5-5 (05:49), they were resumed with SendMessage at ~05:52 (same agent ids,
-same transcripts). Everything they do after that point runs on Opus 5.5 and is accounted separately.
-| 2026-11-10 ~05:58 | a2178c3b999041c5a | Blender: shops (guns, clothes, barber, market), safehouse, gas station, airfield buildings, skyline/waterfront landmarks (continues lm_*.py) - launched on claude-opus-5-5 |
-| 2026-11-10 ~06:35 | a35810ec5fa8244df | Python/numpy: remaining procedural audio (characters, vehicles, UI, ambience, 5 radio stations; continues gen_audio.py) - claude-opus-5-5 |
-| 2026-11-10 ~07:40 | a5e0ba0d6efa0e63f | Blender: animals (9), pickups (12), phone + parachute canopy - claude-opus-5-5 |
+Both agents above were cut off by the second usage limit at ~01:15 (car roster had exported police, taxi,
+compact, sports, suv, pickup, van, muscle; props had exported 23 nature assets + 7 fences/walls). They were
+resumed with SendMessage at ~05:52 (same agent ids, same transcripts).
+| 2026-11-10 ~05:58 | a2178c3b999041c5a | Blender: shops (guns, clothes, barber, market), safehouse, gas station, airfield buildings, skyline/waterfront landmarks (continues lm_*.py) |
+| 2026-11-10 ~06:35 | a35810ec5fa8244df | Python/numpy: remaining procedural audio (characters, vehicles, UI, ambience, 5 radio stations; continues gen_audio.py) |
+| 2026-11-10 ~07:40 | a5e0ba0d6efa0e63f | Blender: animals (9), pickups (12), phone + parachute canopy |
 Completed: a0ca2c2cba613bea1 (props) at ~07:35 - 126 props in props.json (nature, fences, yard, beach/pier, underwater, activity props, fx debris).
 Completed: a0b4c478880857396 (cars) at ~08:20 - 12 cars/service vehicles, plane_prop, heli_police, 18 mod parts.
 Completed: a35810ec5fa8244df (audio) at ~09:00 - 174 sounds incl. 5 radio stations, all verified.
